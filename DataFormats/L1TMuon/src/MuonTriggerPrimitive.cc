@@ -11,18 +11,18 @@
 #include "DataFormats/MuonDetId/interface/CSCDetId.h"
 #include "DataFormats/MuonDetId/interface/RPCDetId.h"
 
-using namespace l1t;
+using namespace L1TMuon;
 
 namespace {
   const char subsystem_names[][4] = {"DT","CSC","RPC"};
 }
 
 //constructors from DT data
-MuonTriggerPrimitive::MuonTriggerPrimitive(const DTChamberId& detid,
+TriggerPrimitive::TriggerPrimitive(const DTChamberId& detid,
 				   const L1MuDTChambPhDigi& digi_phi,
 				   const int segment_number):
   _id(detid),
-  _subsystem(MuonTriggerPrimitive::kDT) {
+  _subsystem(TriggerPrimitive::kDT) {
   calculateDTGlobalSector(detid,_globalsector,_subsector);
   // fill in information from theta trigger
   _dt.theta_bti_group = -1;
@@ -41,11 +41,11 @@ MuonTriggerPrimitive::MuonTriggerPrimitive(const DTChamberId& detid,
   _dt.BxCntCode = digi_phi.BxCnt();
 }
 
-MuonTriggerPrimitive::MuonTriggerPrimitive(const DTChamberId& detid,
+TriggerPrimitive::TriggerPrimitive(const DTChamberId& detid,
 				   const L1MuDTChambThDigi& digi_th,
 				   const int theta_bti_group):
   _id(detid),
-  _subsystem(MuonTriggerPrimitive::kDT) {
+  _subsystem(TriggerPrimitive::kDT) {
   calculateDTGlobalSector(detid,_globalsector,_subsector);
   // fill in information from theta trigger
   _dt.theta_bti_group = theta_bti_group;
@@ -64,12 +64,12 @@ MuonTriggerPrimitive::MuonTriggerPrimitive(const DTChamberId& detid,
   _dt.BxCntCode = -1;
 }
 
-MuonTriggerPrimitive::MuonTriggerPrimitive(const DTChamberId& detid,
+TriggerPrimitive::TriggerPrimitive(const DTChamberId& detid,
 				   const L1MuDTChambPhDigi& digi_phi,
 				   const L1MuDTChambThDigi& digi_th,
 				   const int theta_bti_group):
   _id(detid),
-  _subsystem(MuonTriggerPrimitive::kDT) {
+  _subsystem(TriggerPrimitive::kDT) {
   calculateDTGlobalSector(detid,_globalsector,_subsector);
   // fill in information from theta trigger
   _dt.theta_bti_group = theta_bti_group;
@@ -89,10 +89,10 @@ MuonTriggerPrimitive::MuonTriggerPrimitive(const DTChamberId& detid,
 }
 
 //constructor from CSC data
-MuonTriggerPrimitive::MuonTriggerPrimitive(const CSCDetId& detid,
+TriggerPrimitive::TriggerPrimitive(const CSCDetId& detid,
 				   const CSCCorrelatedLCTDigi& digi):
   _id(detid),
-  _subsystem(MuonTriggerPrimitive::kCSC) {
+  _subsystem(TriggerPrimitive::kCSC) {
   calculateCSCGlobalSector(detid,_globalsector,_subsector);
   _csc.trknmb  = digi.getTrknmb();
   _csc.valid   = digi.isValid();
@@ -109,19 +109,19 @@ MuonTriggerPrimitive::MuonTriggerPrimitive(const CSCDetId& detid,
 }
 
 // constructor from RPC data
-MuonTriggerPrimitive::MuonTriggerPrimitive(const RPCDetId& detid,
+TriggerPrimitive::TriggerPrimitive(const RPCDetId& detid,
 				   const unsigned strip,
 				   const unsigned layer,
 				   const uint16_t bx):
   _id(detid),
-  _subsystem(MuonTriggerPrimitive::kRPC) {
+  _subsystem(TriggerPrimitive::kRPC) {
   calculateRPCGlobalSector(detid,_globalsector,_subsector);
   _rpc.strip = strip;
   _rpc.layer = layer;
   _rpc.bx = bx;
 }
 
-MuonTriggerPrimitive::MuonTriggerPrimitive(const MuonTriggerPrimitive& tp):
+TriggerPrimitive::TriggerPrimitive(const TriggerPrimitive& tp):
   _dt(tp._dt),
   _csc(tp._csc),
   _rpc(tp._rpc),
@@ -134,7 +134,7 @@ MuonTriggerPrimitive::MuonTriggerPrimitive(const MuonTriggerPrimitive& tp):
   _theta(tp._theta){
 }
 
-MuonTriggerPrimitive& MuonTriggerPrimitive::operator=(const MuonTriggerPrimitive& tp) {
+TriggerPrimitive& TriggerPrimitive::operator=(const TriggerPrimitive& tp) {
   this->_dt = tp._dt;
   this->_csc = tp._csc;
   this->_rpc = tp._rpc;
@@ -147,7 +147,7 @@ MuonTriggerPrimitive& MuonTriggerPrimitive::operator=(const MuonTriggerPrimitive
   return *this;
 }
 
-bool MuonTriggerPrimitive::operator==(const MuonTriggerPrimitive& tp) const {
+bool TriggerPrimitive::operator==(const TriggerPrimitive& tp) const {
   return ( this->_dt.bx == tp._dt.bx && 
 	   this->_dt.wheel == tp._dt.wheel && 
 	   this->_dt.sector == tp._dt.sector && 
@@ -182,7 +182,7 @@ bool MuonTriggerPrimitive::operator==(const MuonTriggerPrimitive& tp) const {
 	   this->_subsector == tp._subsector );	     
 }
 
-const int MuonTriggerPrimitive::getBX() const {
+const int TriggerPrimitive::getBX() const {
   switch(_subsystem) {
   case kDT:
     return _dt.bx;
@@ -198,7 +198,7 @@ const int MuonTriggerPrimitive::getBX() const {
   return -1;
 }
 
-const int MuonTriggerPrimitive::getStrip() const {
+const int TriggerPrimitive::getStrip() const {
   switch(_subsystem) {
   case kDT:
     return -1;
@@ -214,7 +214,7 @@ const int MuonTriggerPrimitive::getStrip() const {
   return -1;
 }
 
-const int MuonTriggerPrimitive::getWire() const {
+const int TriggerPrimitive::getWire() const {
   switch(_subsystem) {
   case kDT:
     return -1;
@@ -230,7 +230,7 @@ const int MuonTriggerPrimitive::getWire() const {
   return -1;
 }
 
-const int MuonTriggerPrimitive::getPattern() const {
+const int TriggerPrimitive::getPattern() const {
   switch(_subsystem) {
   case kDT:
     return -1;
@@ -245,7 +245,7 @@ const int MuonTriggerPrimitive::getPattern() const {
   }
   return -1;
 }
-const int MuonTriggerPrimitive::Id() const {
+const int TriggerPrimitive::Id() const {
   switch(_subsystem) {
   case kDT:
     return -1;
@@ -261,22 +261,22 @@ const int MuonTriggerPrimitive::Id() const {
   return -1;
 }
 
-void MuonTriggerPrimitive::calculateDTGlobalSector(const DTChamberId& chid, 
+void TriggerPrimitive::calculateDTGlobalSector(const DTChamberId& chid, 
 					       unsigned& global_sector, 
 					       unsigned& subsector ) {
 }
 
-void MuonTriggerPrimitive::calculateCSCGlobalSector(const CSCDetId& chid, 
+void TriggerPrimitive::calculateCSCGlobalSector(const CSCDetId& chid, 
 						unsigned& global_sector, 
 						unsigned& subsector ) {
 }
 
-void MuonTriggerPrimitive::calculateRPCGlobalSector(const RPCDetId& chid, 
+void TriggerPrimitive::calculateRPCGlobalSector(const RPCDetId& chid, 
 						unsigned& global_sector, 
 						unsigned& subsector ) {
 }
 
-void MuonTriggerPrimitive::print(std::ostream& out) const {
+void TriggerPrimitive::print(std::ostream& out) const {
   unsigned idx = (unsigned) _subsystem;
   out << subsystem_names[idx] << " Trigger Primitive" << std::endl;
   out << "eta: " << _eta << " phi: " << _phi 

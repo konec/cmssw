@@ -57,9 +57,12 @@ fnames = ['/store/relval/CMSSW_7_5_0_pre1/RelValSingleMuPt10_UP15/GEN-SIM-DIGI-R
           '/store/relval/CMSSW_7_5_0_pre1/RelValSingleMuPt10_UP15/GEN-SIM-DIGI-RAW-HLTDEBUG/MCRUN2_74_V7-v1/00000/8E6F7913-83E3-E411-B72F-0025905A48BB.root']
 
 if SAMPLE == "zmumu":
-    fnames = ['root://xrootd.unl.edu//store/mc/Fall13dr/DYToMuMu_M-50_Tune4C_13TeV-pythia8/GEN-SIM-RAW/tsg_PU20bx25_POSTLS162_V2-v1/20000/B61E1FCD-A077-E311-8B65-001E673974EA.root',
-              'root://xrootd.unl.edu//store/mc/Fall13dr/DYToMuMu_M-50_Tune4C_13TeV-pythia8/GEN-SIM-RAW/tsg_PU20bx25_POSTLS162_V2-v1/10000/0023D81B-2980-E311-85A1-001E67398C0F.root',
-              'root://xrootd.unl.edu//store/mc/Fall13dr/DYToMuMu_M-50_Tune4C_13TeV-pythia8/GEN-SIM-RAW/tsg_PU20bx25_POSTLS162_V2-v1/10000/248FB042-3080-E311-A346-001E67397D00.root']
+#    fnames = ['root://xrootd.unl.edu//store/mc/Fall13dr/DYToMuMu_M-50_Tune4C_13TeV-pythia8/GEN-SIM-RAW/tsg_PU20bx25_POSTLS162_V2-v1/20000/B61E1FCD-A077-E311-8B65-001E673974EA.root',
+#              'root://xrootd.unl.edu//store/mc/Fall13dr/DYToMuMu_M-50_Tune4C_13TeV-pythia8/GEN-SIM-RAW/tsg_PU20bx25_POSTLS162_V2-v1/10000/0023D81B-2980-E311-85A1-001E67398C0F.root',
+#              'root://xrootd.unl.edu//store/mc/Fall13dr/DYToMuMu_M-50_Tune4C_13TeV-pythia8/GEN-SIM-RAW/tsg_PU20bx25_POSTLS162_V2-v1/10000/248FB042-3080-E311-A346-001E67397D00.root']
+    fnames = ['/store/mc/Phys14DR/DYToMuMu_M-50_Tune4C_13TeV-pythia8/GEN-SIM-RAW/PU20bx25_tsg_castor_PHYS14_25_V1-v1/10000/044B58B4-9D75-E411-AB6C-002590A83218.root',
+              '/store/mc/Phys14DR/DYToMuMu_M-50_Tune4C_13TeV-pythia8/GEN-SIM-RAW/PU20bx25_tsg_castor_PHYS14_25_V1-v1/10000/045570BC-9175-E411-A06A-002590A887F0.root',
+              '/store/mc/Phys14DR/DYToMuMu_M-50_Tune4C_13TeV-pythia8/GEN-SIM-RAW/PU20bx25_tsg_castor_PHYS14_25_V1-v1/10000/0C8C76BC-9775-E411-882E-002481E0DCD8.root',]
 elif SAMPLE == "minbias":
     fnames = ['root://xrootd.unl.edu//store/mc/Fall13dr/Neutrino_Pt-2to20_gun/GEN-SIM-RAW/tsg_PU20bx25_POSTLS162_V2-v1/00000/00276D94-AA88-E311-9C90-0025905A6060.root',
               'root://xrootd.unl.edu//store/mc/Fall13dr/Neutrino_Pt-2to20_gun/GEN-SIM-RAW/tsg_PU20bx25_POSTLS162_V2-v1/00000/004F8058-6F88-E311-B971-0025905A6094.root',
@@ -75,6 +78,9 @@ process.source = cms.Source(
 
 process.maxEvents = cms.untracked.PSet(input=cms.untracked.int32(NEVENTS))
 
+# print executed modules
+#process.Tracer = cms.Service("Tracer")
+
 # PostLS1 geometry used
 process.load('Configuration.Geometry.GeometryExtended2015Reco_cff')
 process.load('Configuration.Geometry.GeometryExtended2015_cff')
@@ -83,14 +89,14 @@ process.load('Configuration.Geometry.GeometryExtended2015_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff')
 from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
-process.load('L1Trigger.L1TMuonTrackFinderEndCap.L1TMuonTriggerPrimitiveProducer_cfi')
+process.load('L1Trigger.L1TMuonEndCap.L1TMuonTriggerPrimitiveProducer_cfi')
 
-path = "L1Trigger/L1TMuonTrackFinderOverlap/data/"
+path = "L1Trigger/L1TMuonOverlap/data/"
 # OMTF emulator configuration
-process.load('L1Trigger.L1TMuonTrackFinderOverlap.OMTFProducer_cfi')
+process.load('L1Trigger.L1TMuonOverlap.OMTFProducer_cff')
 
 process.L1TMuonEndcapTrackFinder = cms.EDProducer(
-    'L1TMuonUpgradedTrackFinder',
+    'L1TMuonEndCapTrackProducer',
     primitiveSrcs = cms.VInputTag(
     cms.InputTag('L1TMuonTriggerPrimitives', 'CSC'),
     cms.InputTag('L1TMuonTriggerPrimitives', 'DT'),
@@ -98,44 +104,36 @@ process.L1TMuonEndcapTrackFinder = cms.EDProducer(
     ),
 )
 
+# TwinMux Emulator
+process.load('L1Trigger.L1TMuonBarrel.L1TTwinMuxProducer_cfi')
+
 # BMTF Emulator
-process.bmtfEmulator = cms.EDProducer("BMTrackFinder",
-                                      CSCStub_Source=cms.InputTag("simCsctfTrackDigis"),
-                                      DTDigi_Source=cms.InputTag("simDtTriggerPrimitiveDigis"),
-                                      Debug=cms.untracked.int32(0)
+process.load('L1Trigger.L1TMuonBarrel.bmtfDigis_cfi')
+process.bmtfDigis.DTDigi_Source=cms.InputTag("L1TTwinMuxProducer")
 
-                                      )
-
-process.MicroGMTCaloInputProducer = cms.EDProducer("l1t::MicroGMTCaloInputProducer",
+process.MicroGMTCaloInputProducer = cms.EDProducer("L1TMicroGMTCaloInputProducer",
                                                caloStage2Layer2Label=cms.InputTag("caloStage2Layer1Digis"),
 )
 # WORKAROUNDS FOR WRONG SCALES / MISSING COLLECTIONS:
-process.bmtfConverter = cms.EDProducer("l1t::BMTFConverter",)
+process.bmtfConverter = cms.EDProducer("L1TBMTFConverter",
+                                       barrelTFInput = cms.InputTag("bmtfDigis", "BM"))
 
 # Adjust input tags if running on GEN-SIM-RAW (have to re-digi)
 if SAMPLE == "zmumu" or SAMPLE == "minbias":
     process.L1TMuonTriggerPrimitives.CSC.src = cms.InputTag('simCscTriggerPrimitiveDigis')
 
-process.load("L1Trigger.L1TMuon.microgmtemulator_cfi")
+# uGMT emulator
+process.load("L1Trigger.L1TMuon.l1tmicrogmtproducer_cfi")
 
 process.microGMTEmulator.overlapTFInput = cms.InputTag("omtfEmulator", "OMTF")
 process.microGMTEmulator.forwardTFInput = cms.InputTag("L1TMuonEndcapTrackFinder", "EMUTF")
 process.microGMTEmulator.barrelTFInput = cms.InputTag("bmtfConverter", "ConvBMTFMuons")
 process.microGMTEmulator.triggerTowerInput = cms.InputTag("MicroGMTCaloInputProducer", "TriggerTowerSums")
 
-# disable pre-loaded cancel-out lookup tables (they currently contain only 0)
-process.microGMTEmulator.OvlNegSingleMatchQualLUTSettings.filename = cms.string("")
-process.microGMTEmulator.OvlPosSingleMatchQualLUTSettings.filename = cms.string("")
-process.microGMTEmulator.FOPosMatchQualLUTSettings.filename = cms.string("")
-process.microGMTEmulator.FONegMatchQualLUTSettings.filename = cms.string("")
-process.microGMTEmulator.BrlSingleMatchQualLUTSettings.filename = cms.string("")
-process.microGMTEmulator.BOPosMatchQualLUTSettings.filename = cms.string("")
-process.microGMTEmulator.BONegMatchQualLUTSettings.filename = cms.string("")
-
 # output file
 process.TFileService = cms.Service("TFileService",
                                    fileName=cms.string(
-                                       '/afs/cern.ch/work/j/jlingema/private/l1ntuples_upgrade/l1ntuple_{sample}_n.root'.format(sample=SAMPLE))
+                                       '/afs/cern.ch/work/t/treis/private/l1ntuples_upgrade/l1ntuple_{sample}_n.root'.format(sample=SAMPLE))
                                    )
 
 process.load('Configuration.StandardSequences.SimL1Emulator_cff')
@@ -146,16 +144,56 @@ process = customise_csc_PostLS1(process)
 # upgrade calo stage 2
 process.load('L1Trigger.L1TCalorimeter.L1TCaloStage2_PPFromRaw_cff')
 
+# L1TMicroGMTESProducer
+process.load('L1Trigger.L1TMuon.l1tmicrogmtparamsesproducer_cfi')
+# reset LUT paths to trigger CMSSW internal LUT generation
+#process.l1tGMTParamsESProducer.AbsIsoCheckMemLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.RelIsoCheckMemLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.IdxSelMemPhiLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.IdxSelMemEtaLUTPath = cms.string('')
+process.l1tGMTParamsESProducer.BrlSingleMatchQualLUTPath = cms.string('')
+process.l1tGMTParamsESProducer.FwdPosSingleMatchQualLUTPath = cms.string('')
+process.l1tGMTParamsESProducer.FwdNegSingleMatchQualLUTPath = cms.string('')
+process.l1tGMTParamsESProducer.OvlPosSingleMatchQualLUTPath = cms.string('')
+process.l1tGMTParamsESProducer.OvlNegSingleMatchQualLUTPath = cms.string('')
+process.l1tGMTParamsESProducer.BOPosMatchQualLUTPath = cms.string('')
+process.l1tGMTParamsESProducer.BONegMatchQualLUTPath = cms.string('')
+process.l1tGMTParamsESProducer.FOPosMatchQualLUTPath = cms.string('')
+process.l1tGMTParamsESProducer.FONegMatchQualLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.BPhiExtrapolationLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.OPhiExtrapolationLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.FPhiExtrapolationLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.BEtaExtrapolationLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.OEtaExtrapolationLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.FEtaExtrapolationLUTPath = cms.string('')
+#process.l1tGMTParamsESProducer.SortRankLUTPath = cms.string('')
+
+process.esTest = cms.EDAnalyzer("EventSetupRecordDataGetter",
+   toGet = cms.VPSet(
+      cms.PSet(record = cms.string('L1TGMTParamsRcd'),
+               data = cms.vstring('L1TMuonGlobalParams'))
+                    ),
+   verbose = cms.untracked.bool(True)
+)
+
+process.L1ReEmulSeq = cms.Sequence(process.SimL1Emulator
+                                   + process.ecalDigis
+                                   #+ process.hcalDigis
+                                   #+ process.gtDigis
+                                   #+ process.gtEvmDigis
+                                   #+ process.csctfDigis
+                                   #+ process.dttfDigis
+                                   )
 
 process.L1TMuonSeq = cms.Sequence(
-    process.SimL1Emulator
-    + process.ecalDigis
-    + process.L1TMuonTriggerPrimitives
-    + process.bmtfEmulator
+    process.L1TMuonTriggerPrimitives
+    + process.L1TTwinMuxProducer
+    + process.bmtfDigis
     + process.bmtfConverter
     + process.omtfEmulator
     + process.L1TMuonEndcapTrackFinder
     + process.L1TCaloStage2_PPFromRaw
+    + process.esTest
     + process.MicroGMTCaloInputProducer
     + process.microGMTEmulator
 )
@@ -164,7 +202,7 @@ process.L1TMuonSeq = cms.Sequence(
 process.MuonFilter = cms.Sequence()
 
 
-process.L1TMuonPath = cms.Path(process.L1TMuonSeq)
+process.L1TMuonPath = cms.Path(process.L1ReEmulSeq + process.L1TMuonSeq)
 
 process.out = cms.OutputModule("PoolOutputModule",
                                outputCommands=cms.untracked.vstring(),

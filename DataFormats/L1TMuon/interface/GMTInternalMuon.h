@@ -1,18 +1,12 @@
 #ifndef __l1t_gmt_internal_muon_h__
 #define __l1t_gmt_internal_muon_h__
 
-#include "DataFormats/L1Trigger/interface/BXVector.h"
 #include "DataFormats/Common/interface/Ref.h"
 #include "DataFormats/L1TMuon/interface/RegionalMuonCand.h"
+#include "DataFormats/L1TMuon/interface/RegionalMuonCandFwd.h"
 #include <utility>
 
 namespace l1t {
-
-  class GMTInternalMuon;
-  typedef std::vector<GMTInternalMuon> GMTInternalMuonCollection;
-  typedef std::map<int, std::vector<std::shared_ptr<GMTInternalMuon>>> GMTInternalWedges;
-  typedef std::list<std::shared_ptr<GMTInternalMuon>> GMTInternalMuonList;
-
 class GMTInternalMuon {
   public:
     explicit GMTInternalMuon(const RegionalMuonCand&, int);
@@ -55,7 +49,6 @@ class GMTInternalMuon {
     inline const int hwSign() const { return m_regional.hwSign(); };
     inline const int hwSignValid() const { return m_regional.hwSignValid(); };
     inline const int hwQual() const { return m_regional.hwQual(); };
-    inline const int hwTrackAddress() const { return m_regional.hwTrackAddress(); };
     inline const int processor() const { return m_regional.processor(); };
     inline const tftype trackFinderType() const { return m_regional.trackFinderType(); };
     inline const int link() const { return m_regional.link(); }
@@ -77,9 +70,4 @@ class GMTInternalMuon {
 
 } // namespace l1t
 
-
 #endif /* define __l1t_gmt_internal_muon_h__ */
-
-
-
-

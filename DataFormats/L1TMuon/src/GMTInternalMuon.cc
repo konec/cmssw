@@ -1,6 +1,5 @@
 #include "DataFormats/L1TMuon/interface/GMTInternalMuon.h"
-#include "DataFormats/L1TMuon/interface/RegionalMuonCand.h"
-//#include "L1Trigger/L1TMuon/interface/MicroGMTConfiguration.h"
+#include "L1Trigger/L1TMuon/interface/MicroGMTConfiguration.h"
 
 
 namespace l1t {

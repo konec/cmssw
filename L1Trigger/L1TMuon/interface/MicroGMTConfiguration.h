@@ -5,9 +5,9 @@
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 
 #include "DataFormats/L1Trigger/interface/Muon.h"
-#include "DataFormats/L1TMuon/interface/RegionalMuonCand.h"
-#include "DataFormats/L1TMuon/interface/GMTInternalMuon.h"
-#include "DataFormats/L1TMuon/interface/GMTInputCaloSum.h"
+#include "DataFormats/L1TMuon/interface/RegionalMuonCandFwd.h"
+#include "DataFormats/L1TMuon/interface/GMTInternalMuonFwd.h"
+#include "DataFormats/L1TMuon/interface/GMTInputCaloSumFwd.h"
 
 #include <map>
 #include <utility>

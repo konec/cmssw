@@ -77,7 +77,7 @@ process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
 process.MicroGMTInputProducer = cms.EDProducer("l1t::MicroGMTInputProducerFromGen",
 )
 
-process.load("L1Trigger.L1TMuon.microgmtemulator_cfi")
+process.load("L1Trigger.L1TMuon.l1tmicrogmtproducer_cfi")
 
 
 process.L1TMuonSeq = cms.Sequence( process.MicroGMTInputProducer +

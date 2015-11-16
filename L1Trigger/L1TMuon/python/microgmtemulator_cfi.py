@@ -5,7 +5,7 @@ import os
 l1tgmt_basedir = "L1Trigger/L1TMuon/"
 lut_dir = os.path.join(l1tgmt_basedir, "data/microgmt_luts/")
 
-microGMTEmulator = cms.EDProducer('l1t::L1TMicroGMTProducer',
+microGMTEmulator = cms.EDProducer('l1t::L1TMuonProducer',
     barrelTFInput = cms.InputTag("L1TMicroGMTInputProducer", "BarrelTFMuons"),
     overlapTFInput = cms.InputTag("L1TMicroGMTInputProducer", "OverlapTFMuons"),
     forwardTFInput = cms.InputTag("L1TMicroGMTInputProducer", "ForwardTFMuons"),

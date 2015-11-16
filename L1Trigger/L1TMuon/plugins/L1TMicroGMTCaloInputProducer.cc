@@ -33,6 +33,7 @@
 #include "FWCore/Utilities/interface/Exception.h"
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
 
+#include "DataFormats/L1TMuon/interface/GMTInputCaloSumFwd.h"
 #include "DataFormats/L1TMuon/interface/GMTInputCaloSum.h"
 #include "DataFormats/L1TCalorimeter/interface/CaloTower.h"
 

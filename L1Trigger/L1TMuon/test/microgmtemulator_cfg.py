@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-process = cms.Process("MicroGMTEmulator")
+process = cms.Process("L1TMuonProducer")
 
 process.load("FWCore.MessageService.MessageLogger_cfi")
 
@@ -15,7 +15,7 @@ process.source = cms.Source("PoolSource",
     )
 )
 
-process.load("L1Trigger.L1TMuon.microgmtemulator_cfi")
+process.load("L1Trigger.L1TMuon.l1tmicrogmtproducer_cfi")
 
 process.out = cms.OutputModule("PoolOutputModule",
     # fileName = cms.untracked.string('fwd_iso_scan.root')

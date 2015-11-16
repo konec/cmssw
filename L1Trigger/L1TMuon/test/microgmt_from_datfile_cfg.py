@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-process = cms.Process("MicroGMTEmulator")
+process = cms.Process("L1TMuonProducer")
 
 process.load("FWCore.MessageService.MessageLogger_cfi")
 
@@ -11,7 +11,7 @@ n_events_dict = {"fwd_iso_scan":10, "iso_test":21, "many_events":91}
 process.maxEvents = cms.untracked.PSet(input=cms.untracked.int32(n_events_dict[FILENAME]))
 
 process.load("L1Trigger.L1TMuon.microgmtinputproducer_cfi")
-process.load("L1Trigger.L1TMuon.microgmtemulator_cfi")
+process.load("L1Trigger.L1TMuon.l1tmicrogmtproducer_cfi")
 
 process.MicroGMTInputProducer.inputFileName = "patterns/{fname}.dat".format(fname=FILENAME)
 
