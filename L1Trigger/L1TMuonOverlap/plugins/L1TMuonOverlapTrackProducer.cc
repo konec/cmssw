@@ -227,7 +227,8 @@ void L1TMuonOverlapTrackProducer::produce(edm::Event& iEvent, const edm::EventSe
 								       iProcessor,
 								       l1t::tftype::omtf_pos);
 
-    OMTFinput myShiftedInputPos =  myOMTF->shiftInput(iProcessor,*myInputPos);
+//    OMTFinput myShiftedInputPos =  myOMTF->shiftInput(iProcessor,*myInputPos);
+   OMTFinput myShiftedInputPos = *myInputPos;
 
     const OMTFinput *myInputNeg = myInputMaker->buildInputForProcessor(dtPhDigis.product(),
 								       dtThDigis.product(),
@@ -237,7 +238,8 @@ void L1TMuonOverlapTrackProducer::produce(edm::Event& iEvent, const edm::EventSe
 								       l1t::tftype::omtf_neg);
 
     
-    OMTFinput myShiftedInputNeg =  myOMTF->shiftInput(iProcessor,*myInputNeg);
+//    OMTFinput myShiftedInputNeg =  myOMTF->shiftInput(iProcessor,*myInputNeg);
+   OMTFinput myShiftedInputNeg =  *myInputNeg;
 
     l1t::RegionalMuonCandBxCollection myOTFCandidatesPos, myOTFCandidatesNeg;
     ///Results for each GP in each logic region of given processor

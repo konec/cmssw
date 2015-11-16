@@ -242,7 +242,8 @@ void OMTFinputMaker::processDT(const L1MuDTChambPhContainer *dtPhDigis,
     if(OMTFConfiguration::hwToLogicLayer.find(hwNumber)==OMTFConfiguration::hwToLogicLayer.end()) continue;
     
     unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];   
-    int iPhi =  katownik->getGlobalPhi(detid.rawId(), digiIt);
+    //int iPhi =  katownik->getGlobalPhi(detid.rawId(), digiIt);
+    int iPhi =  katownik->getProcessorPhi(iProcessor, type, digiIt);
     int iEta =  katownik->getGlobalEta(detid.rawId(), digiIt, dtThDigis);
     unsigned int iInput= getInputNumber(detid.rawId(), iProcessor, type);
 
@@ -279,7 +280,8 @@ void OMTFinputMaker::processCSC(const CSCCorrelatedLCTDigiCollection *cscDigis,
       if(OMTFConfiguration::hwToLogicLayer.find(hwNumber)==OMTFConfiguration::hwToLogicLayer.end()) continue;
 
       unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];      
-      int iPhi = katownik->getGlobalPhi(rawid, *digi);
+      //int iPhi = katownik->getGlobalPhi(rawid, *digi);
+      int iPhi = katownik->getProcessorPhi(iProcessor, type, CSCDetId(rawid), *digi);
       int iEta = katownik->getGlobalEta(rawid, *digi);
       ///Accept CSC digis only up to eta=1.26.
       ///The nominal OMTF range is up to 1.24, but cutting at 1.24
@@ -301,65 +303,51 @@ void OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
 				l1t::tftype type){
 
   if(!rpcDigis) return;
+  std::stringstream str;
 
-  std::ostringstream myStr;
+  const RPCDigiCollection & rpcDigiCollection = *rpcDigis;
+  for (auto rollDigis : rpcDigiCollection) {
+    RPCDetId roll = rollDigis.first;
+    unsigned int rawid = roll.rawId();
 
-  typedef std::pair<RPCDigi *, RPCDigi *> halfDigi;
-  
-  auto chamber = rpcDigis->begin();
-  auto chend  = rpcDigis->end();
-  for( ; chamber != chend; ++chamber ) {
-    unsigned int rawid = (*chamber).first;
-    
-    ///Check it the data fits into given processor input range
     if(!acceptDigi(rawid, iProcessor, type)) continue;
-
     ///Find clusters of consecutive fired strips.
     ///Have to copy the digis in chamber to sort them (not optimal).
-    ///NOTE: when copying I select only digis with bx==0
+    ///NOTE: when copying I select only digis with bx==0       //FIXME: find a better place/way to filtering digi against quality/BX etc.
     std::vector<RPCDigi> digisCopy;
-    std::copy_if((*chamber).second.first, (*chamber).second.second, std::back_inserter(digisCopy), [](const RPCDigi & aDigi){return (aDigi.bx()==0);});
+    std::copy_if(rollDigis.second.first, rollDigis.second.second, std::back_inserter(digisCopy), [](const RPCDigi & aDigi){return (aDigi.bx()==0);});
     std::sort(digisCopy.begin(),digisCopy.end(),rpcPrimitiveCmp);
-    std::vector<halfDigi> result;
-    for(auto &stripIt: digisCopy) {
-      if(result.empty()) result.push_back(halfDigi(&stripIt,&stripIt));
-      else if (stripIt.strip() - result.back().second->strip() == 1) result.back().second = &stripIt;
-      else if (stripIt.strip() - result.back().second->strip() > 1) result.push_back(halfDigi(&stripIt,&stripIt));
+    typedef std::pair<RPCDigi & , RPCDigi & > Cluster;
+    std::vector<Cluster> clusters;
+    for(auto & digi: digisCopy) {
+      if(clusters.empty()) clusters.push_back(Cluster(digi,digi));
+      else if (digi.strip() - clusters.back().second.strip() == 1) clusters.back().second = digi;
+      else if (digi.strip() - clusters.back().second.strip() > 1) clusters.push_back(Cluster(digi,digi));
     }
-      for(auto halfDigiIt:result){
-	/* This code should be used when LUT for RPC angle converiosn will be implemented.
-	int strip1 = halfDigiIt.first->strip();
-	int strip2 = halfDigiIt.second->strip();
-	int clusterHalfStrip = strip1 + strip2;
-	int iPhi = katownik->getGlobalPhi(rawid,clusterHalfStrip);
-	*/
-	////Temporary code
-	float phi1 =  katownik->getGlobalPhi(rawid,*halfDigiIt.first);
-	float phi2 =  katownik->getGlobalPhi(rawid,*halfDigiIt.second);
-	float phi = (phi1+phi2)/2.0;
-	///If phi1 is close to Pi, and phi2 close to -Pi the results phi is 0
-	///instead -pi
-	if(phi1*phi2<0 && fabs(phi1)>M_PI/2.0) phi = (M_PI-phi)*(1 - 2*std::signbit(phi));
-	int iPhi =  phi/(2.0*M_PI)*OMTFConfiguration::nPhiBins;
-	////////////////	
-	int iEta =  katownik->getGlobalEta(rawid,*halfDigiIt.first);
-	unsigned int hwNumber = OMTFConfiguration::getLayerNumber(rawid);
-	unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];
-	unsigned int iInput= getInputNumber(rawid, iProcessor, type);
-	
-	myInput->addLayerHit(iLayer,iInput,iPhi,iEta);
-	
-	myStr<<" RPC halfDigi "
-	     <<" begin: "<<halfDigiIt.first->strip()<<" end: "<<halfDigiIt.second->strip()
-	     <<" iPhi: "<<iPhi
-	     <<" iEta: "<<iEta
-	     <<" hwNumber: "<<hwNumber
-	     <<" iInput: "<<iInput
-	     <<" iLayer: "<<iLayer
-	     <<std::endl;
-      }    
+
+    for (auto & cluster: clusters) {
+      int iPhiHalfStrip1 = katownik->getProcessorPhi(iProcessor, type, roll, cluster.first);
+      int iPhiHalfStrip2 = katownik->getProcessorPhi(iProcessor, type, roll, cluster.second);
+      int iPhi = (iPhiHalfStrip1+iPhiHalfStrip2)/2;
+      int iEta =  katownik->getGlobalEta(rawid, cluster.first);
+      unsigned int hwNumber = OMTFConfiguration::getLayerNumber(rawid);
+      unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];
+      unsigned int iInput= getInputNumber(rawid, iProcessor, type);
+
+      myInput->addLayerHit(iLayer,iInput,iPhi,iEta);
+
+      str<<" RPC halfDigi "
+           <<" begin: "<<cluster.first.strip()<<" end: "<<cluster.second.strip()
+           <<" iPhi: "<<iPhi
+           <<" iEta: "<<iEta
+           <<" hwNumber: "<<hwNumber
+           <<" iInput: "<<iInput
+           <<" iLayer: "<<iLayer
+           <<std::endl;
+    }
   }
-  edm::LogInfo("OMTFInputMaker")<<myStr.str();
+
+  edm::LogInfo("OMTFInputMaker")<<str.str();
 }
 ////////////////////////////////////////////
 ////////////////////////////////////////////
