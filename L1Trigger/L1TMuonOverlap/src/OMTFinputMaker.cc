@@ -18,30 +18,22 @@
 
 ///////////////////////////////////////
 ///////////////////////////////////////
-OMTFinputMaker::OMTFinputMaker(){ 
-
-  myInput = new OMTFinput();
-
-  katownik.reset(new AngleConverter());
+OMTFinputMaker::OMTFinputMaker() {}
+///////////////////////////////////////
+///////////////////////////////////////
+void OMTFinputMaker::initialize(const edm::EventSetup& es)
+{ 
+  myAngleConverter.checkAndUpdateGeometry(es);
 }
 ///////////////////////////////////////
 ///////////////////////////////////////
-void OMTFinputMaker::initialize(const edm::EventSetup& es){ 
-
-  katownik->checkAndUpdateGeometry(es);
-}
-///////////////////////////////////////
-///////////////////////////////////////
-OMTFinputMaker::~OMTFinputMaker(){ 
-
-  if(myInput) delete myInput;
-
-}
+OMTFinputMaker::~OMTFinputMaker(){ }
 ///////////////////////////////////////
 ///////////////////////////////////////
 bool  OMTFinputMaker::acceptDigi(uint32_t rawId,
 				 unsigned int iProcessor,
-				 l1t::tftype type){
+				 l1t::tftype type)
+{
 
   unsigned int aMin = OMTFConfiguration::barrelMin[iProcessor];
   unsigned int aMax = OMTFConfiguration::barrelMax[iProcessor];
@@ -144,7 +136,8 @@ bool  OMTFinputMaker::acceptDigi(uint32_t rawId,
 ///////////////////////////////////////
 unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId, 
 					    unsigned int iProcessor,
-					    l1t::tftype type){
+					    l1t::tftype type)
+{
 
   unsigned int iInput = 99;
   unsigned int aSector = 99;
@@ -153,8 +146,7 @@ unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId,
   int nInputsPerSector = 2;
 
   DetId detId(rawId);
-  if (detId.det() != DetId::Muon) 
-    edm::LogError("Critical OMTFinputMaker") << "PROBLEM: hit in unknown Det, detID: "<<detId.det()<<std::endl;
+  if (detId.det() != DetId::Muon) edm::LogError("Critical OMTFinputMaker") << "PROBLEM: hit in unknown Det, detID: "<<detId.det()<<std::endl;
   switch (detId.subdetId()) {
   case MuonSubdetId::RPC: {
     RPCDetId rpc(rawId);
@@ -219,12 +211,14 @@ unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId,
 }
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-void OMTFinputMaker::processDT(const L1MuDTChambPhContainer *dtPhDigis,
+OMTFinput OMTFinputMaker::processDT(const L1MuDTChambPhContainer *dtPhDigis,
 	       const L1MuDTChambThContainer *dtThDigis,
 	       unsigned int iProcessor,
-	       l1t::tftype type){
+	       l1t::tftype type)
+{
 
-  if(!dtPhDigis) return;
+  OMTFinput result;
+  if(!dtPhDigis) return result;
 
   for (const auto digiIt: *dtPhDigis->getContainer()) {
 
@@ -236,29 +230,33 @@ void OMTFinputMaker::processDT(const L1MuDTChambPhContainer *dtPhDigis,
     ///Ts2Tag() == 0 - take only first track from DT Trigger Server
     ///BxCnt()  == 0 - ??
     ///code()>=3     - take only double layer hits, HH, HL and LL
+    // FIXME (MK): at least Ts2Tag selection is not correct! Check it
     if (digiIt.bxNum()!= 0 || digiIt.BxCnt()!= 0 || digiIt.Ts2Tag()!= 0 || digiIt.code()<4) continue;
 
     unsigned int hwNumber = OMTFConfiguration::getLayerNumber(detid.rawId());
     if(OMTFConfiguration::hwToLogicLayer.find(hwNumber)==OMTFConfiguration::hwToLogicLayer.end()) continue;
     
     unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];   
-    //int iPhi =  katownik->getGlobalPhi(detid.rawId(), digiIt);
-    int iPhi =  katownik->getProcessorPhi(iProcessor, type, digiIt);
-    int iEta =  katownik->getGlobalEta(detid.rawId(), digiIt, dtThDigis);
+    int iPhi =  myAngleConverter.getProcessorPhi(iProcessor, type, digiIt);
+    int iEta =  myAngleConverter.getGlobalEta(detid.rawId(), digiIt, dtThDigis);
     unsigned int iInput= getInputNumber(detid.rawId(), iProcessor, type);
 
-    myInput->addLayerHit(iLayer,iInput,iPhi,iEta);
-    myInput->addLayerHit(iLayer+1,iInput,digiIt.phiB(),iEta);
+    result.addLayerHit(iLayer,iInput,iPhi,iEta);
+    result.addLayerHit(iLayer+1,iInput,digiIt.phiB(),iEta);
   }
+
+  return result;
   
 }
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-void OMTFinputMaker::processCSC(const CSCCorrelatedLCTDigiCollection *cscDigis,
+OMTFinput OMTFinputMaker::processCSC(const CSCCorrelatedLCTDigiCollection *cscDigis,
 	       unsigned int iProcessor,
-	       l1t::tftype type){
+	       l1t::tftype type)
+{
 
-  if(!cscDigis) return;
+  OMTFinput result;
+  if(!cscDigis) return result;
 
   auto chamber = cscDigis->begin();
   auto chend  = cscDigis->end();
@@ -280,29 +278,30 @@ void OMTFinputMaker::processCSC(const CSCCorrelatedLCTDigiCollection *cscDigis,
       if(OMTFConfiguration::hwToLogicLayer.find(hwNumber)==OMTFConfiguration::hwToLogicLayer.end()) continue;
 
       unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];      
-      //int iPhi = katownik->getGlobalPhi(rawid, *digi);
-      int iPhi = katownik->getProcessorPhi(iProcessor, type, CSCDetId(rawid), *digi);
-      int iEta = katownik->getGlobalEta(rawid, *digi);
+      int iPhi = myAngleConverter.getProcessorPhi(iProcessor, type, CSCDetId(rawid), *digi);
+      int iEta = myAngleConverter.getGlobalEta(rawid, *digi);
       ///Accept CSC digis only up to eta=1.26.
       ///The nominal OMTF range is up to 1.24, but cutting at 1.24
       ///kill efficnency at the edge. 1.26 is one eta bin above nominal.
       if(abs(iEta)>1.26/2.61*240) continue;
       unsigned int iInput= getInputNumber(rawid, iProcessor, type);      
-      myInput->addLayerHit(iLayer,iInput,iPhi,iEta);     
+      result.addLayerHit(iLayer,iInput,iPhi,iEta);     
     }
   }      
+  return result;
 }
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-bool rpcPrimitiveCmp(const  RPCDigi &a,
-		     const  RPCDigi &b) { return a.strip() < b.strip(); };
+bool rpcPrimitiveCmp(const  RPCDigi &a, const  RPCDigi &b) { return a.strip() < b.strip(); };
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-void OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
+OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
 				unsigned int iProcessor,
-				l1t::tftype type){
+				l1t::tftype type)
+{
 
-  if(!rpcDigis) return;
+  OMTFinput result; 
+  if(!rpcDigis) return result;
   std::stringstream str;
 
   const RPCDigiCollection & rpcDigiCollection = *rpcDigis;
@@ -326,15 +325,15 @@ void OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
     }
 
     for (auto & cluster: clusters) {
-      int iPhiHalfStrip1 = katownik->getProcessorPhi(iProcessor, type, roll, cluster.first);
-      int iPhiHalfStrip2 = katownik->getProcessorPhi(iProcessor, type, roll, cluster.second);
+      int iPhiHalfStrip1 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.first);
+      int iPhiHalfStrip2 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.second);
       int iPhi = (iPhiHalfStrip1+iPhiHalfStrip2)/2;
-      int iEta =  katownik->getGlobalEta(rawid, cluster.first);
+      int iEta =  myAngleConverter.getGlobalEta(rawid, cluster.first);
       unsigned int hwNumber = OMTFConfiguration::getLayerNumber(rawid);
       unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];
       unsigned int iInput= getInputNumber(rawid, iProcessor, type);
 
-      myInput->addLayerHit(iLayer,iInput,iPhi,iEta);
+      result.addLayerHit(iLayer,iInput,iPhi,iEta);
 
       str<<" RPC halfDigi "
            <<" begin: "<<cluster.first.strip()<<" end: "<<cluster.second.strip()
@@ -348,24 +347,22 @@ void OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
   }
 
   edm::LogInfo("OMTFInputMaker")<<str.str();
+  return result;
 }
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-const OMTFinput * OMTFinputMaker::buildInputForProcessor(const L1MuDTChambPhContainer *dtPhDigis,
+OMTFinput OMTFinputMaker::buildInputForProcessor(const L1MuDTChambPhContainer *dtPhDigis,
 							 const L1MuDTChambThContainer *dtThDigis,
 							 const CSCCorrelatedLCTDigiCollection *cscDigis,
 							 const RPCDigiCollection *rpcDigis,
 							 unsigned int iProcessor,
-							 l1t::tftype type){  
-  myInput->clear();	
-
-  processDT(dtPhDigis, dtThDigis, iProcessor, type);
-  processCSC(cscDigis, iProcessor, type);
-  processRPC(rpcDigis, iProcessor, type);
-
-  return myInput;
-
+							 l1t::tftype type)
+{  
+  OMTFinput result;
+  result += processDT(dtPhDigis, dtThDigis, iProcessor, type);
+  result += processCSC(cscDigis, iProcessor, type);
+  result += processRPC(rpcDigis, iProcessor, type);
+  return result;
 }
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-

@@ -150,20 +150,17 @@ void OMTFPatternMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& 
   for(unsigned int iProcessor=0;iProcessor<6;++iProcessor){
         
     ///Input data with phi ranges shifted for each processor, so it fits 11 bits range
-    const OMTFinput *myInput = myInputMaker->buildInputForProcessor(dtPhDigis.product(),
+    OMTFinput myInput = myInputMaker->buildInputForProcessor(dtPhDigis.product(),
 								    dtThDigis.product(),
 								    cscDigis.product(),
 								    rpcDigis.product(),								       
 								    iProcessor,
 								    mtfType);
     
-    ///Input data with phi ranges shifted for each processor, so it fits 10 bits range
-    const OMTFinput myShiftedInput =  myOMTF->shiftInput(iProcessor,*myInput);	
-    
     ///Phi maps should be made with original, global phi values.
-    if(makeConnectionsMaps) myOMTFConfigMaker->makeConnetionsMap(iProcessor,*myInput);
+    //if(makeConnectionsMaps) myOMTFConfigMaker->makeConnetionsMap(iProcessor,*myInput);
   
-    if(makeGoldenPatterns) myOMTF->fillCounts(iProcessor,myShiftedInput, aSimMuon);
+    if(makeGoldenPatterns) myOMTF->fillCounts(iProcessor,myInput, aSimMuon);
     
   }
 }
