@@ -148,7 +148,7 @@ void OMTFProducerMix::produce(edm::Event& iEvent, const edm::EventSetup& evSetup
     for(unsigned int iProcessor=0;iProcessor<6;++iProcessor){
 
       edm::LogInfo("OMTFOMTFProducerMix")<<" iProcessor: "<<iProcessor;
-      const OMTFinput *myInput = myInputMaker->buildInputForProcessor(dtPhDigis.product(),
+      OMTFinput myInput = myInputMaker->buildInputForProcessor(dtPhDigis.product(),
 									 dtThDigis.product(),
 									 cscDigis.product(),
 									 rpcDigis.product(),								       
@@ -157,18 +157,18 @@ void OMTFProducerMix::produce(edm::Event& iEvent, const edm::EventSetup& evSetup
       
 
       ///Input data with phi ranges shifted for each processor, so it fits 11 bits range
-      OMTFinput myShiftedInput =  myOMTF->shiftInput(iProcessor,*myInput);
+      //OMTFinput myShiftedInput =  myOMTF->shiftInput(iProcessor,*myInput);
 
       ///Every second BX contains the mixed event
-      if(iEventMix%2==1 && iEventMix>0) myShiftedInput.clear();
+      if(iEventMix%2==1 && iEventMix>0) myInput.clear();
       ///First BX contains the original event
       if(iEventMix>0){
 	myInputXML->clear();
 	myInputXML->readData(myReader,int(iEventMix-0.5)/2, iProcessor);
-	myShiftedInput.mergeData(myInputXML);
+	myInput.mergeData(myInputXML);
       }
       ///Results for each GP in each logic region of given processor
-      const std::vector<OMTFProcessor::resultsMap> & myResults = myOMTF->processInput(iProcessor,myShiftedInput);
+      const std::vector<OMTFProcessor::resultsMap> & myResults = myOMTF->processInput(iProcessor,myInput);
 
       //Retreive all candidates returned by sorter: upto 3 non empty ones with different phi or charge
       l1t::RegionalMuonCandBxCollection  myOTFCandidates;
@@ -196,7 +196,7 @@ void OMTFProducerMix::produce(edm::Event& iEvent, const edm::EventSetup& evSetup
 
       ///Write to XML
       if(dumpResultToXML && myEventNumber==eventToSave && iEventMix==4){
-	xercesc::DOMElement * aProcElement = myWriter->writeEventData(aTopElement,iProcessor,myShiftedInput);
+	xercesc::DOMElement * aProcElement = myWriter->writeEventData(aTopElement,iProcessor,myInput);
 	for(unsigned int iRefHit=0;iRefHit<OMTFConfiguration::nTestRefHits;++iRefHit){
 	  ///Dump only regions, where a candidate was found
 	  InternalObj myCand = mySorter->sortRefHitResults(myResults[iRefHit],0);//charge=0 means ignore charge

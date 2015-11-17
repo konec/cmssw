@@ -448,7 +448,7 @@ void XMLConfigReader::readConfig( L1TMuonOverlapParams *aConfig){
     }
     ///////////
     nElem1 = aProcessorElement->getElementsByTagName(_toDOMS("RefHit"))->getLength();
-    assert(nElem1==nRefHits);
+    assert( (iProcessor==0 && nElem1==nRefHits) || (iProcessor!=0 && nElem1==0) );
     DOMElement* aRefHitElement = 0;
     for(uint ii=0;ii<nElem1;++ii){
       aNode = aProcessorElement->getElementsByTagName(_toDOMS("RefHit"))->item(ii);
@@ -466,11 +466,12 @@ void XMLConfigReader::readConfig( L1TMuonOverlapParams *aConfig){
       aRefHitNode.iInput = iInput;
       aRefHitNode.iRegion = iRegion;
       aRefHitNode.iRefLayer = iRefLayer;
-      aRefHitMapVec[iRefHit + iProcessor*nRefHits] = aRefHitNode;
+      //aRefHitMapVec[iRefHit + iProcessor*nRefHits] = aRefHitNode;
+      for (unsigned int ip=0; ip<nProcessors; ++ip) aRefHitMapVec[iRefHit + ip*nRefHits] = aRefHitNode;
     }
     ///////////
     unsigned int nElem2 = aProcessorElement->getElementsByTagName(_toDOMS("LogicRegion"))->getLength();
-    assert(nElem2==nProcessors);
+    assert( (iProcessor==0 && nElem2==nLogicRegions) || (iProcessor!=0 && nElem2==0) );
     DOMElement* aRegionElement = 0;
     for(uint ii=0;ii<nElem2;++ii){
       aNode = aProcessorElement->getElementsByTagName(_toDOMS("LogicRegion"))->item(ii);
@@ -480,15 +481,16 @@ void XMLConfigReader::readConfig( L1TMuonOverlapParams *aConfig){
       assert(nElem3==nLayers);
       DOMElement* aLayerElement = 0;
       for(uint iii=0;iii<nElem3;++iii){
-	aNode = aRegionElement->getElementsByTagName(_toDOMS("Layer"))->item(iii);
-	aLayerElement = static_cast<DOMElement *>(aNode); 
-	unsigned int iLayer = std::atoi(_toString(aLayerElement->getAttribute(_toDOMS("iLayer"))).c_str());
-	unsigned int iFirstInput = std::atoi(_toString(aLayerElement->getAttribute(_toDOMS("iFirstInput"))).c_str());
-	unsigned int nInputs = std::atoi(_toString(aLayerElement->getAttribute(_toDOMS("nInputs"))).c_str());
-	aLayerInputNode.iLayer = iLayer;
-	aLayerInputNode.iFirstInput = iFirstInput;
-	aLayerInputNode.nInputs = nInputs;
-	aLayerInputMapVec[iLayer + iRegion*nLayers + iProcessor*nLayers*nLogicRegions] = aLayerInputNode;
+  	  aNode = aRegionElement->getElementsByTagName(_toDOMS("Layer"))->item(iii);
+	  aLayerElement = static_cast<DOMElement *>(aNode); 
+	  unsigned int iLayer = std::atoi(_toString(aLayerElement->getAttribute(_toDOMS("iLayer"))).c_str());
+	  unsigned int iFirstInput = std::atoi(_toString(aLayerElement->getAttribute(_toDOMS("iFirstInput"))).c_str());
+	  unsigned int nInputs = std::atoi(_toString(aLayerElement->getAttribute(_toDOMS("nInputs"))).c_str());
+	  aLayerInputNode.iLayer = iLayer;
+	  aLayerInputNode.iFirstInput = iFirstInput;
+	  aLayerInputNode.nInputs = nInputs;
+//        aLayerInputMapVec[iLayer + iRegion*nLayers + iProcessor*nLayers*nLogicRegions] = aLayerInputNode;
+	  for (unsigned int ip=0; ip<nProcessors; ++ip) aLayerInputMapVec[iLayer + iRegion*nLayers + ip*nLayers*nLogicRegions] = aLayerInputNode;
       }
     }   
   }
