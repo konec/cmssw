@@ -11,7 +11,6 @@
 #include "L1Trigger/L1TMuonOverlap/interface/XMLConfigWriter.h"
 
 #include "SimDataFormats/Track/interface/SimTrack.h"
-#include "SimDataFormats/Track/interface/SimTrackContainer.h"
 
 #include "Math/VectorUtil.h"
 
@@ -25,6 +24,7 @@ OMTFPatternMaker::OMTFPatternMaker(const edm::ParameterSet& cfg):
   inputTokenDTTh = consumes<L1MuDTChambThContainer>(theConfig.getParameter<edm::InputTag>("srcDTTh"));
   inputTokenCSC = consumes<CSCCorrelatedLCTDigiCollection>(theConfig.getParameter<edm::InputTag>("srcCSC"));
   inputTokenRPC = consumes<RPCDigiCollection>(theConfig.getParameter<edm::InputTag>("srcRPC"));
+  inputTokenSimHit = consumes<edm::SimTrackContainer>(theConfig.getParameter<edm::InputTag>("g4SimTrackSrc"));
     
   if(!theConfig.exists("omtf")){
     edm::LogError("OMTFPatternMaker")<<"omtf configuration not found in cfg.py";
@@ -170,7 +170,7 @@ const SimTrack * OMTFPatternMaker::findSimMuon(const edm::Event &ev, const edm::
 
   const SimTrack * result = 0;
   edm::Handle<edm::SimTrackContainer> simTks;
-  ev.getByLabel("g4SimHits",simTks);
+  ev.getByToken(inputTokenSimHit,simTks);
 
   for (std::vector<SimTrack>::const_iterator it=simTks->begin(); it< simTks->end(); it++) {
     const SimTrack & aTrack = *it;

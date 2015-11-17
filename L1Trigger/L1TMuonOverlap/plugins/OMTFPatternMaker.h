@@ -13,6 +13,7 @@
 #include "DataFormats/L1DTTrackFinder/interface/L1MuDTChambThContainer.h"
 #include "DataFormats/CSCDigi/interface/CSCCorrelatedLCTDigiCollection.h"
 #include "DataFormats/RPCDigi/interface/RPCDigiCollection.h"
+#include "SimDataFormats/Track/interface/SimTrackContainer.h"
 
 class OMTFProcessor;
 class OMTFConfiguration;
@@ -53,7 +54,7 @@ private:
   edm::EDGetTokenT<L1MuDTChambThContainer> inputTokenDTTh;
   edm::EDGetTokenT<CSCCorrelatedLCTDigiCollection> inputTokenCSC;
   edm::EDGetTokenT<RPCDigiCollection> inputTokenRPC;
-
+  edm::EDGetTokenT<edm::SimTrackContainer> inputTokenSimHit;
 
   bool makeConnectionsMaps, makeGoldenPatterns;
 
