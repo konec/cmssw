@@ -17,15 +17,15 @@
 #include "DataFormats/CSCDigi/interface/CSCCorrelatedLCTDigiCollection.h"
 #include "DataFormats/RPCDigi/interface/RPCDigiCollection.h"
 
-#include "TRandom3.h"
+#include "L1Trigger/L1TMuonOverlap/interface/OMTFinputMaker.h"
+#include "L1Trigger/L1TMuonOverlap/interface/OMTFSorter.h"
+
+
 
 class L1TMuonOverlapParams;
 class OMTFProcessor;
 class OMTFConfiguration;
 class OMTFConfigMaker;
-class OMTFinputMaker;
-class OMTFSorter;
-class OMTFinput;
 class XMLConfigWriter;
 
 
@@ -71,16 +71,14 @@ class L1TMuonOverlapTrackProducer : public edm::EDProducer {
 
   ///OMTF objects
   OMTFConfiguration *myOMTFConfig;
-  OMTFinputMaker *myInputMaker;
-  OMTFSorter *mySorter;
+  OMTFinputMaker myInputMaker;
+  OMTFSorter mySorter;
   OMTFProcessor *myOMTF;
-  OMTFinput *myInputXML;
   ///
   xercesc::DOMElement *aTopElement;
   OMTFConfigMaker *myOMTFConfigMaker;
   XMLConfigWriter *myWriter;
-  std::shared_ptr<L1TMuonOverlapParams> omtfParams;
-  ///
+  std::shared_ptr<L1TMuonOverlapParams> omtfParams; //FIXME: fill configuration and not store it.
 
 };
 

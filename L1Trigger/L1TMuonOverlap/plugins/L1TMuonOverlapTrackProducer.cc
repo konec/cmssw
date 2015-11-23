@@ -12,15 +12,13 @@
 
 #include "L1Trigger/L1TMuonOverlap/plugins/L1TMuonOverlapTrackProducer.h"
 #include "L1Trigger/L1TMuonOverlap/interface/OMTFProcessor.h"
-#include "L1Trigger/L1TMuonOverlap/interface/OMTFinputMaker.h"
 #include "L1Trigger/L1TMuonOverlap/interface/OMTFinput.h"
-#include "L1Trigger/L1TMuonOverlap/interface/OMTFSorter.h"
 #include "L1Trigger/L1TMuonOverlap/interface/OMTFConfiguration.h"
 #include "L1Trigger/L1TMuonOverlap/interface/XMLConfigWriter.h"
 
-#include "FWCore/Framework/interface/ESHandle.h"
 
-L1TMuonOverlapTrackProducer::L1TMuonOverlapTrackProducer(const edm::ParameterSet& cfg):theConfig(cfg){
+L1TMuonOverlapTrackProducer::L1TMuonOverlapTrackProducer(const edm::ParameterSet& cfg)
+  :theConfig(cfg), myOMTFConfig(0), myOMTF(0), aTopElement(0), myOMTFConfigMaker(0), myWriter(0) {
 
   produces<l1t::RegionalMuonCandBxCollection >("OMTF");
 
@@ -33,10 +31,6 @@ L1TMuonOverlapTrackProducer::L1TMuonOverlapTrackProducer(const edm::ParameterSet
     edm::LogError("L1TMuonOverlapTrackProducer")<<"omtf configuration not found in cfg.py";
   }
 
-  myInputMaker = new OMTFinputMaker();
-  mySorter = new OMTFSorter();
-  myWriter = 0;
-
   dumpResultToXML = theConfig.getParameter<bool>("dumpResultToXML");
   dumpDetailedResultToXML = theConfig.getParameter<bool>("dumpDetailedResultToXML");
   dumpGPToXML = theConfig.getParameter<bool>("dumpGPToXML");
@@ -47,8 +41,6 @@ L1TMuonOverlapTrackProducer::L1TMuonOverlapTrackProducer(const edm::ParameterSet
     std::string fName = "OMTF";
     myWriter->initialiseXMLDocument(fName);
   }
-
-  myOMTFConfig = 0;
 }
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
@@ -56,9 +48,6 @@ L1TMuonOverlapTrackProducer::~L1TMuonOverlapTrackProducer(){
 
   delete myOMTFConfig;
   delete myOMTF;
-
-  delete myInputMaker;
-  delete mySorter;
 
   if (myWriter) delete myWriter;
 
@@ -192,7 +181,7 @@ void L1TMuonOverlapTrackProducer::produce(edm::Event& iEvent, const edm::EventSe
 
   std::ostringstream myStr;
 
-  myInputMaker->initialize(evSetup);
+  myInputMaker.initialize(evSetup); //FIXME shoun't it be in beginRun?
 
   edm::Handle<L1MuDTChambPhContainer> dtPhDigis;
   edm::Handle<L1MuDTChambThContainer> dtThDigis;
@@ -220,33 +209,29 @@ void L1TMuonOverlapTrackProducer::produce(edm::Event& iEvent, const edm::EventSe
     //myStr<<" iProcessor: "<<iProcessor;
 
     ///Input data with phi ranges shifted for each processor, so it fits 11 bits range
-    const OMTFinput *myInputPos = myInputMaker->buildInputForProcessor(dtPhDigis.product(),
+    OMTFinput myInputPos = myInputMaker.buildInputForProcessor(dtPhDigis.product(),
 								       dtThDigis.product(),
 								       cscDigis.product(),
-								       rpcDigis.product(),								       
+								       rpcDigis.product(),
 								       iProcessor,
 								       l1t::tftype::omtf_pos);
 
-    OMTFinput myShiftedInputPos =  myOMTF->shiftInput(iProcessor,*myInputPos);
-
-    const OMTFinput *myInputNeg = myInputMaker->buildInputForProcessor(dtPhDigis.product(),
+    OMTFinput myInputNeg = myInputMaker.buildInputForProcessor(dtPhDigis.product(),
 								       dtThDigis.product(),
-								       cscDigis.product(),
-								       rpcDigis.product(),								       
-								       iProcessor,
-								       l1t::tftype::omtf_neg);
+								       cscDigis.product(), 
+	  								rpcDigis.product(),
+							       iProcessor, 
+									l1t::tftype::omtf_neg);
 
     
-    OMTFinput myShiftedInputNeg =  myOMTF->shiftInput(iProcessor,*myInputNeg);
-
     l1t::RegionalMuonCandBxCollection myOTFCandidatesPos, myOTFCandidatesNeg;
     ///Results for each GP in each logic region of given processor
     //Retreive all candidates returned by sorter: upto 3 non empty ones with different phi or charge
-    const std::vector<OMTFProcessor::resultsMap> & myResultsNeg = myOMTF->processInput(iProcessor,myShiftedInputNeg);
-    mySorter->sortProcessor(myResultsNeg, myOTFCandidatesNeg, bx);
+    const std::vector<OMTFProcessor::resultsMap> & myResultsNeg = myOMTF->processInput(iProcessor,myInputNeg);
+    mySorter.sortProcessor(myResultsNeg, myOTFCandidatesNeg, bx);
 
-    const std::vector<OMTFProcessor::resultsMap> & myResultsPos = myOMTF->processInput(iProcessor,myShiftedInputPos);
-    mySorter->sortProcessor(myResultsPos, myOTFCandidatesPos, bx);
+    const std::vector<OMTFProcessor::resultsMap> & myResultsPos = myOMTF->processInput(iProcessor,myInputPos);
+    mySorter.sortProcessor(myResultsPos, myOTFCandidatesPos, bx);
 
     ///Shift phi scales, and put MicroGMT candidates into myCands collection
     processCandidates(iProcessor, bx, myCands, myOTFCandidatesPos, l1t::tftype::omtf_pos);
@@ -254,10 +239,10 @@ void L1TMuonOverlapTrackProducer::produce(edm::Event& iEvent, const edm::EventSe
 
     ///Write data to XML file
     if(dumpResultToXML){
-      xercesc::DOMElement * aProcElement = myWriter->writeEventData(aTopElement,iProcessor,myShiftedInputPos);
+      xercesc::DOMElement * aProcElement = myWriter->writeEventData(aTopElement,iProcessor,myInputPos);
       for(unsigned int iRefHit=0;iRefHit<OMTFConfiguration::nTestRefHits;++iRefHit){
 	///Dump only regions, where a candidate was found
-	InternalObj myCand = mySorter->sortRefHitResults(myResultsPos[iRefHit],0);//charge=0 means ignore charge
+	InternalObj myCand = mySorter.sortRefHitResults(myResultsPos[iRefHit],0);//charge=0 means ignore charge
 	if(myCand.pt){
 	  myWriter->writeCandidateData(aProcElement,iRefHit,myCand);
 	  if(dumpDetailedResultToXML){
@@ -308,3 +293,4 @@ void L1TMuonOverlapTrackProducer::processCandidates(unsigned int iProcessor, int
 
 #include "FWCore/Framework/interface/MakerMacros.h"
 DEFINE_FWK_MODULE(L1TMuonOverlapTrackProducer);
+

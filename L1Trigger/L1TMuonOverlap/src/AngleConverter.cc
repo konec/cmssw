@@ -36,6 +36,121 @@ void AngleConverter::checkAndUpdateGeometry(const edm::EventSetup& es) {
     _geom_cache_id = geomid;
   }  
 }
+
+///////////////////////////////////////
+///////////////////////////////////////
+int AngleConverter::getProcessorPhi(unsigned int iProcessor, l1t::tftype part, const L1MuDTChambPhDigi &digi) const
+{
+
+  double hsPhiPitch = 2*M_PI/OMTFConfiguration::nPhiBins; // width of phi Pitch, related to halfStrip at CSC station 2
+  const int dummy = OMTFConfiguration::nPhiBins;
+
+  int processor= iProcessor+1;                           // FIXME: get from OMTF name when available
+  int posneg = (part==l1t::tftype::omtf_pos) ? 1 : -1;        // FIXME: get from OMTF name
+
+  int sector  = digi.scNum()+1;   //NOTE: there is a inconsistency in DT sector numb. Thus +1 needed to get detector numb.
+  int wheel   = digi.whNum();
+  int station = digi.stNum();
+  int phiDT   = digi.phi();
+
+  if (posneg*2 != wheel) return dummy;
+  if (station > 3 ) return dummy;
+
+  //FIXME: update the following two lines with proper method when Connections introduced
+  if (processor !=6 && !(sector >= processor*2-1 && sector <= processor*2+1) ) return dummy;
+  if (processor ==6 && !(sector >= 11 || sector==1) ) return dummy;
+
+  // ichamber is consecutive chamber connected to processor, starting from 0 (overlaping one)
+  int ichamber = sector-1-2*(processor-1);
+  if (ichamber < 0) ichamber += 12;
+
+  int offsetLoc = lround( ((ichamber-1)*M_PI/6+M_PI/12.)/hsPhiPitch );
+  double scale = 1./4096/hsPhiPitch;
+
+  int phi = static_cast<int>(phiDT*scale) + offsetLoc;
+  return phi;
+}
+
+///////////////////////////////////////
+///////////////////////////////////////
+int AngleConverter::getProcessorPhi(unsigned int iProcessor, l1t::tftype part, const CSCDetId & csc, const CSCCorrelatedLCTDigi &digi) const
+{
+
+  const double hsPhiPitch = 2*M_PI/OMTFConfiguration::nPhiBins; //
+  const int dummy = OMTFConfiguration::nPhiBins;
+
+  int processor= iProcessor+1;                           // FIXME: get from OMTF name when available
+  int posneg = (part==l1t::tftype::omtf_pos) ? 1 : -1;        // FIXME: get from OMTF name
+
+
+
+  // filter out chambers not connected to OMTF board
+  // FIXME: temporary - use Connections or relay that filtering done before.
+  if (posneg != csc.zendcap()) return dummy;
+  if ( csc.ring() != 3 && !(csc.ring()==2 && (csc.station()==2 || csc.station()==3 || csc.station()==1)) ) return dummy;
+  if (processor !=6) {
+    if (csc.chamber() < (processor-1)*6 + 2) return dummy;
+    if (csc.chamber() > (processor-1)*6 + 8) return dummy;
+  } else {
+    if (csc.chamber() > 2 && csc.chamber() < 32) return dummy;
+  }
+
+  //
+  // assign number 0..6, consecutive processor for a processor
+  //
+  //int ichamber = (csc.chamber()-2-6*(processor-1));
+  //if (ichamber < 0) ichamber += 36;
+
+  //
+  // get offset for each chamber.
+  // FIXME: These parameters depends on processor and chamber only so may be precomputed and put in map
+  //
+  const CSCChamber* chamber = _geocsc->chamber(csc);
+  const CSCChamberSpecs* cspec = chamber->specs();
+  const CSCLayer* layer = chamber->layer(3);
+  int order = ( layer->centerOfStrip(2).phi() - layer->centerOfStrip(1).phi()> 0) ? 1 : -1;
+  double stripPhiPitch = cspec->stripPhiPitch();
+  double scale = fabs(stripPhiPitch/hsPhiPitch/2.); if ( fabs(scale-1.) < 0.0002) scale=1.;
+  double phi15deg = M_PI/3.*(processor-1)+M_PI/12.;
+  double phiHalfStrip0 = layer->centerOfStrip(10).phi() - order*9*stripPhiPitch - order*stripPhiPitch/4.;
+  if ( processor==6 || phiHalfStrip0<0) phiHalfStrip0 += 2*M_PI;
+  int offsetLoc = lround( (phiHalfStrip0-phi15deg)/hsPhiPitch );
+
+  int halfStrip = digi.getStrip(); // returns halfStrip 0..159
+  //FIXME: to be checked (only important for ME1/3) keep more bits for offset, truncate at the end
+  int phi = offsetLoc + order*scale*halfStrip;
+
+  return phi;
+}
+
+///////////////////////////////////////
+///////////////////////////////////////
+int AngleConverter::getProcessorPhi(unsigned int iProcessor, l1t::tftype part, const RPCDetId & rollId, const RPCDigi &digi) const
+{
+  const double hsPhiPitch = 2*M_PI/OMTFConfiguration::nPhiBins; //
+  const int dummy = OMTFConfiguration::nPhiBins;
+
+  int processor = iProcessor+1;
+  const RPCRoll* roll = _georpc->roll(rollId);
+  if (!roll) return dummy;
+
+  double phi15deg =  M_PI/3.*(processor-1)+M_PI/12.;                           // "0" is 15degree moved cyclicaly to each processor, note [0,2pi]
+  double stripPhi = (roll->toGlobal(roll->centreOfStrip(digi.strip()))).phi(); // note [-pi,pi]
+
+  // adjust [0,2pi] and [-pi,pi] to get deltaPhi difference properly
+  switch (processor) {
+    case 1: break;
+    case 6: {phi15deg -= 2*M_PI; break; }
+    default : {if (stripPhi < 0) stripPhi += 2*M_PI; break; }
+  }
+
+  // local angle in CSC halfStrip usnits
+  int halfStrip = lround ( (stripPhi-phi15deg)/hsPhiPitch );
+
+  return halfStrip;
+}
+
+
 ///////////////////////////////////////
 ///////////////////////////////////////
 float AngleConverter::getGlobalPhi(unsigned int rawid, const RPCDigi & aDigi){

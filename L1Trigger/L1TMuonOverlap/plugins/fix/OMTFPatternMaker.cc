@@ -11,9 +11,10 @@
 #include "L1Trigger/L1TMuonOverlap/interface/XMLConfigWriter.h"
 
 #include "SimDataFormats/Track/interface/SimTrack.h"
-#include "SimDataFormats/Track/interface/SimTrackContainer.h"
 
 #include "Math/VectorUtil.h"
+
+using namespace L1TMuon;
 
 OMTFPatternMaker::OMTFPatternMaker(const edm::ParameterSet& cfg):
   theConfig(cfg),
@@ -23,6 +24,7 @@ OMTFPatternMaker::OMTFPatternMaker(const edm::ParameterSet& cfg):
   inputTokenDTTh = consumes<L1MuDTChambThContainer>(theConfig.getParameter<edm::InputTag>("srcDTTh"));
   inputTokenCSC = consumes<CSCCorrelatedLCTDigiCollection>(theConfig.getParameter<edm::InputTag>("srcCSC"));
   inputTokenRPC = consumes<RPCDigiCollection>(theConfig.getParameter<edm::InputTag>("srcRPC"));
+  inputTokenSimHit = consumes<edm::SimTrackContainer>(theConfig.getParameter<edm::InputTag>("g4SimTrackSrc"));
     
   if(!theConfig.exists("omtf")){
     edm::LogError("OMTFPatternMaker")<<"omtf configuration not found in cfg.py";
@@ -148,20 +150,17 @@ void OMTFPatternMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& 
   for(unsigned int iProcessor=0;iProcessor<6;++iProcessor){
         
     ///Input data with phi ranges shifted for each processor, so it fits 11 bits range
-    const OMTFinput *myInput = myInputMaker->buildInputForProcessor(dtPhDigis.product(),
+    OMTFinput myInput = myInputMaker->buildInputForProcessor(dtPhDigis.product(),
 								    dtThDigis.product(),
 								    cscDigis.product(),
 								    rpcDigis.product(),								       
 								    iProcessor,
 								    mtfType);
     
-    ///Input data with phi ranges shifted for each processor, so it fits 10 bits range
-    const OMTFinput myShiftedInput =  myOMTF->shiftInput(iProcessor,*myInput);	
-    
     ///Phi maps should be made with original, global phi values.
-    if(makeConnectionsMaps) myOMTFConfigMaker->makeConnetionsMap(iProcessor,*myInput);
+    //if(makeConnectionsMaps) myOMTFConfigMaker->makeConnetionsMap(iProcessor,*myInput);
   
-    if(makeGoldenPatterns) myOMTF->fillCounts(iProcessor,myShiftedInput, aSimMuon);
+    if(makeGoldenPatterns) myOMTF->fillCounts(iProcessor,myInput, aSimMuon);
     
   }
 }
@@ -171,7 +170,7 @@ const SimTrack * OMTFPatternMaker::findSimMuon(const edm::Event &ev, const edm::
 
   const SimTrack * result = 0;
   edm::Handle<edm::SimTrackContainer> simTks;
-  ev.getByLabel("g4SimHits",simTks);
+  ev.getByToken(inputTokenSimHit,simTks);
 
   for (std::vector<SimTrack>::const_iterator it=simTks->begin(); it< simTks->end(); it++) {
     const SimTrack & aTrack = *it;
