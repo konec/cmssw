@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<OMTF xmlns:xi="http://www.w3.org/2001/XInclude" version="0x00020004">
+<OMTF xmlns:xi="http://www.w3.org/2001/XInclude" version="0x00020005">
 
 <GlobalData nPdfAddrBits="7" nPdfValBits="6" nHitsPerLayer="6" nPhiBits="11" nPhiBins="5400" nRefHits="128" nTestRefHits="4" nProcessors="6" nLogicRegions="6" nInputs="14" nLayers="18" nRefLayers="8" nGoldenPatterns="52"/>
 
@@ -184,15 +184,14 @@
     <RefHit iInput="10" iPhiMax="999" iPhiMin="750" iRefHit="118" iRefLayer="7" iRegion="5"/>
     <RefHit iInput="11" iPhiMax="999" iPhiMin="750" iRefHit="119" iRefLayer="7" iRegion="5"/>
 
-    <!-- Dummy iPhiMin, iPhiMax values are beyond range of any sub systems phi digi -->
-    <RefHit iInput="10" iPhiMax="0" iPhiMin="0" iRefHit="120" iRefLayer="0" iRegion="0"/>
-    <RefHit iInput="10" iPhiMax="0" iPhiMin="0" iRefHit="121" iRefLayer="0" iRegion="0"/>
-    <RefHit iInput="10" iPhiMax="0" iPhiMin="0" iRefHit="122" iRefLayer="0" iRegion="0"/>
-    <RefHit iInput="10" iPhiMax="0" iPhiMin="0" iRefHit="123" iRefLayer="0" iRegion="0"/>
-    <RefHit iInput="10" iPhiMax="0" iPhiMin="0" iRefHit="124" iRefLayer="0" iRegion="0"/>
-    <RefHit iInput="10" iPhiMax="0" iPhiMin="0" iRefHit="125" iRefLayer="0" iRegion="0"/>
-    <RefHit iInput="10" iPhiMax="0" iPhiMin="0" iRefHit="126" iRefLayer="0" iRegion="0"/>
-    <RefHit iInput="10" iPhiMax="0" iPhiMin="0" iRefHit="127" iRefLayer="0" iRegion="0"/>
+    <RefHit iInput="10" iPhiMax="1" iPhiMin="0" iRefHit="120" iRefLayer="0" iRegion="0"/>
+    <RefHit iInput="10" iPhiMax="1" iPhiMin="0" iRefHit="121" iRefLayer="0" iRegion="0"/>
+    <RefHit iInput="10" iPhiMax="1" iPhiMin="0" iRefHit="122" iRefLayer="0" iRegion="0"/>
+    <RefHit iInput="10" iPhiMax="1" iPhiMin="0" iRefHit="123" iRefLayer="0" iRegion="0"/>
+    <RefHit iInput="10" iPhiMax="1" iPhiMin="0" iRefHit="124" iRefLayer="0" iRegion="0"/>
+    <RefHit iInput="10" iPhiMax="1" iPhiMin="0" iRefHit="125" iRefLayer="0" iRegion="0"/>
+    <RefHit iInput="10" iPhiMax="1" iPhiMin="0" iRefHit="126" iRefLayer="0" iRegion="0"/>
+    <RefHit iInput="10" iPhiMax="1" iPhiMin="0" iRefHit="127" iRefLayer="0" iRegion="0"/>
 
     <LogicRegion iRegion="0">
       <Layer iFirstInput="0" iLayer="0" nInputs="4"/>
