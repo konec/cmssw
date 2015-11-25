@@ -319,7 +319,7 @@ void XMLConfigReader::readConfig( L1TMuonOverlapParams *aConfig){
   DOMNode *aNode = doc->getElementsByTagName(_toDOMS("OMTF"))->item(0);
   DOMElement* aOMTFElement = static_cast<DOMElement *>(aNode);
 
-  unsigned int version = std::atoi(_toString(aOMTFElement->getAttribute(_toDOMS("version"))).c_str());
+  unsigned int version = std::stoul(_toString(aOMTFElement->getAttribute(_toDOMS("version"))), nullptr, 16);
   aConfig->setFwVersion(version);
 
   ///Addresing bits numbers
@@ -519,6 +519,7 @@ void XMLConfigReader::readConfig(OMTFConfiguration *aConfig){
   }
   DOMNode *aNode = doc->getElementsByTagName(_toDOMS("OMTF"))->item(0);
   DOMElement* aOMTFElement = static_cast<DOMElement *>(aNode);  
+  unsigned int fwVersion = std::atoi(_toString(aOMTFElement->getAttribute(_toDOMS("version"))).c_str()); 
 
   ///Addresing bits numbers
   nElem = aOMTFElement->getElementsByTagName(_toDOMS("GlobalData"))->getLength();
@@ -538,6 +539,7 @@ void XMLConfigReader::readConfig(OMTFConfiguration *aConfig){
   unsigned int nLogicRegions =  std::atoi(_toString(aElement->getAttribute(_toDOMS("nLogicRegions"))).c_str());
   unsigned int nInputs =  std::atoi(_toString(aElement->getAttribute(_toDOMS("nInputs"))).c_str());
   unsigned int nGoldenPatterns =  std::atoi(_toString(aElement->getAttribute(_toDOMS("nGoldenPatterns"))).c_str()); 
+  OMTFConfiguration::fwVersion = fwVersion;
   OMTFConfiguration::minPdfVal = minPdfVal;
   OMTFConfiguration::nPdfAddrBits = nPdfAddrBits;
   OMTFConfiguration::nPdfValBits = nPdfValBits;

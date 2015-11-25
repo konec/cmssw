@@ -43,12 +43,6 @@ class OMTFProcessor{
   ///Return map of GoldenPatterns
   const std::map<Key,GoldenPattern*> & getPatterns() const;
 
-  ///Shift phi values in input to fit the 11 bits
-  ///range. For each processor the global phi beggining-511 
-  ///is added, so it starts at -551
-  OMTFinput shiftInput(unsigned int iProcessor,
-		       const OMTFinput & aInput);
-
   ///Fill counts for a GoldenPattern of this
   ///processor unit. Pattern key is selcted according 
   ///to the SimTrack parameters.

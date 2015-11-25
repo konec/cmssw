@@ -295,21 +295,6 @@ const std::vector<OMTFProcessor::resultsMap> & OMTFProcessor::processInput(unsig
 }   
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-OMTFinput OMTFProcessor::shiftInput(unsigned int iProcessor,
-				    const OMTFinput & aInput){
-
-  int minPhi =  OMTFConfiguration::globalPhiStart(iProcessor);
-
-  ///OMTFConfiguration::nPhiBins/2 to shift the minPhi to 0-nBins scale,
-  if(minPhi<0) minPhi+=OMTFConfiguration::nPhiBins;
-
-  OMTFinput myCopy = aInput;
-  myCopy.shiftMyPhi(minPhi);
-  
-  return myCopy;
-}
-////////////////////////////////////////////
-////////////////////////////////////////////
 OMTFinput::vector1D OMTFProcessor::restrictInput(unsigned int iProcessor,
 						 unsigned int iRegion,
 						 unsigned int iLayer,

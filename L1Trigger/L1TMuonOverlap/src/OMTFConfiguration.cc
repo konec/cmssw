@@ -14,6 +14,7 @@
 #include "L1Trigger/L1TMuonOverlap/interface/OMTFConfiguration.h"
 #include "L1Trigger/L1TMuonOverlap/interface/XMLConfigReader.h"
 
+unsigned int OMTFConfiguration::fwVersion;
 float OMTFConfiguration::minPdfVal;
 unsigned int OMTFConfiguration::nLayers;
 unsigned int OMTFConfiguration::nHitsPerLayer;
@@ -128,6 +129,7 @@ void OMTFConfiguration::configure(const L1TMuonOverlapParams *omtfParams){
 
   ///Set global parameters
   minPdfVal = 0.001;
+  fwVersion = omtfParams->fwVersion();  
   nPdfAddrBits = omtfParams->nPdfAddrBits();  
   nPdfValBits = omtfParams->nPdfValBits();
   nHitsPerLayer = omtfParams->nHitsPerLayer();

@@ -153,10 +153,6 @@ void OMTFProducerMix::produce(edm::Event& iEvent, const edm::EventSetup& evSetup
 									 iProcessor,
 									 l1t::tftype::omtf_pos);
       
-
-      ///Input data with phi ranges shifted for each processor, so it fits 11 bits range
-      //OMTFinput myShiftedInput =  myOMTF->shiftInput(iProcessor,*myInput);
-
       ///Every second BX contains the mixed event
       if(iEventMix%2==1 && iEventMix>0) myInput.clear();
       ///First BX contains the original event
