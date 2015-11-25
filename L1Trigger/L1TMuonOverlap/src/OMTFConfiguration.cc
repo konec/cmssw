@@ -336,7 +336,7 @@ uint32_t OMTFConfiguration::getLayerNumber(uint32_t rawId){
   case MuonSubdetId::CSC: {
     CSCDetId csc(rawId);
     aLayer = csc.station();
-    if(csc.ring()==2 && csc.station()==1) aLayer = 11;
+    if(csc.ring()==2 && csc.station()==1) aLayer = 1811;//1811 = 2011 - 200, as we want to get 2011 for this chamber.
     if(csc.station()==4) aLayer = 4;
     break;
   }

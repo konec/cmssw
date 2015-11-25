@@ -24,7 +24,7 @@
 #include "xercesc/util/XercesDefs.hpp"
 XERCES_CPP_NAMESPACE_USE
 
-
+#include "L1Trigger/RPCTrigger/interface/RPCConst.h"
 //////////////////////////////////
 // XMLConfigReader
 //////////////////////////////////
@@ -63,7 +63,7 @@ void XMLConfigReader::readLUT(l1t::LUT *lut, const std::string & type){
 
   if(type=="iCharge") outWidth = 1;
   if(type=="iEta") outWidth = 2;
-  if(type=="iPt") outWidth = 6;
+  if(type=="iPt") outWidth = 9;
   if(type=="meanDistPhi"){
     outWidth = 11;
     totalInWidth = 14;
@@ -81,9 +81,13 @@ void XMLConfigReader::readLUT(l1t::LUT *lut, const std::string & type){
   unsigned int in = 0;
   int out = 0;
   for(auto it: aGPs){
-    if(type=="iCharge") out = it->key().theCharge + 1*(it->key().theCharge<0);
+    if(type=="iCharge") out = it->key().theCharge + 1*(it->key().theCharge<0);//FIXME will change convention
     if(type=="iEta") out = it->key().theEtaCode;
-    if(type=="iPt") out = it->key().thePtCode;
+    if(type=="iPt"){
+      int ipt = it->key().thePtCode+1;
+      if(ipt>31) out = 200*2;//FIXME will change convention. Arbitrary pt beyond PAC scale is uesed.
+      else out = RPCConst::ptFromIpt(ipt)*2.0;//FIXME will change convention      
+    }
     if(type=="meanDistPhi"){
       for(unsigned int iLayer = 0;iLayer<OMTFConfiguration::nLayers;++iLayer){
 	for(unsigned int iRefLayer=0;iRefLayer<OMTFConfiguration::nRefLayers;++iRefLayer){

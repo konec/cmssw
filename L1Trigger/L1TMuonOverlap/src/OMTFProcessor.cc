@@ -19,7 +19,6 @@
 #include "L1Trigger/RPCTrigger/interface/RPCConst.h"
 
 #include "SimDataFormats/Track/interface/SimTrack.h"
-
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
 OMTFProcessor::OMTFProcessor(const edm::ParameterSet & theConfig){
@@ -77,9 +76,7 @@ bool OMTFProcessor::configure(const L1TMuonOverlapParams* omtfParams){
     address = iGP;
     iEta = etaLUT->data(address);
     iCharge = chargeLUT->data(address);
-    if(iCharge==0) iCharge = -1;//FIXME: Standarise to 0,1
     iPt = ptLUT->data(address);
-
     GoldenPattern::vector2D meanDistPhi2D(OMTFConfiguration::nLayers);
     GoldenPattern::vector1D pdf1D(exp2(OMTFConfiguration::nPdfAddrBits));
     GoldenPattern::vector3D pdf3D(OMTFConfiguration::nLayers);
@@ -337,6 +334,12 @@ void OMTFProcessor::fillCounts(unsigned int iProcessor,
 
   int theCharge = (abs(aSimMuon->type()) == 13) ? aSimMuon->type()/-13 : 0;
   unsigned int  iPt =  RPCConst::iptFromPt(aSimMuon->momentum().pt());
+  ///Stupid conersion. Have to go through PAC pt scale, as we later
+  ///shitf resulting pt code by +1
+  iPt+=1;
+  if(iPt>31) iPt=200*2;
+  else iPt = RPCConst::ptFromIpt(iPt)*2.0;//MicroGMT has 0.5 GeV pt bins
+  //////
 
   //////////////////////////////////////  
   std::bitset<128> refHitsBits = aInput.getRefHits(iProcessor);
