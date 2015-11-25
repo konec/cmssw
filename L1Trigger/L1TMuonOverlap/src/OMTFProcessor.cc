@@ -60,15 +60,15 @@ bool OMTFProcessor::configure(XMLConfigReader *aReader){
 }
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
-bool OMTFProcessor::configure( std::shared_ptr<L1TMuonOverlapParams> omtfParams){
+bool OMTFProcessor::configure(const L1TMuonOverlapParams* omtfParams){
 
   myResults.assign(OMTFConfiguration::nTestRefHits,OMTFProcessor::resultsMap());
   
-  l1t::LUT* chargeLUT =  omtfParams->chargeLUT();
-  l1t::LUT* etaLUT =  omtfParams->etaLUT();
-  l1t::LUT* ptLUT =  omtfParams->ptLUT();
-  l1t::LUT* pdfLUT =  omtfParams->pdfLUT();
-  l1t::LUT* meanDistPhiLUT =  omtfParams->meanDistPhiLUT();
+  const l1t::LUT* chargeLUT =  omtfParams->chargeLUT();
+  const l1t::LUT* etaLUT =  omtfParams->etaLUT();
+  const l1t::LUT* ptLUT =  omtfParams->ptLUT();
+  const l1t::LUT* pdfLUT =  omtfParams->pdfLUT();
+  const l1t::LUT* meanDistPhiLUT =  omtfParams->meanDistPhiLUT();
 
   unsigned int nGPs = OMTFConfiguration::nGoldenPatterns;
   unsigned int address = 0;

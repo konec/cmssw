@@ -634,8 +634,8 @@ void XMLConfigReader::readConfig(OMTFConfiguration *aConfig){
   ///Vector of all reflayers
   std::vector<std::vector<std::pair<int,int> > > aRefHit2D;
   aRefHit2D.assign(OMTFConfiguration::nRefLayers,aRefHit1D);
-  ///Vector of all processors
-  OMTFConfiguration::regionPhisVsRefLayerVsProcessor.assign(OMTFConfiguration::nProcessors,aRefHit2D);
+  ///Vector of all inputs
+  OMTFConfiguration::regionPhisVsRefLayerVsInput.assign(OMTFConfiguration::nInputs,aRefHit2D);
 
   //Vector of ref hit definitions
   std::vector<RefHitDef> aRefHitsDefs(OMTFConfiguration::nRefHits);
@@ -673,12 +673,11 @@ void XMLConfigReader::readConfig(OMTFConfiguration *aConfig){
       unsigned int iRegion = std::atoi(_toString(aRefHitElement->getAttribute(_toDOMS("iRegion"))).c_str());
       unsigned int iRefLayer = std::atoi(_toString(aRefHitElement->getAttribute(_toDOMS("iRefLayer"))).c_str());
       /////////
-      OMTFConfiguration::regionPhisVsRefLayerVsProcessor[iProcessor][iRefLayer][iRegion] = std::pair<int,int>(iPhiMin,iPhiMax);
+      OMTFConfiguration::regionPhisVsRefLayerVsInput[iInput][iRefLayer][iRegion] = std::pair<int,int>(iPhiMin,iPhiMax);
       OMTFConfiguration::refHitsDefs[iProcessor][iRefHit] = RefHitDef(iInput,iPhiMin,iPhiMax,iRegion,iRefLayer);
       ///Fill all processors with the same setting as for processor 0.
       if(iProcessor==0){
 	for (unsigned int iProcessorTmp=0; iProcessorTmp<OMTFConfiguration::nProcessors; ++iProcessorTmp){
-	  OMTFConfiguration::regionPhisVsRefLayerVsProcessor[iProcessorTmp][iRefLayer][iRegion] = std::pair<int,int>(iPhiMin,iPhiMax);
 	  OMTFConfiguration::refHitsDefs[iProcessorTmp][iRefHit] = RefHitDef(iInput,iPhiMin,iPhiMax,iRegion,iRefLayer);
 	}      
       }

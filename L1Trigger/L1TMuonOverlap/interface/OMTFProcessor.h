@@ -31,7 +31,7 @@ class OMTFProcessor{
   bool configure(XMLConfigReader *aReader);
 
   ///Fill GP map with patterns from CondFormats object
-  bool configure(std::shared_ptr<L1TMuonOverlapParams> omtfParams);
+  bool configure(const L1TMuonOverlapParams* omtfParams);
 
   ///Process input data from a single event
   ///Input data is represented by hits in logic layers expressed in local coordinates

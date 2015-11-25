@@ -78,7 +78,6 @@ class L1TMuonOverlapTrackProducer : public edm::EDProducer {
   xercesc::DOMElement *aTopElement;
   OMTFConfigMaker *myOMTFConfigMaker;
   XMLConfigWriter *myWriter;
-  std::shared_ptr<L1TMuonOverlapParams> omtfParams; //FIXME: fill configuration and not store it.
 
 };
 
