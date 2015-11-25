@@ -1,0 +1,3809 @@
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+iProcessor: 0 sector: 3 phiDT: 118 phi: 699 offset: 675
+iProcessor: 0 sector: 2 phiDT: 567 phi: 343 offset: 225
+iProcessor: 0 sector: 1 phiDT: 427 phi: -136 offset: -225
+iSector: 1 iPhi: -136
+iProcessor: 0 sector: 1 phiDT: -55 phi: -236 offset: -225
+iSector: 1 iPhi: -236
+iProcessor: 0 sector: 2 phiDT: -80 phi: 209 offset: 225
+iProcessor: 0 sector: 1 phiDT: 370 phi: -148 offset: -225
+iSector: 1 iPhi: -148
+iProcessor: 0 sector: 2 phiDT: 33 phi: 231 offset: 225
+iProcessor: 0 sector: 3 phiDT: 527 phi: 785 offset: 675
+iProcessor: 0 sector: 1 phiDT: 70 phi: -211 offset: -225
+iSector: 1 iPhi: -211
+iProcessor: 0 sector: 3 phiDT: 558 phi: 792 offset: 675
+iProcessor: 0 sector: 1 phiDT: -41 phi: -233 offset: -225
+iSector: 1 iPhi: -233
+iProcessor: 0 sector: 3 phiDT: 1034 phi: 891 offset: 675
+iProcessor: 0 sector: 2 phiDT: 231 phi: 273 offset: 225
+iProcessor: 0 sector: 3 phiDT: -439 phi: 583 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1248 phi: 936 offset: 675
+iProcessor: 0 sector: 1 phiDT: -249 phi: -277 offset: -225
+iSector: 1 iPhi: -277
+iProcessor: 0 sector: 3 phiDT: -281 phi: 617 offset: 675
+iProcessor: 0 sector: 2 phiDT: -442 phi: 133 offset: 225
+iProcessor: 0 sector: 2 phiDT: 58 phi: 237 offset: 225
+iProcessor: 0 sector: 2 phiDT: 745 phi: 381 offset: 225
+iProcessor: 0 sector: 1 phiDT: 589 phi: -102 offset: -225
+iSector: 1 iPhi: -102
+iProcessor: 0 sector: 3 phiDT: 651 phi: 811 offset: 675
+iProcessor: 0 sector: 3 phiDT: -40 phi: 667 offset: 675
+iProcessor: 0 sector: 2 phiDT: -141 phi: 196 offset: 225
+iProcessor: 0 sector: 3 phiDT: -471 phi: 577 offset: 675
+iProcessor: 0 sector: 1 phiDT: -80 phi: -241 offset: -225
+iSector: 1 iPhi: -241
+iProcessor: 0 sector: 2 phiDT: 652 phi: 361 offset: 225
+iProcessor: 0 sector: 1 phiDT: 223 phi: -179 offset: -225
+iSector: 1 iPhi: -179
+iProcessor: 0 sector: 1 phiDT: 27 phi: -220 offset: -225
+iSector: 1 iPhi: -220
+iProcessor: 0 sector: 2 phiDT: 1076 phi: 450 offset: 225
+iProcessor: 0 sector: 1 phiDT: 257 phi: -172 offset: -225
+iSector: 1 iPhi: -172
+iProcessor: 0 sector: 3 phiDT: 271 phi: 731 offset: 675
+iProcessor: 0 sector: 2 phiDT: -286 phi: 165 offset: 225
+iProcessor: 0 sector: 2 phiDT: 633 phi: 357 offset: 225
+iProcessor: 0 sector: 3 phiDT: -317 phi: 609 offset: 675
+iProcessor: 0 sector: 3 phiDT: 378 phi: 754 offset: 675
+iProcessor: 0 sector: 2 phiDT: 742 phi: 380 offset: 225
+iProcessor: 0 sector: 1 phiDT: -89 phi: -243 offset: -225
+iSector: 1 iPhi: -243
+iProcessor: 0 sector: 2 phiDT: 189 phi: 264 offset: 225
+iProcessor: 0 sector: 3 phiDT: 574 phi: 795 offset: 675
+iProcessor: 0 sector: 1 phiDT: 383 phi: -145 offset: -225
+iSector: 1 iPhi: -145
+iProcessor: 0 sector: 2 phiDT: 362 phi: 300 offset: 225
+iProcessor: 0 sector: 1 phiDT: 834 phi: -51 offset: -225
+iSector: 1 iPhi: -51
+iInput: 0 phiRef: -51 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 427 phi: -136 offset: -225
+iSector: 1 iPhi: -136
+iProcessor: 0 sector: 2 phiDT: 869 phi: 407 offset: 225
+iProcessor: 0 sector: 1 phiDT: 592 phi: -101 offset: -225
+iSector: 1 iPhi: -101
+iProcessor: 0 sector: 1 phiDT: 1186 phi: 23 offset: -225
+iSector: 1 iPhi: 23
+iInput: 0 phiRef: 23 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1147 phi: 465 offset: 225
+iProcessor: 0 sector: 3 phiDT: 47 phi: 684 offset: 675
+iProcessor: 0 sector: 2 phiDT: -378 phi: 146 offset: 225
+iProcessor: 0 sector: 3 phiDT: 115 phi: 699 offset: 675
+iProcessor: 0 sector: 1 phiDT: 465 phi: -128 offset: -225
+iSector: 1 iPhi: -128
+iProcessor: 0 sector: 2 phiDT: 77 phi: 241 offset: 225
+iProcessor: 0 sector: 2 phiDT: 472 phi: 324 offset: 225
+iProcessor: 0 sector: 2 phiDT: -233 phi: 177 offset: 225
+iProcessor: 0 sector: 2 phiDT: 200 phi: 266 offset: 225
+iProcessor: 0 sector: 1 phiDT: 83 phi: -208 offset: -225
+iSector: 1 iPhi: -208
+iProcessor: 0 sector: 2 phiDT: 731 phi: 378 offset: 225
+iProcessor: 0 sector: 1 phiDT: 724 phi: -74 offset: -225
+iSector: 1 iPhi: -74
+iInput: 0 phiRef: -74 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 797 phi: 842 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1066 phi: -2 offset: -225
+iSector: 1 iPhi: -2
+iInput: 0 phiRef: -2 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 871 phi: 857 offset: 675
+iProcessor: 0 sector: 3 phiDT: 250 phi: 727 offset: 675
+iProcessor: 0 sector: 1 phiDT: -350 phi: -298 offset: -225
+iSector: 1 iPhi: -298
+iProcessor: 0 sector: 1 phiDT: 835 phi: -50 offset: -225
+iSector: 1 iPhi: -50
+iInput: 0 phiRef: -50 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 25 phi: 230 offset: 225
+iProcessor: 0 sector: 1 phiDT: 883 phi: -40 offset: -225
+iSector: 1 iPhi: -40
+iInput: 0 phiRef: -40 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -338 phi: 155 offset: 225
+iProcessor: 0 sector: 3 phiDT: -475 phi: 576 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1018 phi: 888 offset: 675
+iProcessor: 0 sector: 2 phiDT: -349 phi: 152 offset: 225
+iProcessor: 0 sector: 1 phiDT: -397 phi: -308 offset: -225
+iSector: 1 iPhi: -308
+iProcessor: 0 sector: 3 phiDT: -452 phi: 581 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1040 phi: 893 offset: 675
+iProcessor: 0 sector: 1 phiDT: -104 phi: -246 offset: -225
+iSector: 1 iPhi: -246
+iProcessor: 0 sector: 1 phiDT: 172 phi: -189 offset: -225
+iSector: 1 iPhi: -189
+iProcessor: 0 sector: 3 phiDT: -303 phi: 612 offset: 675
+iProcessor: 0 sector: 3 phiDT: 25 phi: 680 offset: 675
+iProcessor: 0 sector: 1 phiDT: -18 phi: -228 offset: -225
+iSector: 1 iPhi: -228
+iProcessor: 0 sector: 2 phiDT: 659 phi: 363 offset: 225
+iProcessor: 0 sector: 3 phiDT: -375 phi: 597 offset: 675
+iProcessor: 0 sector: 3 phiDT: 981 phi: 880 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1248 phi: 936 offset: 675
+iProcessor: 0 sector: 3 phiDT: -292 phi: 614 offset: 675
+iProcessor: 0 sector: 1 phiDT: 240 phi: -175 offset: -225
+iSector: 1 iPhi: -175
+iProcessor: 0 sector: 1 phiDT: 859 phi: -45 offset: -225
+iSector: 1 iPhi: -45
+iInput: 0 phiRef: -45 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 768 phi: 836 offset: 675
+iProcessor: 0 sector: 1 phiDT: -339 phi: -296 offset: -225
+iSector: 1 iPhi: -296
+iProcessor: 0 sector: 3 phiDT: 547 phi: 789 offset: 675
+iProcessor: 0 sector: 2 phiDT: 376 phi: 303 offset: 225
+iProcessor: 0 sector: 1 phiDT: 395 phi: -143 offset: -225
+iSector: 1 iPhi: -143
+iProcessor: 0 sector: 2 phiDT: 1023 phi: 439 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1028 phi: 890 offset: 675
+iProcessor: 0 sector: 2 phiDT: 465 phi: 322 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1165 phi: 19 offset: -225
+iSector: 1 iPhi: 19
+iInput: 0 phiRef: 19 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 381 phi: 754 offset: 675
+iProcessor: 0 sector: 2 phiDT: 75 phi: 240 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1027 phi: 890 offset: 675
+iProcessor: 0 sector: 2 phiDT: 94 phi: 244 offset: 225
+iProcessor: 0 sector: 1 phiDT: -174 phi: -261 offset: -225
+iSector: 1 iPhi: -261
+iProcessor: 0 sector: 3 phiDT: -244 phi: 624 offset: 675
+iProcessor: 0 sector: 1 phiDT: 663 phi: -86 offset: -225
+iSector: 1 iPhi: -86
+iInput: 0 phiRef: -86 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -543 phi: -338 offset: -225
+iSector: 1 iPhi: -338
+iProcessor: 0 sector: 1 phiDT: 738 phi: -71 offset: -225
+iSector: 1 iPhi: -71
+iInput: 0 phiRef: -71 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -136 phi: -253 offset: -225
+iSector: 1 iPhi: -253
+iProcessor: 0 sector: 1 phiDT: 141 phi: -196 offset: -225
+iSector: 1 iPhi: -196
+iProcessor: 0 sector: 2 phiDT: -112 phi: 202 offset: 225
+iProcessor: 0 sector: 1 phiDT: 959 phi: -24 offset: -225
+iSector: 1 iPhi: -24
+iInput: 0 phiRef: -24 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -32 phi: 219 offset: 225
+iProcessor: 0 sector: 1 phiDT: 652 phi: -89 offset: -225
+iSector: 1 iPhi: -89
+iInput: 0 phiRef: -89 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 256 phi: 728 offset: 675
+iProcessor: 0 sector: 3 phiDT: -503 phi: 570 offset: 675
+iProcessor: 0 sector: 2 phiDT: 328 phi: 293 offset: 225
+iProcessor: 0 sector: 3 phiDT: 569 phi: 794 offset: 675
+iProcessor: 0 sector: 3 phiDT: -126 phi: 649 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1171 phi: 20 offset: -225
+iSector: 1 iPhi: 20
+iInput: 0 phiRef: 20 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1016 phi: 438 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1255 phi: 938 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1093 phi: 454 offset: 225
+iProcessor: 0 sector: 2 phiDT: 914 phi: 416 offset: 225
+iProcessor: 0 sector: 2 phiDT: -149 phi: 194 offset: 225
+iProcessor: 0 sector: 2 phiDT: 77 phi: 241 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1097 phi: 455 offset: 225
+iProcessor: 0 sector: 2 phiDT: 268 phi: 281 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1082 phi: 902 offset: 675
+iProcessor: 0 sector: 3 phiDT: 294 phi: 736 offset: 675
+iProcessor: 0 sector: 3 phiDT: 412 phi: 761 offset: 675
+iProcessor: 0 sector: 2 phiDT: -244 phi: 174 offset: 225
+iProcessor: 0 sector: 2 phiDT: 653 phi: 362 offset: 225
+iProcessor: 0 sector: 3 phiDT: -318 phi: 609 offset: 675
+iProcessor: 0 sector: 1 phiDT: 238 phi: -176 offset: -225
+iSector: 1 iPhi: -176
+iProcessor: 0 sector: 1 phiDT: 933 phi: -30 offset: -225
+iSector: 1 iPhi: -30
+iInput: 0 phiRef: -30 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -264 phi: -280 offset: -225
+iSector: 1 iPhi: -280
+iProcessor: 0 sector: 1 phiDT: 641 phi: -91 offset: -225
+iSector: 1 iPhi: -91
+iInput: 0 phiRef: -91 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 877 phi: 409 offset: 225
+iProcessor: 0 sector: 3 phiDT: 335 phi: 745 offset: 675
+iProcessor: 0 sector: 1 phiDT: 615 phi: -96 offset: -225
+iSector: 1 iPhi: -96
+iInput: 0 phiRef: -96 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -122 phi: -250 offset: -225
+iSector: 1 iPhi: -250
+iProcessor: 0 sector: 1 phiDT: -372 phi: -303 offset: -225
+iSector: 1 iPhi: -303
+iProcessor: 0 sector: 2 phiDT: 514 phi: 332 offset: 225
+iProcessor: 0 sector: 2 phiDT: -460 phi: 129 offset: 225
+iProcessor: 0 sector: 3 phiDT: 172 phi: 711 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1153 phi: 466 offset: 225
+iProcessor: 0 sector: 2 phiDT: 644 phi: 360 offset: 225
+iProcessor: 0 sector: 1 phiDT: -216 phi: -270 offset: -225
+iSector: 1 iPhi: -270
+iProcessor: 0 sector: 3 phiDT: 579 phi: 796 offset: 675
+iProcessor: 0 sector: 2 phiDT: -236 phi: 176 offset: 225
+iProcessor: 0 sector: 2 phiDT: -297 phi: 163 offset: 225
+iProcessor: 0 sector: 1 phiDT: -121 phi: -250 offset: -225
+iSector: 1 iPhi: -250
+iProcessor: 0 sector: 1 phiDT: -250 phi: -277 offset: -225
+iSector: 1 iPhi: -277
+iProcessor: 0 sector: 2 phiDT: 1257 phi: 488 offset: 225
+iProcessor: 0 sector: 2 phiDT: 236 phi: 274 offset: 225
+iProcessor: 0 sector: 3 phiDT: 652 phi: 811 offset: 675
+iProcessor: 0 sector: 2 phiDT: -503 phi: 120 offset: 225
+iProcessor: 0 sector: 3 phiDT: -290 phi: 615 offset: 675
+iProcessor: 0 sector: 3 phiDT: 334 phi: 745 offset: 675
+iProcessor: 0 sector: 1 phiDT: -416 phi: -312 offset: -225
+iSector: 1 iPhi: -312
+iProcessor: 0 sector: 3 phiDT: 1256 phi: 938 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1222 phi: 481 offset: 225
+iProcessor: 0 sector: 1 phiDT: 50 phi: -215 offset: -225
+iSector: 1 iPhi: -215
+iProcessor: 0 sector: 3 phiDT: 775 phi: 837 offset: 675
+iProcessor: 0 sector: 2 phiDT: 160 phi: 258 offset: 225
+iProcessor: 0 sector: 2 phiDT: 457 phi: 320 offset: 225
+iProcessor: 0 sector: 2 phiDT: -158 phi: 192 offset: 225
+iProcessor: 0 sector: 2 phiDT: 98 phi: 245 offset: 225
+iProcessor: 0 sector: 1 phiDT: 63 phi: -212 offset: -225
+iSector: 1 iPhi: -212
+iProcessor: 0 sector: 3 phiDT: 772 phi: 836 offset: 675
+iProcessor: 0 sector: 3 phiDT: 923 phi: 868 offset: 675
+iProcessor: 0 sector: 3 phiDT: -551 phi: 560 offset: 675
+iProcessor: 0 sector: 2 phiDT: -41 phi: 217 offset: 225
+iProcessor: 0 sector: 2 phiDT: 294 phi: 286 offset: 225
+iProcessor: 0 sector: 2 phiDT: 947 phi: 423 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1123 phi: 910 offset: 675
+iProcessor: 0 sector: 1 phiDT: -267 phi: -281 offset: -225
+iSector: 1 iPhi: -281
+iProcessor: 0 sector: 2 phiDT: 835 phi: 400 offset: 225
+iProcessor: 0 sector: 1 phiDT: -129 phi: -252 offset: -225
+iSector: 1 iPhi: -252
+iProcessor: 0 sector: 3 phiDT: 445 phi: 768 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1243 phi: 485 offset: 225
+iProcessor: 0 sector: 2 phiDT: 13 phi: 227 offset: 225
+iProcessor: 0 sector: 1 phiDT: 974 phi: -21 offset: -225
+iSector: 1 iPhi: -21
+iInput: 0 phiRef: -21 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 596 phi: 350 offset: 225
+iProcessor: 0 sector: 1 phiDT: 399 phi: -142 offset: -225
+iSector: 1 iPhi: -142
+iProcessor: 0 sector: 2 phiDT: 87 phi: 243 offset: 225
+iProcessor: 0 sector: 2 phiDT: 370 phi: 302 offset: 225
+iProcessor: 0 sector: 1 phiDT: -37 phi: -232 offset: -225
+iSector: 1 iPhi: -232
+iProcessor: 0 sector: 2 phiDT: 1038 phi: 442 offset: 225
+iProcessor: 0 sector: 1 phiDT: 744 phi: -69 offset: -225
+iSector: 1 iPhi: -69
+iInput: 0 phiRef: -69 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 850 phi: -47 offset: -225
+iSector: 1 iPhi: -47
+iInput: 0 phiRef: -47 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -326 phi: 607 offset: 675
+iProcessor: 0 sector: 3 phiDT: -489 phi: 573 offset: 675
+iProcessor: 0 sector: 3 phiDT: -434 phi: 584 offset: 675
+iProcessor: 0 sector: 2 phiDT: 774 phi: 387 offset: 225
+iProcessor: 0 sector: 1 phiDT: 887 phi: -39 offset: -225
+iSector: 1 iPhi: -39
+iInput: 0 phiRef: -39 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1246 phi: 36 offset: -225
+iSector: 1 iPhi: 36
+iInput: 0 phiRef: 36 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 243 phi: -175 offset: -225
+iSector: 1 iPhi: -175
+iProcessor: 0 sector: 2 phiDT: 842 phi: 401 offset: 225
+iProcessor: 0 sector: 3 phiDT: 199 phi: 716 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1168 phi: 20 offset: -225
+iSector: 1 iPhi: 20
+iInput: 0 phiRef: 20 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1098 phi: 455 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1090 phi: 903 offset: 675
+iProcessor: 0 sector: 1 phiDT: 535 phi: -113 offset: -225
+iSector: 1 iPhi: -113
+iProcessor: 0 sector: 3 phiDT: -336 phi: 605 offset: 675
+iProcessor: 0 sector: 2 phiDT: 808 phi: 394 offset: 225
+iProcessor: 0 sector: 2 phiDT: 388 phi: 306 offset: 225
+iProcessor: 0 sector: 1 phiDT: -511 phi: -332 offset: -225
+iSector: 1 iPhi: -332
+iProcessor: 0 sector: 2 phiDT: -118 phi: 201 offset: 225
+iProcessor: 0 sector: 3 phiDT: 835 phi: 850 offset: 675
+iProcessor: 0 sector: 2 phiDT: 221 phi: 271 offset: 225
+iProcessor: 0 sector: 3 phiDT: -233 phi: 627 offset: 675
+iProcessor: 0 sector: 3 phiDT: 584 phi: 797 offset: 675
+iProcessor: 0 sector: 2 phiDT: 433 phi: 315 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1231 phi: 483 offset: 225
+iProcessor: 0 sector: 1 phiDT: -462 phi: -321 offset: -225
+iSector: 1 iPhi: -321
+iProcessor: 0 sector: 1 phiDT: 330 phi: -156 offset: -225
+iSector: 1 iPhi: -156
+iProcessor: 0 sector: 2 phiDT: 546 phi: 339 offset: 225
+iProcessor: 0 sector: 1 phiDT: -78 phi: -241 offset: -225
+iSector: 1 iPhi: -241
+iProcessor: 0 sector: 1 phiDT: 298 phi: -163 offset: -225
+iSector: 1 iPhi: -163
+iProcessor: 0 sector: 1 phiDT: 946 phi: -27 offset: -225
+iSector: 1 iPhi: -27
+iInput: 0 phiRef: -27 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 367 phi: -148 offset: -225
+iSector: 1 iPhi: -148
+iProcessor: 0 sector: 2 phiDT: 845 phi: 402 offset: 225
+iProcessor: 0 sector: 3 phiDT: 146 phi: 705 offset: 675
+iProcessor: 0 sector: 1 phiDT: 651 phi: -89 offset: -225
+iSector: 1 iPhi: -89
+iInput: 0 phiRef: -89 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 315 phi: 741 offset: 675
+iProcessor: 0 sector: 1 phiDT: 709 phi: -77 offset: -225
+iSector: 1 iPhi: -77
+iInput: 0 phiRef: -77 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 959 phi: 876 offset: 675
+iProcessor: 0 sector: 1 phiDT: 791 phi: -60 offset: -225
+iSector: 1 iPhi: -60
+iInput: 0 phiRef: -60 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 469 phi: 323 offset: 225
+iProcessor: 0 sector: 2 phiDT: 875 phi: 408 offset: 225
+iProcessor: 0 sector: 1 phiDT: 518 phi: -117 offset: -225
+iSector: 1 iPhi: -117
+iProcessor: 0 sector: 3 phiDT: 82 phi: 692 offset: 675
+iProcessor: 0 sector: 2 phiDT: 730 phi: 378 offset: 225
+iProcessor: 0 sector: 2 phiDT: -180 phi: 188 offset: 225
+iProcessor: 0 sector: 2 phiDT: -538 phi: 113 offset: 225
+iProcessor: 0 sector: 1 phiDT: 288 phi: -165 offset: -225
+iSector: 1 iPhi: -165
+iProcessor: 0 sector: 3 phiDT: 19 phi: 678 offset: 675
+iProcessor: 0 sector: 3 phiDT: 969 phi: 878 offset: 675
+iProcessor: 0 sector: 2 phiDT: 997 phi: 434 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1105 phi: 906 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1207 phi: 478 offset: 225
+iProcessor: 0 sector: 1 phiDT: 430 phi: -135 offset: -225
+iSector: 1 iPhi: -135
+iProcessor: 0 sector: 2 phiDT: 569 phi: 344 offset: 225
+iProcessor: 0 sector: 1 phiDT: 777 phi: -62 offset: -225
+iSector: 1 iPhi: -62
+iInput: 0 phiRef: -62 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1271 phi: 41 offset: -225
+iSector: 1 iPhi: 41
+iInput: 0 phiRef: 41 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 462 phi: 771 offset: 675
+iProcessor: 0 sector: 3 phiDT: -210 phi: 631 offset: 675
+iProcessor: 0 sector: 2 phiDT: -332 phi: 156 offset: 225
+iProcessor: 0 sector: 2 phiDT: 628 phi: 356 offset: 225
+iProcessor: 0 sector: 1 phiDT: 221 phi: -179 offset: -225
+iSector: 1 iPhi: -179
+iProcessor: 0 sector: 3 phiDT: 1171 phi: 920 offset: 675
+iProcessor: 0 sector: 3 phiDT: 644 phi: 810 offset: 675
+iProcessor: 0 sector: 3 phiDT: 885 phi: 860 offset: 675
+iProcessor: 0 sector: 3 phiDT: 966 phi: 877 offset: 675
+iProcessor: 0 sector: 3 phiDT: 141 phi: 704 offset: 675
+iProcessor: 0 sector: 2 phiDT: 574 phi: 345 offset: 225
+iProcessor: 0 sector: 3 phiDT: 954 phi: 875 offset: 675
+iProcessor: 0 sector: 2 phiDT: -346 phi: 153 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1034 phi: -9 offset: -225
+iSector: 1 iPhi: -9
+iInput: 0 phiRef: -9 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -223 phi: 179 offset: 225
+iProcessor: 0 sector: 1 phiDT: -8 phi: -226 offset: -225
+iSector: 1 iPhi: -226
+iProcessor: 0 sector: 1 phiDT: 149 phi: -194 offset: -225
+iSector: 1 iPhi: -194
+iProcessor: 0 sector: 3 phiDT: -197 phi: 634 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1174 phi: 921 offset: 675
+iProcessor: 0 sector: 3 phiDT: 603 phi: 801 offset: 675
+iProcessor: 0 sector: 1 phiDT: 871 phi: -43 offset: -225
+iSector: 1 iPhi: -43
+iInput: 0 phiRef: -43 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 42 phi: -217 offset: -225
+iSector: 1 iPhi: -217
+iProcessor: 0 sector: 3 phiDT: 752 phi: 832 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1111 phi: 458 offset: 225
+iProcessor: 0 sector: 1 phiDT: 779 phi: -62 offset: -225
+iSector: 1 iPhi: -62
+iInput: 0 phiRef: -62 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 228 phi: 722 offset: 675
+iProcessor: 0 sector: 3 phiDT: 230 phi: 723 offset: 675
+iProcessor: 0 sector: 3 phiDT: -514 phi: 568 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1183 phi: 923 offset: 675
+iProcessor: 0 sector: 1 phiDT: 862 phi: -45 offset: -225
+iSector: 1 iPhi: -45
+iInput: 0 phiRef: -45 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 941 phi: -28 offset: -225
+iSector: 1 iPhi: -28
+iInput: 0 phiRef: -28 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 739 phi: 830 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1064 phi: -2 offset: -225
+iSector: 1 iPhi: -2
+iInput: 0 phiRef: -2 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -103 phi: 654 offset: 675
+iProcessor: 0 sector: 3 phiDT: 304 phi: 738 offset: 675
+iProcessor: 0 sector: 3 phiDT: 619 phi: 804 offset: 675
+iProcessor: 0 sector: 2 phiDT: 915 phi: 416 offset: 225
+iProcessor: 0 sector: 1 phiDT: -460 phi: -321 offset: -225
+iSector: 1 iPhi: -321
+iProcessor: 0 sector: 1 phiDT: -272 phi: -282 offset: -225
+iSector: 1 iPhi: -282
+iProcessor: 0 sector: 3 phiDT: 839 phi: 851 offset: 675
+iProcessor: 0 sector: 2 phiDT: 2 phi: 225 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1086 phi: 902 offset: 675
+iProcessor: 0 sector: 1 phiDT: 397 phi: -142 offset: -225
+iSector: 1 iPhi: -142
+iProcessor: 0 sector: 1 phiDT: 1042 phi: -7 offset: -225
+iSector: 1 iPhi: -7
+iInput: 0 phiRef: -7 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 985 phi: 881 offset: 675
+iProcessor: 0 sector: 3 phiDT: 365 phi: 751 offset: 675
+iProcessor: 0 sector: 3 phiDT: -355 phi: 601 offset: 675
+iProcessor: 0 sector: 3 phiDT: 847 phi: 852 offset: 675
+iProcessor: 0 sector: 3 phiDT: -475 phi: 576 offset: 675
+iProcessor: 0 sector: 2 phiDT: 73 phi: 240 offset: 225
+iProcessor: 0 sector: 2 phiDT: 502 phi: 330 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1014 phi: 887 offset: 675
+iProcessor: 0 sector: 1 phiDT: 907 phi: -35 offset: -225
+iSector: 1 iPhi: -35
+iInput: 0 phiRef: -35 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -402 phi: -309 offset: -225
+iSector: 1 iPhi: -309
+iProcessor: 0 sector: 1 phiDT: -498 phi: -329 offset: -225
+iSector: 1 iPhi: -329
+iProcessor: 0 sector: 3 phiDT: 592 phi: 799 offset: 675
+iProcessor: 0 sector: 2 phiDT: -324 phi: 158 offset: 225
+iProcessor: 0 sector: 2 phiDT: -430 phi: 135 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1245 phi: 36 offset: -225
+iSector: 1 iPhi: 36
+iInput: 0 phiRef: 36 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -5 phi: -226 offset: -225
+iSector: 1 iPhi: -226
+iProcessor: 0 sector: 3 phiDT: 1119 phi: 909 offset: 675
+iProcessor: 0 sector: 2 phiDT: -301 phi: 162 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1012 phi: 437 offset: 225
+iProcessor: 0 sector: 3 phiDT: -290 phi: 615 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1071 phi: 899 offset: 675
+iProcessor: 0 sector: 1 phiDT: -496 phi: -329 offset: -225
+iSector: 1 iPhi: -329
+iProcessor: 0 sector: 2 phiDT: 860 phi: 405 offset: 225
+iProcessor: 0 sector: 3 phiDT: -254 phi: 622 offset: 675
+iProcessor: 0 sector: 2 phiDT: -374 phi: 147 offset: 225
+iProcessor: 0 sector: 1 phiDT: 922 phi: -32 offset: -225
+iSector: 1 iPhi: -32
+iInput: 0 phiRef: -32 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 350 phi: 298 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1046 phi: 894 offset: 675
+iProcessor: 0 sector: 2 phiDT: 94 phi: 244 offset: 225
+iProcessor: 0 sector: 3 phiDT: -469 phi: 577 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1072 phi: 449 offset: 225
+iProcessor: 0 sector: 3 phiDT: 916 phi: 867 offset: 675
+iProcessor: 0 sector: 2 phiDT: -289 phi: 165 offset: 225
+iProcessor: 0 sector: 2 phiDT: 464 phi: 322 offset: 225
+iProcessor: 0 sector: 2 phiDT: -519 phi: 117 offset: 225
+iProcessor: 0 sector: 1 phiDT: 457 phi: -130 offset: -225
+iSector: 1 iPhi: -130
+iProcessor: 0 sector: 2 phiDT: 637 phi: 358 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1104 phi: 456 offset: 225
+iProcessor: 0 sector: 1 phiDT: -216 phi: -270 offset: -225
+iSector: 1 iPhi: -270
+iProcessor: 0 sector: 2 phiDT: 294 phi: 286 offset: 225
+iProcessor: 0 sector: 2 phiDT: -72 phi: 210 offset: 225
+iProcessor: 0 sector: 2 phiDT: 161 phi: 258 offset: 225
+iProcessor: 0 sector: 2 phiDT: 348 phi: 298 offset: 225
+iProcessor: 0 sector: 2 phiDT: 464 phi: 322 offset: 225
+iProcessor: 0 sector: 3 phiDT: 279 phi: 733 offset: 675
+iProcessor: 0 sector: 3 phiDT: 488 phi: 777 offset: 675
+iProcessor: 0 sector: 3 phiDT: -119 phi: 651 offset: 675
+iProcessor: 0 sector: 3 phiDT: 148 phi: 706 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1207 phi: 28 offset: -225
+iSector: 1 iPhi: 28
+iInput: 0 phiRef: 28 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 623 phi: 805 offset: 675
+iProcessor: 0 sector: 3 phiDT: -337 phi: 605 offset: 675
+iProcessor: 0 sector: 2 phiDT: -352 phi: 152 offset: 225
+iProcessor: 0 sector: 3 phiDT: 726 phi: 827 offset: 675
+iProcessor: 0 sector: 3 phiDT: 568 phi: 794 offset: 675
+iProcessor: 0 sector: 1 phiDT: 185 phi: -187 offset: -225
+iSector: 1 iPhi: -187
+iProcessor: 0 sector: 3 phiDT: 943 phi: 872 offset: 675
+iProcessor: 0 sector: 1 phiDT: -518 phi: -333 offset: -225
+iSector: 1 iPhi: -333
+iProcessor: 0 sector: 2 phiDT: 471 phi: 323 offset: 225
+iProcessor: 0 sector: 3 phiDT: -317 phi: 609 offset: 675
+iProcessor: 0 sector: 2 phiDT: -75 phi: 210 offset: 225
+iProcessor: 0 sector: 3 phiDT: 100 phi: 695 offset: 675
+iProcessor: 0 sector: 3 phiDT: 489 phi: 777 offset: 675
+iProcessor: 0 sector: 3 phiDT: 92 phi: 694 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1088 phi: 903 offset: 675
+iProcessor: 0 sector: 2 phiDT: -513 phi: 118 offset: 225
+iProcessor: 0 sector: 2 phiDT: -5 phi: 224 offset: 225
+iProcessor: 0 sector: 3 phiDT: 887 phi: 861 offset: 675
+iProcessor: 0 sector: 3 phiDT: 336 phi: 745 offset: 675
+iProcessor: 0 sector: 2 phiDT: -380 phi: 146 offset: 225
+iProcessor: 0 sector: 1 phiDT: 50 phi: -215 offset: -225
+iSector: 1 iPhi: -215
+iProcessor: 0 sector: 2 phiDT: 668 phi: 365 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1168 phi: 470 offset: 225
+iProcessor: 0 sector: 2 phiDT: 240 phi: 275 offset: 225
+iProcessor: 0 sector: 2 phiDT: 432 phi: 315 offset: 225
+iProcessor: 0 sector: 2 phiDT: 456 phi: 320 offset: 225
+iProcessor: 0 sector: 3 phiDT: 725 phi: 827 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1240 phi: 35 offset: -225
+iSector: 1 iPhi: 35
+iInput: 0 phiRef: 35 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1227 phi: 32 offset: -225
+iSector: 1 iPhi: 32
+iInput: 0 phiRef: 32 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -117 phi: 201 offset: 225
+iProcessor: 0 sector: 1 phiDT: -348 phi: -298 offset: -225
+iSector: 1 iPhi: -298
+iProcessor: 0 sector: 1 phiDT: 477 phi: -125 offset: -225
+iSector: 1 iPhi: -125
+iProcessor: 0 sector: 1 phiDT: 466 phi: -128 offset: -225
+iSector: 1 iPhi: -128
+iProcessor: 0 sector: 3 phiDT: 153 phi: 707 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1097 phi: 5 offset: -225
+iSector: 1 iPhi: 5
+iInput: 0 phiRef: 5 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -192 phi: 635 offset: 675
+iProcessor: 0 sector: 1 phiDT: 159 phi: -192 offset: -225
+iSector: 1 iPhi: -192
+iProcessor: 0 sector: 2 phiDT: -116 phi: 201 offset: 225
+iProcessor: 0 sector: 1 phiDT: -507 phi: -331 offset: -225
+iSector: 1 iPhi: -331
+iProcessor: 0 sector: 3 phiDT: 597 phi: 800 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1197 phi: 26 offset: -225
+iSector: 1 iPhi: 26
+iInput: 0 phiRef: 26 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 925 phi: -31 offset: -225
+iSector: 1 iPhi: -31
+iInput: 0 phiRef: -31 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 30 phi: 681 offset: 675
+iProcessor: 0 sector: 2 phiDT: -303 phi: 162 offset: 225
+iProcessor: 0 sector: 2 phiDT: -503 phi: 120 offset: 225
+iProcessor: 0 sector: 3 phiDT: -266 phi: 620 offset: 675
+iProcessor: 0 sector: 3 phiDT: 618 phi: 804 offset: 675
+iProcessor: 0 sector: 3 phiDT: -312 phi: 610 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1153 phi: 916 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1168 phi: 20 offset: -225
+iSector: 1 iPhi: 20
+iInput: 0 phiRef: 20 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 406 phi: 310 offset: 225
+iProcessor: 0 sector: 1 phiDT: 79 phi: -209 offset: -225
+iSector: 1 iPhi: -209
+iProcessor: 0 sector: 2 phiDT: 276 phi: 282 offset: 225
+iProcessor: 0 sector: 2 phiDT: 101 phi: 246 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1239 phi: 484 offset: 225
+iProcessor: 0 sector: 2 phiDT: 172 phi: 261 offset: 225
+iProcessor: 0 sector: 1 phiDT: -88 phi: -243 offset: -225
+iSector: 1 iPhi: -243
+iProcessor: 0 sector: 1 phiDT: -73 phi: -240 offset: -225
+iSector: 1 iPhi: -240
+iProcessor: 0 sector: 3 phiDT: 396 phi: 758 offset: 675
+iProcessor: 0 sector: 3 phiDT: -216 phi: 630 offset: 675
+iProcessor: 0 sector: 3 phiDT: 354 phi: 749 offset: 675
+iProcessor: 0 sector: 3 phiDT: -511 phi: 568 offset: 675
+iProcessor: 0 sector: 1 phiDT: -208 phi: -268 offset: -225
+iSector: 1 iPhi: -268
+iProcessor: 0 sector: 3 phiDT: -286 phi: 615 offset: 675
+iProcessor: 0 sector: 1 phiDT: -36 phi: -232 offset: -225
+iSector: 1 iPhi: -232
+iProcessor: 0 sector: 3 phiDT: 848 phi: 852 offset: 675
+iProcessor: 0 sector: 2 phiDT: 634 phi: 358 offset: 225
+iProcessor: 0 sector: 3 phiDT: 354 phi: 749 offset: 675
+iProcessor: 0 sector: 3 phiDT: -512 phi: 568 offset: 675
+iProcessor: 0 sector: 3 phiDT: 9 phi: 676 offset: 675
+iProcessor: 0 sector: 2 phiDT: 885 phi: 410 offset: 225
+iProcessor: 0 sector: 3 phiDT: -221 phi: 629 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1186 phi: 23 offset: -225
+iSector: 1 iPhi: 23
+iInput: 0 phiRef: 23 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 380 phi: 754 offset: 675
+iProcessor: 0 sector: 3 phiDT: -311 phi: 610 offset: 675
+iProcessor: 0 sector: 3 phiDT: -311 phi: 610 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1162 phi: 918 offset: 675
+iProcessor: 0 sector: 1 phiDT: 345 phi: -153 offset: -225
+iSector: 1 iPhi: -153
+iProcessor: 0 sector: 1 phiDT: -324 phi: -292 offset: -225
+iSector: 1 iPhi: -292
+iProcessor: 0 sector: 2 phiDT: 395 phi: 307 offset: 225
+iProcessor: 0 sector: 3 phiDT: 796 phi: 842 offset: 675
+iProcessor: 0 sector: 1 phiDT: -444 phi: -318 offset: -225
+iSector: 1 iPhi: -318
+iProcessor: 0 sector: 3 phiDT: 413 phi: 761 offset: 675
+iProcessor: 0 sector: 3 phiDT: -70 phi: 661 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1173 phi: 921 offset: 675
+iProcessor: 0 sector: 2 phiDT: 515 phi: 333 offset: 225
+iProcessor: 0 sector: 2 phiDT: 145 phi: 255 offset: 225
+iProcessor: 0 sector: 2 phiDT: -134 phi: 197 offset: 225
+iProcessor: 0 sector: 3 phiDT: -228 phi: 628 offset: 675
+iProcessor: 0 sector: 1 phiDT: -449 phi: -319 offset: -225
+iSector: 1 iPhi: -319
+iProcessor: 0 sector: 1 phiDT: 443 phi: -133 offset: -225
+iSector: 1 iPhi: -133
+iProcessor: 0 sector: 1 phiDT: -269 phi: -281 offset: -225
+iSector: 1 iPhi: -281
+iProcessor: 0 sector: 2 phiDT: 461 phi: 321 offset: 225
+iProcessor: 0 sector: 2 phiDT: -485 phi: 124 offset: 225
+iProcessor: 0 sector: 2 phiDT: 340 phi: 296 offset: 225
+iProcessor: 0 sector: 2 phiDT: 469 phi: 323 offset: 225
+iProcessor: 0 sector: 1 phiDT: -300 phi: -287 offset: -225
+iSector: 1 iPhi: -287
+iProcessor: 0 sector: 1 phiDT: -260 phi: -279 offset: -225
+iSector: 1 iPhi: -279
+iProcessor: 0 sector: 1 phiDT: 1062 phi: -3 offset: -225
+iSector: 1 iPhi: -3
+iInput: 0 phiRef: -3 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 574 phi: 345 offset: 225
+iProcessor: 0 sector: 2 phiDT: 417 phi: 312 offset: 225
+iProcessor: 0 sector: 2 phiDT: -56 phi: 214 offset: 225
+iProcessor: 0 sector: 2 phiDT: -394 phi: 143 offset: 225
+iProcessor: 0 sector: 3 phiDT: 390 phi: 756 offset: 675
+iProcessor: 0 sector: 1 phiDT: -454 phi: -320 offset: -225
+iSector: 1 iPhi: -320
+iProcessor: 0 sector: 3 phiDT: 165 phi: 709 offset: 675
+iProcessor: 0 sector: 2 phiDT: 120 phi: 250 offset: 225
+iProcessor: 0 sector: 1 phiDT: -394 phi: -307 offset: -225
+iSector: 1 iPhi: -307
+iProcessor: 0 sector: 1 phiDT: 1043 phi: -7 offset: -225
+iSector: 1 iPhi: -7
+iInput: 0 phiRef: -7 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1187 phi: 24 offset: -225
+iSector: 1 iPhi: 24
+iInput: 0 phiRef: 24 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 403 phi: 759 offset: 675
+iProcessor: 0 sector: 2 phiDT: 320 phi: 292 offset: 225
+iProcessor: 0 sector: 3 phiDT: 390 phi: 756 offset: 675
+iProcessor: 0 sector: 1 phiDT: -233 phi: -273 offset: -225
+iSector: 1 iPhi: -273
+iProcessor: 0 sector: 1 phiDT: -362 phi: -300 offset: -225
+iSector: 1 iPhi: -300
+iProcessor: 0 sector: 3 phiDT: 289 phi: 735 offset: 675
+iProcessor: 0 sector: 2 phiDT: -310 phi: 160 offset: 225
+iProcessor: 0 sector: 3 phiDT: 665 phi: 814 offset: 675
+iProcessor: 0 sector: 2 phiDT: 434 phi: 316 offset: 225
+iProcessor: 0 sector: 1 phiDT: 55 phi: -214 offset: -225
+iSector: 1 iPhi: -214
+iProcessor: 0 sector: 2 phiDT: -537 phi: 113 offset: 225
+iProcessor: 0 sector: 3 phiDT: -230 phi: 627 offset: 675
+iProcessor: 0 sector: 3 phiDT: -259 phi: 621 offset: 675
+iProcessor: 0 sector: 1 phiDT: 953 phi: -26 offset: -225
+iSector: 1 iPhi: -26
+iInput: 0 phiRef: -26 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -153 phi: 193 offset: 225
+iProcessor: 0 sector: 2 phiDT: -228 phi: 178 offset: 225
+iProcessor: 0 sector: 3 phiDT: 523 phi: 784 offset: 675
+iProcessor: 0 sector: 1 phiDT: -338 phi: -295 offset: -225
+iSector: 1 iPhi: -295
+iProcessor: 0 sector: 3 phiDT: 470 phi: 773 offset: 675
+iProcessor: 0 sector: 2 phiDT: 644 phi: 360 offset: 225
+iProcessor: 0 sector: 1 phiDT: 8 phi: -224 offset: -225
+iSector: 1 iPhi: -224
+iProcessor: 0 sector: 2 phiDT: 646 phi: 360 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1030 phi: 441 offset: 225
+iProcessor: 0 sector: 3 phiDT: 688 phi: 819 offset: 675
+iProcessor: 0 sector: 2 phiDT: 434 phi: 316 offset: 225
+iProcessor: 0 sector: 1 phiDT: 945 phi: -27 offset: -225
+iSector: 1 iPhi: -27
+iInput: 0 phiRef: -27 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 820 phi: -53 offset: -225
+iSector: 1 iPhi: -53
+iInput: 0 phiRef: -53 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 392 phi: -143 offset: -225
+iSector: 1 iPhi: -143
+iProcessor: 0 sector: 2 phiDT: 1268 phi: 491 offset: 225
+iProcessor: 0 sector: 1 phiDT: 887 phi: -39 offset: -225
+iSector: 1 iPhi: -39
+iInput: 0 phiRef: -39 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1255 phi: 38 offset: -225
+iSector: 1 iPhi: 38
+iInput: 0 phiRef: 38 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -83 phi: -242 offset: -225
+iSector: 1 iPhi: -242
+iProcessor: 0 sector: 3 phiDT: 1016 phi: 888 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1084 phi: 2 offset: -225
+iSector: 1 iPhi: 2
+iInput: 0 phiRef: 2 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 422 phi: 763 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1099 phi: 5 offset: -225
+iSector: 1 iPhi: 5
+iInput: 0 phiRef: 5 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 887 phi: -39 offset: -225
+iSector: 1 iPhi: -39
+iInput: 0 phiRef: -39 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 894 phi: 862 offset: 675
+iProcessor: 0 sector: 3 phiDT: 745 phi: 831 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1200 phi: 26 offset: -225
+iSector: 1 iPhi: 26
+iInput: 0 phiRef: 26 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 366 phi: -149 offset: -225
+iSector: 1 iPhi: -149
+iProcessor: 0 sector: 2 phiDT: -320 phi: 158 offset: 225
+iProcessor: 0 sector: 1 phiDT: 195 phi: -185 offset: -225
+iSector: 1 iPhi: -185
+iProcessor: 0 sector: 1 phiDT: 940 phi: -28 offset: -225
+iSector: 1 iPhi: -28
+iInput: 0 phiRef: -28 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 542 phi: 788 offset: 675
+iProcessor: 0 sector: 2 phiDT: -157 phi: 193 offset: 225
+iProcessor: 0 sector: 3 phiDT: -541 phi: 562 offset: 675
+iProcessor: 0 sector: 2 phiDT: -336 phi: 155 offset: 225
+iProcessor: 0 sector: 1 phiDT: 303 phi: -162 offset: -225
+iSector: 1 iPhi: -162
+iProcessor: 0 sector: 2 phiDT: 228 phi: 272 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1084 phi: 902 offset: 675
+iProcessor: 0 sector: 2 phiDT: -213 phi: 181 offset: 225
+iProcessor: 0 sector: 1 phiDT: -187 phi: -264 offset: -225
+iSector: 1 iPhi: -264
+iProcessor: 0 sector: 1 phiDT: 1076 phi: 0 offset: -225
+iSector: 1 iPhi: 0
+iInput: 0 phiRef: 0 iRegion: 0
+iProcessor: 0 sector: 1 phiDT: 730 phi: -72 offset: -225
+iSector: 1 iPhi: -72
+iInput: 0 phiRef: -72 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -223 phi: 179 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1223 phi: 31 offset: -225
+iSector: 1 iPhi: 31
+iInput: 0 phiRef: 31 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -204 phi: -267 offset: -225
+iSector: 1 iPhi: -267
+iProcessor: 0 sector: 2 phiDT: 1054 phi: 446 offset: 225
+iProcessor: 0 sector: 2 phiDT: -399 phi: 142 offset: 225
+iProcessor: 0 sector: 1 phiDT: 848 phi: -48 offset: -225
+iSector: 1 iPhi: -48
+iInput: 0 phiRef: -48 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 318 phi: -159 offset: -225
+iSector: 1 iPhi: -159
+iProcessor: 0 sector: 1 phiDT: 563 phi: -107 offset: -225
+iSector: 1 iPhi: -107
+iProcessor: 0 sector: 1 phiDT: 1191 phi: 24 offset: -225
+iSector: 1 iPhi: 24
+iInput: 0 phiRef: 24 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1255 phi: 38 offset: -225
+iSector: 1 iPhi: 38
+iInput: 0 phiRef: 38 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 693 phi: 820 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1212 phi: 929 offset: 675
+iProcessor: 0 sector: 2 phiDT: 796 phi: 392 offset: 225
+iProcessor: 0 sector: 2 phiDT: 228 phi: 272 offset: 225
+iProcessor: 0 sector: 3 phiDT: 659 phi: 813 offset: 675
+iProcessor: 0 sector: 1 phiDT: 900 phi: -37 offset: -225
+iSector: 1 iPhi: -37
+iInput: 0 phiRef: -37 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -546 phi: 561 offset: 675
+iProcessor: 0 sector: 3 phiDT: -485 phi: 574 offset: 675
+iProcessor: 0 sector: 1 phiDT: -357 phi: -299 offset: -225
+iSector: 1 iPhi: -299
+iProcessor: 0 sector: 2 phiDT: -101 phi: 204 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1018 phi: -12 offset: -225
+iSector: 1 iPhi: -12
+iInput: 0 phiRef: -12 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 868 phi: -43 offset: -225
+iSector: 1 iPhi: -43
+iInput: 0 phiRef: -43 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 245 phi: 726 offset: 675
+iProcessor: 0 sector: 3 phiDT: 510 phi: 782 offset: 675
+iProcessor: 0 sector: 2 phiDT: 346 phi: 297 offset: 225
+iProcessor: 0 sector: 3 phiDT: -195 phi: 635 offset: 675
+iProcessor: 0 sector: 2 phiDT: 179 phi: 262 offset: 225
+iProcessor: 0 sector: 3 phiDT: 386 phi: 755 offset: 675
+iProcessor: 0 sector: 3 phiDT: -58 phi: 663 offset: 675
+iProcessor: 0 sector: 2 phiDT: 126 phi: 251 offset: 225
+iProcessor: 0 sector: 2 phiDT: -355 phi: 151 offset: 225
+iProcessor: 0 sector: 1 phiDT: 559 phi: -108 offset: -225
+iSector: 1 iPhi: -108
+iProcessor: 0 sector: 3 phiDT: 575 phi: 795 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1032 phi: 891 offset: 675
+iProcessor: 0 sector: 2 phiDT: 658 phi: 363 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1089 phi: 903 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1165 phi: 19 offset: -225
+iSector: 1 iPhi: 19
+iInput: 0 phiRef: 19 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 351 phi: -152 offset: -225
+iSector: 1 iPhi: -152
+iProcessor: 0 sector: 1 phiDT: 882 phi: -40 offset: -225
+iSector: 1 iPhi: -40
+iInput: 0 phiRef: -40 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -402 phi: 141 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1181 phi: 22 offset: -225
+iSector: 1 iPhi: 22
+iInput: 0 phiRef: 22 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1077 phi: 450 offset: 225
+iProcessor: 0 sector: 2 phiDT: -378 phi: 146 offset: 225
+iProcessor: 0 sector: 2 phiDT: -297 phi: 163 offset: 225
+iProcessor: 0 sector: 2 phiDT: 984 phi: 431 offset: 225
+iProcessor: 0 sector: 3 phiDT: -219 phi: 630 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1027 phi: -10 offset: -225
+iSector: 1 iPhi: -10
+iInput: 0 phiRef: -10 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 890 phi: 861 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1239 phi: 34 offset: -225
+iSector: 1 iPhi: 34
+iInput: 0 phiRef: 34 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 640 phi: -91 offset: -225
+iSector: 1 iPhi: -91
+iInput: 0 phiRef: -91 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 521 phi: -116 offset: -225
+iSector: 1 iPhi: -116
+iProcessor: 0 sector: 2 phiDT: 1244 phi: 486 offset: 225
+iProcessor: 0 sector: 3 phiDT: 335 phi: 745 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1004 phi: 885 offset: 675
+iProcessor: 0 sector: 1 phiDT: 998 phi: -16 offset: -225
+iSector: 1 iPhi: -16
+iInput: 0 phiRef: -16 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1215 phi: 29 offset: -225
+iSector: 1 iPhi: 29
+iInput: 0 phiRef: 29 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 801 phi: -57 offset: -225
+iSector: 1 iPhi: -57
+iInput: 0 phiRef: -57 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 108 phi: 697 offset: 675
+iProcessor: 0 sector: 3 phiDT: -494 phi: 572 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1012 phi: 887 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1026 phi: -10 offset: -225
+iSector: 1 iPhi: -10
+iInput: 0 phiRef: -10 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 972 phi: 878 offset: 675
+iProcessor: 0 sector: 2 phiDT: -512 phi: 118 offset: 225
+iProcessor: 0 sector: 3 phiDT: -265 phi: 620 offset: 675
+iProcessor: 0 sector: 1 phiDT: 351 phi: -152 offset: -225
+iSector: 1 iPhi: -152
+iProcessor: 0 sector: 2 phiDT: 138 phi: 253 offset: 225
+iProcessor: 0 sector: 3 phiDT: -245 phi: 624 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1127 phi: 11 offset: -225
+iSector: 1 iPhi: 11
+iInput: 0 phiRef: 11 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 515 phi: 783 offset: 675
+iProcessor: 0 sector: 2 phiDT: 692 phi: 370 offset: 225
+iProcessor: 0 sector: 1 phiDT: -234 phi: -274 offset: -225
+iSector: 1 iPhi: -274
+iProcessor: 0 sector: 1 phiDT: 25 phi: -220 offset: -225
+iSector: 1 iPhi: -220
+iProcessor: 0 sector: 1 phiDT: 1135 phi: 13 offset: -225
+iSector: 1 iPhi: 13
+iInput: 0 phiRef: 13 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 404 phi: -141 offset: -225
+iSector: 1 iPhi: -141
+iProcessor: 0 sector: 2 phiDT: 240 phi: 275 offset: 225
+iProcessor: 0 sector: 2 phiDT: 433 phi: 315 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1227 phi: 32 offset: -225
+iSector: 1 iPhi: 32
+iInput: 0 phiRef: 32 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 804 phi: -57 offset: -225
+iSector: 1 iPhi: -57
+iInput: 0 phiRef: -57 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 401 phi: 759 offset: 675
+iProcessor: 0 sector: 2 phiDT: 709 phi: 373 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1240 phi: 935 offset: 675
+iProcessor: 0 sector: 2 phiDT: -66 phi: 212 offset: 225
+iProcessor: 0 sector: 1 phiDT: 814 phi: -55 offset: -225
+iSector: 1 iPhi: -55
+iInput: 0 phiRef: -55 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 325 phi: -157 offset: -225
+iSector: 1 iPhi: -157
+iProcessor: 0 sector: 3 phiDT: 130 phi: 702 offset: 675
+iProcessor: 0 sector: 3 phiDT: 472 phi: 774 offset: 675
+iProcessor: 0 sector: 1 phiDT: 826 phi: -52 offset: -225
+iSector: 1 iPhi: -52
+iInput: 0 phiRef: -52 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -498 phi: 571 offset: 675
+iProcessor: 0 sector: 3 phiDT: -240 phi: 625 offset: 675
+iProcessor: 0 sector: 2 phiDT: -557 phi: 109 offset: 225
+iProcessor: 0 sector: 3 phiDT: 742 phi: 830 offset: 675
+iProcessor: 0 sector: 1 phiDT: 475 phi: -126 offset: -225
+iSector: 1 iPhi: -126
+iProcessor: 0 sector: 1 phiDT: 245 phi: -174 offset: -225
+iSector: 1 iPhi: -174
+iProcessor: 0 sector: 1 phiDT: -496 phi: -329 offset: -225
+iSector: 1 iPhi: -329
+iProcessor: 0 sector: 1 phiDT: 330 phi: -156 offset: -225
+iSector: 1 iPhi: -156
+iProcessor: 0 sector: 1 phiDT: 1153 phi: 16 offset: -225
+iSector: 1 iPhi: 16
+iInput: 0 phiRef: 16 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 469 phi: -127 offset: -225
+iSector: 1 iPhi: -127
+iProcessor: 0 sector: 3 phiDT: 423 phi: 763 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1004 phi: 885 offset: 675
+iProcessor: 0 sector: 3 phiDT: -149 phi: 644 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1107 phi: 907 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1078 phi: 451 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1108 phi: 907 offset: 675
+iProcessor: 0 sector: 3 phiDT: -538 phi: 563 offset: 675
+iProcessor: 0 sector: 3 phiDT: -328 phi: 607 offset: 675
+iProcessor: 0 sector: 1 phiDT: -409 phi: -310 offset: -225
+iSector: 1 iPhi: -310
+iProcessor: 0 sector: 3 phiDT: 897 phi: 863 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1153 phi: 916 offset: 675
+iProcessor: 0 sector: 1 phiDT: 991 phi: -18 offset: -225
+iSector: 1 iPhi: -18
+iInput: 0 phiRef: -18 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 391 phi: 757 offset: 675
+iProcessor: 0 sector: 2 phiDT: 507 phi: 331 offset: 225
+iProcessor: 0 sector: 3 phiDT: 294 phi: 736 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1011 phi: -13 offset: -225
+iSector: 1 iPhi: -13
+iInput: 0 phiRef: -13 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 328 phi: 293 offset: 225
+iProcessor: 0 sector: 3 phiDT: 398 phi: 758 offset: 675
+iProcessor: 0 sector: 3 phiDT: 308 phi: 739 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1134 phi: 12 offset: -225
+iSector: 1 iPhi: 12
+iInput: 0 phiRef: 12 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 987 phi: -18 offset: -225
+iSector: 1 iPhi: -18
+iInput: 0 phiRef: -18 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 257 phi: 278 offset: 225
+iProcessor: 0 sector: 2 phiDT: 938 phi: 421 offset: 225
+iProcessor: 0 sector: 1 phiDT: 200 phi: -184 offset: -225
+iSector: 1 iPhi: -184
+iProcessor: 0 sector: 2 phiDT: -35 phi: 218 offset: 225
+iProcessor: 0 sector: 2 phiDT: 257 phi: 278 offset: 225
+iProcessor: 0 sector: 1 phiDT: 297 phi: -163 offset: -225
+iSector: 1 iPhi: -163
+iProcessor: 0 sector: 3 phiDT: 338 phi: 745 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1112 phi: 8 offset: -225
+iSector: 1 iPhi: 8
+iInput: 0 phiRef: 8 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 785 phi: 839 offset: 675
+iProcessor: 0 sector: 2 phiDT: 446 phi: 318 offset: 225
+iProcessor: 0 sector: 3 phiDT: -321 phi: 608 offset: 675
+iProcessor: 0 sector: 3 phiDT: 585 phi: 797 offset: 675
+iProcessor: 0 sector: 3 phiDT: 398 phi: 758 offset: 675
+iProcessor: 0 sector: 1 phiDT: -26 phi: -230 offset: -225
+iSector: 1 iPhi: -230
+iProcessor: 0 sector: 1 phiDT: 1187 phi: 24 offset: -225
+iSector: 1 iPhi: 24
+iInput: 0 phiRef: 24 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 587 phi: 798 offset: 675
+iProcessor: 0 sector: 1 phiDT: 531 phi: -114 offset: -225
+iSector: 1 iPhi: -114
+iProcessor: 0 sector: 2 phiDT: 1110 phi: 457 offset: 225
+iProcessor: 0 sector: 2 phiDT: 709 phi: 373 offset: 225
+iProcessor: 0 sector: 3 phiDT: 253 phi: 728 offset: 675
+iProcessor: 0 sector: 3 phiDT: -510 phi: 568 offset: 675
+iProcessor: 0 sector: 2 phiDT: -30 phi: 219 offset: 225
+iProcessor: 0 sector: 2 phiDT: -462 phi: 129 offset: 225
+iProcessor: 0 sector: 1 phiDT: -192 phi: -265 offset: -225
+iSector: 1 iPhi: -265
+iProcessor: 0 sector: 2 phiDT: -513 phi: 118 offset: 225
+iProcessor: 0 sector: 2 phiDT: 49 phi: 235 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1098 phi: 455 offset: 225
+iProcessor: 0 sector: 2 phiDT: 545 phi: 339 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1041 phi: -7 offset: -225
+iSector: 1 iPhi: -7
+iInput: 0 phiRef: -7 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 251 phi: -173 offset: -225
+iSector: 1 iPhi: -173
+iProcessor: 0 sector: 1 phiDT: 225 phi: -178 offset: -225
+iSector: 1 iPhi: -178
+iProcessor: 0 sector: 1 phiDT: 179 phi: -188 offset: -225
+iSector: 1 iPhi: -188
+iProcessor: 0 sector: 1 phiDT: -337 phi: -295 offset: -225
+iSector: 1 iPhi: -295
+iProcessor: 0 sector: 1 phiDT: -556 phi: -341 offset: -225
+iSector: 1 iPhi: -341
+iProcessor: 0 sector: 2 phiDT: -457 phi: 130 offset: 225
+iProcessor: 0 sector: 1 phiDT: 745 phi: -69 offset: -225
+iSector: 1 iPhi: -69
+iInput: 0 phiRef: -69 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 44 phi: -216 offset: -225
+iSector: 1 iPhi: -216
+iProcessor: 0 sector: 1 phiDT: 1208 phi: 28 offset: -225
+iSector: 1 iPhi: 28
+iInput: 0 phiRef: 28 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -406 phi: 140 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1067 phi: 898 offset: 675
+iProcessor: 0 sector: 2 phiDT: 716 phi: 375 offset: 225
+iProcessor: 0 sector: 1 phiDT: 628 phi: -94 offset: -225
+iSector: 1 iPhi: -94
+iInput: 0 phiRef: -94 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -437 phi: -316 offset: -225
+iSector: 1 iPhi: -316
+iProcessor: 0 sector: 1 phiDT: -329 phi: -294 offset: -225
+iSector: 1 iPhi: -294
+iProcessor: 0 sector: 1 phiDT: 340 phi: -154 offset: -225
+iSector: 1 iPhi: -154
+iProcessor: 0 sector: 2 phiDT: -436 phi: 134 offset: 225
+iProcessor: 0 sector: 2 phiDT: 221 phi: 271 offset: 225
+iProcessor: 0 sector: 1 phiDT: -537 phi: -337 offset: -225
+iSector: 1 iPhi: -337
+iProcessor: 0 sector: 3 phiDT: 391 phi: 757 offset: 675
+iProcessor: 0 sector: 3 phiDT: 434 phi: 766 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1074 phi: 0 offset: -225
+iSector: 1 iPhi: 0
+iInput: 0 phiRef: 0 iRegion: 0
+iProcessor: 0 sector: 1 phiDT: 732 phi: -72 offset: -225
+iSector: 1 iPhi: -72
+iInput: 0 phiRef: -72 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 194 phi: -185 offset: -225
+iSector: 1 iPhi: -185
+iProcessor: 0 sector: 1 phiDT: 792 phi: -59 offset: -225
+iSector: 1 iPhi: -59
+iInput: 0 phiRef: -59 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -50 phi: 215 offset: 225
+iProcessor: 0 sector: 2 phiDT: 386 phi: 305 offset: 225
+iProcessor: 0 sector: 3 phiDT: 634 phi: 808 offset: 675
+iProcessor: 0 sector: 2 phiDT: 312 phi: 290 offset: 225
+iProcessor: 0 sector: 1 phiDT: -384 phi: -305 offset: -225
+iSector: 1 iPhi: -305
+iProcessor: 0 sector: 1 phiDT: -376 phi: -303 offset: -225
+iSector: 1 iPhi: -303
+iProcessor: 0 sector: 3 phiDT: 430 phi: 765 offset: 675
+iProcessor: 0 sector: 2 phiDT: -552 phi: 110 offset: 225
+iProcessor: 0 sector: 3 phiDT: 606 phi: 802 offset: 675
+iProcessor: 0 sector: 2 phiDT: -58 phi: 213 offset: 225
+iProcessor: 0 sector: 1 phiDT: 554 phi: -109 offset: -225
+iSector: 1 iPhi: -109
+iProcessor: 0 sector: 1 phiDT: -535 phi: -337 offset: -225
+iSector: 1 iPhi: -337
+iProcessor: 0 sector: 2 phiDT: 100 phi: 245 offset: 225
+iProcessor: 0 sector: 2 phiDT: -508 phi: 119 offset: 225
+iProcessor: 0 sector: 1 phiDT: -453 phi: -320 offset: -225
+iSector: 1 iPhi: -320
+iProcessor: 0 sector: 1 phiDT: -511 phi: -332 offset: -225
+iSector: 1 iPhi: -332
+iProcessor: 0 sector: 3 phiDT: 904 phi: 864 offset: 675
+iProcessor: 0 sector: 3 phiDT: 153 phi: 707 offset: 675
+iProcessor: 0 sector: 3 phiDT: 341 phi: 746 offset: 675
+iProcessor: 0 sector: 3 phiDT: 276 phi: 732 offset: 675
+iProcessor: 0 sector: 3 phiDT: 573 phi: 795 offset: 675
+iProcessor: 0 sector: 3 phiDT: -197 phi: 634 offset: 675
+iProcessor: 0 sector: 1 phiDT: 585 phi: -103 offset: -225
+iSector: 1 iPhi: -103
+iProcessor: 0 sector: 1 phiDT: 1162 phi: 18 offset: -225
+iSector: 1 iPhi: 18
+iInput: 0 phiRef: 18 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 57 phi: 686 offset: 675
+iProcessor: 0 sector: 2 phiDT: 201 phi: 267 offset: 225
+iProcessor: 0 sector: 1 phiDT: 637 phi: -92 offset: -225
+iSector: 1 iPhi: -92
+iInput: 0 phiRef: -92 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1156 phi: 917 offset: 675
+iProcessor: 0 sector: 3 phiDT: 273 phi: 732 offset: 675
+iProcessor: 0 sector: 3 phiDT: -238 phi: 626 offset: 675
+iProcessor: 0 sector: 2 phiDT: 284 phi: 284 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1102 phi: 6 offset: -225
+iSector: 1 iPhi: 6
+iInput: 0 phiRef: 6 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -449 phi: 581 offset: 675
+iProcessor: 0 sector: 1 phiDT: -48 phi: -235 offset: -225
+iSector: 1 iPhi: -235
+iProcessor: 0 sector: 1 phiDT: 612 phi: -97 offset: -225
+iSector: 1 iPhi: -97
+iInput: 0 phiRef: -97 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -233 phi: 627 offset: 675
+iProcessor: 0 sector: 1 phiDT: 432 phi: -135 offset: -225
+iSector: 1 iPhi: -135
+iProcessor: 0 sector: 2 phiDT: 838 phi: 400 offset: 225
+iProcessor: 0 sector: 3 phiDT: 752 phi: 832 offset: 675
+iProcessor: 0 sector: 1 phiDT: -131 phi: -252 offset: -225
+iSector: 1 iPhi: -252
+iProcessor: 0 sector: 3 phiDT: -51 phi: 665 offset: 675
+iProcessor: 0 sector: 3 phiDT: 276 phi: 732 offset: 675
+iProcessor: 0 sector: 2 phiDT: 875 phi: 408 offset: 225
+iProcessor: 0 sector: 1 phiDT: 340 phi: -154 offset: -225
+iSector: 1 iPhi: -154
+iProcessor: 0 sector: 3 phiDT: 364 phi: 751 offset: 675
+iProcessor: 0 sector: 2 phiDT: 248 phi: 277 offset: 225
+iProcessor: 0 sector: 1 phiDT: 143 phi: -195 offset: -225
+iSector: 1 iPhi: -195
+iProcessor: 0 sector: 3 phiDT: 404 phi: 759 offset: 675
+iProcessor: 0 sector: 3 phiDT: 864 phi: 856 offset: 675
+iProcessor: 0 sector: 2 phiDT: 279 phi: 283 offset: 225
+iProcessor: 0 sector: 1 phiDT: 450 phi: -131 offset: -225
+iSector: 1 iPhi: -131
+iProcessor: 0 sector: 2 phiDT: 113 phi: 248 offset: 225
+iProcessor: 0 sector: 1 phiDT: 921 phi: -32 offset: -225
+iSector: 1 iPhi: -32
+iInput: 0 phiRef: -32 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1183 phi: 473 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1188 phi: 24 offset: -225
+iSector: 1 iPhi: 24
+iInput: 0 phiRef: 24 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 54 phi: 686 offset: 675
+iProcessor: 0 sector: 2 phiDT: 525 phi: 335 offset: 225
+iProcessor: 0 sector: 2 phiDT: -36 phi: 218 offset: 225
+iProcessor: 0 sector: 1 phiDT: 428 phi: -136 offset: -225
+iSector: 1 iPhi: -136
+iProcessor: 0 sector: 3 phiDT: 413 phi: 761 offset: 675
+iProcessor: 0 sector: 2 phiDT: 742 phi: 380 offset: 225
+iProcessor: 0 sector: 1 phiDT: 273 phi: -168 offset: -225
+iSector: 1 iPhi: -168
+iProcessor: 0 sector: 1 phiDT: -287 phi: -285 offset: -225
+iSector: 1 iPhi: -285
+iProcessor: 0 sector: 3 phiDT: 992 phi: 883 offset: 675
+iProcessor: 0 sector: 3 phiDT: -223 phi: 629 offset: 675
+iProcessor: 0 sector: 3 phiDT: -154 phi: 643 offset: 675
+iProcessor: 0 sector: 2 phiDT: 845 phi: 402 offset: 225
+iProcessor: 0 sector: 3 phiDT: 639 phi: 809 offset: 675
+iProcessor: 0 sector: 1 phiDT: -475 phi: -324 offset: -225
+iSector: 1 iPhi: -324
+iProcessor: 0 sector: 2 phiDT: -28 phi: 220 offset: 225
+iProcessor: 0 sector: 1 phiDT: -344 phi: -297 offset: -225
+iSector: 1 iPhi: -297
+iProcessor: 0 sector: 3 phiDT: -315 phi: 609 offset: 675
+iProcessor: 0 sector: 3 phiDT: 417 phi: 762 offset: 675
+iProcessor: 0 sector: 1 phiDT: 553 phi: -109 offset: -225
+iSector: 1 iPhi: -109
+iProcessor: 0 sector: 3 phiDT: 603 phi: 801 offset: 675
+iProcessor: 0 sector: 2 phiDT: -427 phi: 136 offset: 225
+iProcessor: 0 sector: 3 phiDT: 308 phi: 739 offset: 675
+iProcessor: 0 sector: 2 phiDT: 307 phi: 289 offset: 225
+iProcessor: 0 sector: 2 phiDT: -379 phi: 146 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1182 phi: 23 offset: -225
+iSector: 1 iPhi: 23
+iInput: 0 phiRef: 23 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 702 phi: 822 offset: 675
+iProcessor: 0 sector: 2 phiDT: 507 phi: 331 offset: 225
+iProcessor: 0 sector: 2 phiDT: 48 phi: 235 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1200 phi: 26 offset: -225
+iSector: 1 iPhi: 26
+iInput: 0 phiRef: 26 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1149 phi: 466 offset: 225
+iProcessor: 0 sector: 2 phiDT: -500 phi: 121 offset: 225
+iProcessor: 0 sector: 1 phiDT: -538 phi: -337 offset: -225
+iSector: 1 iPhi: -337
+iProcessor: 0 sector: 3 phiDT: 1103 phi: 906 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1055 phi: -4 offset: -225
+iSector: 1 iPhi: -4
+iInput: 0 phiRef: -4 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -142 phi: 646 offset: 675
+iProcessor: 0 sector: 1 phiDT: -311 phi: -290 offset: -225
+iSector: 1 iPhi: -290
+iProcessor: 0 sector: 3 phiDT: 667 phi: 814 offset: 675
+iProcessor: 0 sector: 3 phiDT: -148 phi: 644 offset: 675
+iProcessor: 0 sector: 3 phiDT: 733 phi: 828 offset: 675
+iProcessor: 0 sector: 1 phiDT: 902 phi: -36 offset: -225
+iSector: 1 iPhi: -36
+iInput: 0 phiRef: -36 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 80 phi: 241 offset: 225
+iProcessor: 0 sector: 1 phiDT: -137 phi: -253 offset: -225
+iSector: 1 iPhi: -253
+iProcessor: 0 sector: 3 phiDT: 813 phi: 845 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1014 phi: 437 offset: 225
+iProcessor: 0 sector: 2 phiDT: 975 phi: 429 offset: 225
+iProcessor: 0 sector: 3 phiDT: 470 phi: 773 offset: 675
+iProcessor: 0 sector: 1 phiDT: 217 phi: -180 offset: -225
+iSector: 1 iPhi: -180
+iProcessor: 0 sector: 1 phiDT: 1176 phi: 21 offset: -225
+iSector: 1 iPhi: 21
+iInput: 0 phiRef: 21 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1222 phi: 931 offset: 675
+iProcessor: 0 sector: 3 phiDT: 266 phi: 730 offset: 675
+iProcessor: 0 sector: 1 phiDT: 514 phi: -118 offset: -225
+iSector: 1 iPhi: -118
+iProcessor: 0 sector: 3 phiDT: -443 phi: 583 offset: 675
+iProcessor: 0 sector: 2 phiDT: -560 phi: 108 offset: 225
+iProcessor: 0 sector: 3 phiDT: 663 phi: 814 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1056 phi: -4 offset: -225
+iSector: 1 iPhi: -4
+iInput: 0 phiRef: -4 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 946 phi: 423 offset: 225
+iProcessor: 0 sector: 2 phiDT: 819 phi: 396 offset: 225
+iProcessor: 0 sector: 2 phiDT: 999 phi: 434 offset: 225
+iProcessor: 0 sector: 1 phiDT: 603 phi: -99 offset: -225
+iSector: 1 iPhi: -99
+iInput: 0 phiRef: -99 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -97 phi: 655 offset: 675
+iProcessor: 0 sector: 1 phiDT: 221 phi: -179 offset: -225
+iSector: 1 iPhi: -179
+iProcessor: 0 sector: 1 phiDT: 1020 phi: -11 offset: -225
+iSector: 1 iPhi: -11
+iInput: 0 phiRef: -11 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 749 phi: 832 offset: 675
+iProcessor: 0 sector: 1 phiDT: 795 phi: -59 offset: -225
+iSector: 1 iPhi: -59
+iInput: 0 phiRef: -59 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 971 phi: 878 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1123 phi: 460 offset: 225
+iProcessor: 0 sector: 2 phiDT: -173 phi: 189 offset: 225
+iProcessor: 0 sector: 2 phiDT: 690 phi: 369 offset: 225
+iProcessor: 0 sector: 3 phiDT: -498 phi: 571 offset: 675
+iProcessor: 0 sector: 2 phiDT: 504 phi: 330 offset: 225
+iProcessor: 0 sector: 1 phiDT: 300 phi: -163 offset: -225
+iSector: 1 iPhi: -163
+iProcessor: 0 sector: 1 phiDT: 488 phi: -123 offset: -225
+iSector: 1 iPhi: -123
+iProcessor: 0 sector: 1 phiDT: 1084 phi: 2 offset: -225
+iSector: 1 iPhi: 2
+iInput: 0 phiRef: 2 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 504 phi: -120 offset: -225
+iSector: 1 iPhi: -120
+iProcessor: 0 sector: 2 phiDT: 565 phi: 343 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1198 phi: 926 offset: 675
+iProcessor: 0 sector: 3 phiDT: 512 phi: 782 offset: 675
+iProcessor: 0 sector: 1 phiDT: -152 phi: -256 offset: -225
+iSector: 1 iPhi: -256
+iProcessor: 0 sector: 3 phiDT: 266 phi: 730 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1028 phi: 440 offset: 225
+iProcessor: 0 sector: 1 phiDT: 247 phi: -174 offset: -225
+iSector: 1 iPhi: -174
+iProcessor: 0 sector: 1 phiDT: 92 phi: -206 offset: -225
+iSector: 1 iPhi: -206
+iProcessor: 0 sector: 2 phiDT: -342 phi: 154 offset: 225
+iProcessor: 0 sector: 2 phiDT: 38 phi: 232 offset: 225
+iProcessor: 0 sector: 3 phiDT: 774 phi: 837 offset: 675
+iProcessor: 0 sector: 2 phiDT: 284 phi: 284 offset: 225
+iProcessor: 0 sector: 2 phiDT: 974 phi: 429 offset: 225
+iProcessor: 0 sector: 1 phiDT: 135 phi: -197 offset: -225
+iSector: 1 iPhi: -197
+iProcessor: 0 sector: 1 phiDT: -311 phi: -290 offset: -225
+iSector: 1 iPhi: -290
+iProcessor: 0 sector: 2 phiDT: -177 phi: 188 offset: 225
+iProcessor: 0 sector: 3 phiDT: 397 phi: 758 offset: 675
+iProcessor: 0 sector: 1 phiDT: 592 phi: -101 offset: -225
+iSector: 1 iPhi: -101
+iProcessor: 0 sector: 1 phiDT: 18 phi: -222 offset: -225
+iSector: 1 iPhi: -222
+iProcessor: 0 sector: 2 phiDT: -470 phi: 127 offset: 225
+iProcessor: 0 sector: 2 phiDT: -301 phi: 162 offset: 225
+iProcessor: 0 sector: 3 phiDT: -25 phi: 670 offset: 675
+iProcessor: 0 sector: 2 phiDT: -394 phi: 143 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1252 phi: 487 offset: 225
+iProcessor: 0 sector: 3 phiDT: -302 phi: 612 offset: 675
+iProcessor: 0 sector: 3 phiDT: 955 phi: 875 offset: 675
+iProcessor: 0 sector: 2 phiDT: 691 phi: 369 offset: 225
+iProcessor: 0 sector: 1 phiDT: -339 phi: -296 offset: -225
+iSector: 1 iPhi: -296
+iProcessor: 0 sector: 1 phiDT: 323 phi: -158 offset: -225
+iSector: 1 iPhi: -158
+iProcessor: 0 sector: 3 phiDT: 466 phi: 772 offset: 675
+iProcessor: 0 sector: 2 phiDT: -357 phi: 151 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1263 phi: 490 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1054 phi: 446 offset: 225
+iProcessor: 0 sector: 3 phiDT: -11 phi: 673 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1212 phi: 29 offset: -225
+iSector: 1 iPhi: 29
+iInput: 0 phiRef: 29 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -40 phi: 667 offset: 675
+iProcessor: 0 sector: 3 phiDT: -369 phi: 598 offset: 675
+iProcessor: 0 sector: 3 phiDT: -455 phi: 580 offset: 675
+iProcessor: 0 sector: 1 phiDT: -297 phi: -287 offset: -225
+iSector: 1 iPhi: -287
+iProcessor: 0 sector: 2 phiDT: 245 phi: 276 offset: 225
+iProcessor: 0 sector: 3 phiDT: 172 phi: 711 offset: 675
+iProcessor: 0 sector: 1 phiDT: -78 phi: -241 offset: -225
+iSector: 1 iPhi: -241
+iProcessor: 0 sector: 2 phiDT: 62 phi: 238 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1208 phi: 928 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1074 phi: 0 offset: -225
+iSector: 1 iPhi: 0
+iInput: 0 phiRef: 0 iRegion: 0
+iProcessor: 0 sector: 2 phiDT: 371 phi: 302 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1157 phi: 467 offset: 225
+iProcessor: 0 sector: 2 phiDT: -355 phi: 151 offset: 225
+iProcessor: 0 sector: 2 phiDT: -528 phi: 115 offset: 225
+iProcessor: 0 sector: 3 phiDT: -219 phi: 630 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1053 phi: 445 offset: 225
+iProcessor: 0 sector: 3 phiDT: 334 phi: 745 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1007 phi: -14 offset: -225
+iSector: 1 iPhi: -14
+iInput: 0 phiRef: -14 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 130 phi: 702 offset: 675
+iProcessor: 0 sector: 3 phiDT: 515 phi: 783 offset: 675
+iProcessor: 0 sector: 2 phiDT: 243 phi: 275 offset: 225
+iProcessor: 0 sector: 1 phiDT: 821 phi: -53 offset: -225
+iSector: 1 iPhi: -53
+iInput: 0 phiRef: -53 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -423 phi: 137 offset: 225
+iProcessor: 0 sector: 2 phiDT: 823 phi: 397 offset: 225
+iProcessor: 0 sector: 1 phiDT: -320 phi: -292 offset: -225
+iSector: 1 iPhi: -292
+iProcessor: 0 sector: 2 phiDT: 466 phi: 322 offset: 225
+iProcessor: 0 sector: 1 phiDT: -463 phi: -322 offset: -225
+iSector: 1 iPhi: -322
+iProcessor: 0 sector: 3 phiDT: 454 phi: 770 offset: 675
+iProcessor: 0 sector: 2 phiDT: 182 phi: 263 offset: 225
+iProcessor: 0 sector: 1 phiDT: -109 phi: -247 offset: -225
+iSector: 1 iPhi: -247
+iProcessor: 0 sector: 1 phiDT: 868 phi: -43 offset: -225
+iSector: 1 iPhi: -43
+iInput: 0 phiRef: -43 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1032 phi: 891 offset: 675
+iProcessor: 0 sector: 3 phiDT: 676 phi: 816 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1153 phi: 466 offset: 225
+iProcessor: 0 sector: 3 phiDT: 955 phi: 875 offset: 675
+iProcessor: 0 sector: 2 phiDT: 917 phi: 417 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1005 phi: 435 offset: 225
+iProcessor: 0 sector: 3 phiDT: 504 phi: 780 offset: 675
+iProcessor: 0 sector: 3 phiDT: -396 phi: 592 offset: 675
+iProcessor: 0 sector: 1 phiDT: 60 phi: -213 offset: -225
+iSector: 1 iPhi: -213
+iProcessor: 0 sector: 2 phiDT: 164 phi: 259 offset: 225
+iProcessor: 0 sector: 3 phiDT: 75 phi: 690 offset: 675
+iProcessor: 0 sector: 1 phiDT: -124 phi: -251 offset: -225
+iSector: 1 iPhi: -251
+iProcessor: 0 sector: 1 phiDT: 1195 phi: 25 offset: -225
+iSector: 1 iPhi: 25
+iInput: 0 phiRef: 25 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 760 phi: -66 offset: -225
+iSector: 1 iPhi: -66
+iInput: 0 phiRef: -66 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 274 phi: 732 offset: 675
+iProcessor: 0 sector: 3 phiDT: -465 phi: 578 offset: 675
+iProcessor: 0 sector: 3 phiDT: 541 phi: 788 offset: 675
+iProcessor: 0 sector: 1 phiDT: 750 phi: -68 offset: -225
+iSector: 1 iPhi: -68
+iInput: 0 phiRef: -68 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1205 phi: 927 offset: 675
+iProcessor: 0 sector: 3 phiDT: 564 phi: 793 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1220 phi: 480 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1104 phi: 456 offset: 225
+iProcessor: 0 sector: 3 phiDT: 634 phi: 808 offset: 675
+iProcessor: 0 sector: 1 phiDT: -31 phi: -231 offset: -225
+iSector: 1 iPhi: -231
+iProcessor: 0 sector: 2 phiDT: 568 phi: 344 offset: 225
+iProcessor: 0 sector: 2 phiDT: 542 phi: 338 offset: 225
+iProcessor: 0 sector: 1 phiDT: 199 phi: -184 offset: -225
+iSector: 1 iPhi: -184
+iProcessor: 0 sector: 1 phiDT: 798 phi: -58 offset: -225
+iSector: 1 iPhi: -58
+iInput: 0 phiRef: -58 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 70 phi: -211 offset: -225
+iSector: 1 iPhi: -211
+iProcessor: 0 sector: 1 phiDT: 1107 phi: 7 offset: -225
+iSector: 1 iPhi: 7
+iInput: 0 phiRef: 7 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 3 phi: 675 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1063 phi: 448 offset: 225
+iProcessor: 0 sector: 2 phiDT: 185 phi: 263 offset: 225
+iProcessor: 0 sector: 1 phiDT: -397 phi: -308 offset: -225
+iSector: 1 iPhi: -308
+iProcessor: 0 sector: 3 phiDT: 686 phi: 818 offset: 675
+iProcessor: 0 sector: 2 phiDT: 155 phi: 257 offset: 225
+iProcessor: 0 sector: 2 phiDT: -167 phi: 190 offset: 225
+iProcessor: 0 sector: 2 phiDT: 49 phi: 235 offset: 225
+iProcessor: 0 sector: 3 phiDT: 772 phi: 836 offset: 675
+iProcessor: 0 sector: 1 phiDT: -12 phi: -227 offset: -225
+iSector: 1 iPhi: -227
+iProcessor: 0 sector: 3 phiDT: 1235 phi: 934 offset: 675
+iProcessor: 0 sector: 2 phiDT: -256 phi: 172 offset: 225
+iProcessor: 0 sector: 1 phiDT: 791 phi: -60 offset: -225
+iSector: 1 iPhi: -60
+iInput: 0 phiRef: -60 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 969 phi: 428 offset: 225
+iProcessor: 0 sector: 2 phiDT: 717 phi: 375 offset: 225
+iProcessor: 0 sector: 2 phiDT: 98 phi: 245 offset: 225
+iProcessor: 0 sector: 1 phiDT: 562 phi: -108 offset: -225
+iSector: 1 iPhi: -108
+iProcessor: 0 sector: 2 phiDT: 1018 phi: 438 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1118 phi: 909 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1112 phi: 8 offset: -225
+iSector: 1 iPhi: 8
+iInput: 0 phiRef: 8 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 349 phi: -152 offset: -225
+iSector: 1 iPhi: -152
+iProcessor: 0 sector: 3 phiDT: 728 phi: 827 offset: 675
+iProcessor: 0 sector: 3 phiDT: 195 phi: 715 offset: 675
+iProcessor: 0 sector: 2 phiDT: 281 phi: 283 offset: 225
+iProcessor: 0 sector: 3 phiDT: -77 phi: 659 offset: 675
+iProcessor: 0 sector: 1 phiDT: 165 phi: -191 offset: -225
+iSector: 1 iPhi: -191
+iProcessor: 0 sector: 2 phiDT: -418 phi: 138 offset: 225
+iProcessor: 0 sector: 2 phiDT: 724 phi: 376 offset: 225
+iProcessor: 0 sector: 1 phiDT: 973 phi: -21 offset: -225
+iSector: 1 iPhi: -21
+iInput: 0 phiRef: -21 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 540 phi: 338 offset: 225
+iProcessor: 0 sector: 1 phiDT: 318 phi: -159 offset: -225
+iSector: 1 iPhi: -159
+iProcessor: 0 sector: 3 phiDT: -346 phi: 603 offset: 675
+iProcessor: 0 sector: 2 phiDT: 670 phi: 365 offset: 225
+iProcessor: 0 sector: 3 phiDT: 390 phi: 756 offset: 675
+iProcessor: 0 sector: 1 phiDT: -391 phi: -307 offset: -225
+iSector: 1 iPhi: -307
+iProcessor: 0 sector: 2 phiDT: 640 phi: 359 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1098 phi: 905 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1220 phi: 480 offset: 225
+iProcessor: 0 sector: 3 phiDT: 360 phi: 750 offset: 675
+iProcessor: 0 sector: 3 phiDT: -453 phi: 580 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1096 phi: 904 offset: 675
+iProcessor: 0 sector: 2 phiDT: 967 phi: 427 offset: 225
+iProcessor: 0 sector: 1 phiDT: 644 phi: -90 offset: -225
+iSector: 1 iPhi: -90
+iInput: 0 phiRef: -90 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1241 phi: 935 offset: 675
+iProcessor: 0 sector: 3 phiDT: 133 phi: 702 offset: 675
+iProcessor: 0 sector: 2 phiDT: 438 phi: 316 offset: 225
+iProcessor: 0 sector: 1 phiDT: -546 phi: -339 offset: -225
+iSector: 1 iPhi: -339
+iProcessor: 0 sector: 2 phiDT: -83 phi: 208 offset: 225
+iProcessor: 0 sector: 3 phiDT: 841 phi: 851 offset: 675
+iProcessor: 0 sector: 1 phiDT: 412 phi: -139 offset: -225
+iSector: 1 iPhi: -139
+iProcessor: 0 sector: 1 phiDT: 1211 phi: 29 offset: -225
+iSector: 1 iPhi: 29
+iInput: 0 phiRef: 29 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -274 phi: 618 offset: 675
+iProcessor: 0 sector: 2 phiDT: 815 phi: 396 offset: 225
+iProcessor: 0 sector: 3 phiDT: -416 phi: 588 offset: 675
+iProcessor: 0 sector: 1 phiDT: 507 phi: -119 offset: -225
+iSector: 1 iPhi: -119
+iProcessor: 0 sector: 3 phiDT: 817 phi: 846 offset: 675
+iProcessor: 0 sector: 2 phiDT: -541 phi: 112 offset: 225
+iProcessor: 0 sector: 2 phiDT: 634 phi: 358 offset: 225
+iProcessor: 0 sector: 2 phiDT: 720 phi: 376 offset: 225
+iProcessor: 0 sector: 3 phiDT: -490 phi: 573 offset: 675
+iProcessor: 0 sector: 3 phiDT: -249 phi: 623 offset: 675
+iProcessor: 0 sector: 2 phiDT: 652 phi: 361 offset: 225
+iProcessor: 0 sector: 1 phiDT: 845 phi: -48 offset: -225
+iSector: 1 iPhi: -48
+iInput: 0 phiRef: -48 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 545 phi: 789 offset: 675
+iProcessor: 0 sector: 1 phiDT: 9 phi: -224 offset: -225
+iSector: 1 iPhi: -224
+iProcessor: 0 sector: 1 phiDT: 345 phi: -153 offset: -225
+iSector: 1 iPhi: -153
+iProcessor: 0 sector: 2 phiDT: 968 phi: 428 offset: 225
+iProcessor: 0 sector: 2 phiDT: 62 phi: 238 offset: 225
+iProcessor: 0 sector: 1 phiDT: -348 phi: -298 offset: -225
+iSector: 1 iPhi: -298
+iProcessor: 0 sector: 2 phiDT: 521 phi: 334 offset: 225
+iProcessor: 0 sector: 1 phiDT: 669 phi: -85 offset: -225
+iSector: 1 iPhi: -85
+iInput: 0 phiRef: -85 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -68 phi: 211 offset: 225
+iProcessor: 0 sector: 1 phiDT: -425 phi: -314 offset: -225
+iSector: 1 iPhi: -314
+iProcessor: 0 sector: 2 phiDT: 182 phi: 263 offset: 225
+iProcessor: 0 sector: 2 phiDT: -27 phi: 220 offset: 225
+iProcessor: 0 sector: 3 phiDT: 328 phi: 743 offset: 675
+iProcessor: 0 sector: 2 phiDT: 299 phi: 287 offset: 225
+iProcessor: 0 sector: 1 phiDT: -448 phi: -319 offset: -225
+iSector: 1 iPhi: -319
+iProcessor: 0 sector: 3 phiDT: 678 phi: 817 offset: 675
+iProcessor: 0 sector: 1 phiDT: -437 phi: -316 offset: -225
+iSector: 1 iPhi: -316
+iProcessor: 0 sector: 2 phiDT: 101 phi: 246 offset: 225
+iProcessor: 0 sector: 1 phiDT: 408 phi: -140 offset: -225
+iSector: 1 iPhi: -140
+iProcessor: 0 sector: 3 phiDT: 281 phi: 733 offset: 675
+iProcessor: 0 sector: 1 phiDT: 734 phi: -71 offset: -225
+iSector: 1 iPhi: -71
+iInput: 0 phiRef: -71 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 635 phi: 808 offset: 675
+iProcessor: 0 sector: 2 phiDT: 805 phi: 393 offset: 225
+iProcessor: 0 sector: 2 phiDT: 57 phi: 236 offset: 225
+iProcessor: 0 sector: 1 phiDT: 768 phi: -64 offset: -225
+iSector: 1 iPhi: -64
+iInput: 0 phiRef: -64 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1246 phi: 486 offset: 225
+iProcessor: 0 sector: 2 phiDT: 636 phi: 358 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1093 phi: 904 offset: 675
+iProcessor: 0 sector: 3 phiDT: -308 phi: 611 offset: 675
+iProcessor: 0 sector: 1 phiDT: 952 phi: -26 offset: -225
+iSector: 1 iPhi: -26
+iInput: 0 phiRef: -26 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1105 phi: 6 offset: -225
+iSector: 1 iPhi: 6
+iInput: 0 phiRef: 6 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1141 phi: 914 offset: 675
+iProcessor: 0 sector: 3 phiDT: 581 phi: 796 offset: 675
+iProcessor: 0 sector: 1 phiDT: 684 phi: -82 offset: -225
+iSector: 1 iPhi: -82
+iInput: 0 phiRef: -82 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 504 phi: 780 offset: 675
+iProcessor: 0 sector: 3 phiDT: -172 phi: 639 offset: 675
+iProcessor: 0 sector: 2 phiDT: -295 phi: 164 offset: 225
+iProcessor: 0 sector: 1 phiDT: 979 phi: -20 offset: -225
+iSector: 1 iPhi: -20
+iInput: 0 phiRef: -20 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -37 phi: 218 offset: 225
+iProcessor: 0 sector: 3 phiDT: 360 phi: 750 offset: 675
+iProcessor: 0 sector: 2 phiDT: 732 phi: 378 offset: 225
+iProcessor: 0 sector: 1 phiDT: 687 phi: -81 offset: -225
+iSector: 1 iPhi: -81
+iInput: 0 phiRef: -81 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 393 phi: 757 offset: 675
+iProcessor: 0 sector: 2 phiDT: 520 phi: 334 offset: 225
+iProcessor: 0 sector: 2 phiDT: 673 phi: 366 offset: 225
+iProcessor: 0 sector: 2 phiDT: 163 phi: 259 offset: 225
+iProcessor: 0 sector: 1 phiDT: 542 phi: -112 offset: -225
+iSector: 1 iPhi: -112
+iProcessor: 0 sector: 1 phiDT: -489 phi: -327 offset: -225
+iSector: 1 iPhi: -327
+iProcessor: 0 sector: 3 phiDT: 424 phi: 763 offset: 675
+iProcessor: 0 sector: 2 phiDT: 921 phi: 418 offset: 225
+iProcessor: 0 sector: 3 phiDT: 888 phi: 861 offset: 675
+iProcessor: 0 sector: 1 phiDT: 108 phi: -203 offset: -225
+iSector: 1 iPhi: -203
+iProcessor: 0 sector: 1 phiDT: -329 phi: -294 offset: -225
+iSector: 1 iPhi: -294
+iProcessor: 0 sector: 2 phiDT: 38 phi: 232 offset: 225
+iProcessor: 0 sector: 2 phiDT: -11 phi: 223 offset: 225
+iProcessor: 0 sector: 2 phiDT: -97 phi: 205 offset: 225
+iProcessor: 0 sector: 3 phiDT: 274 phi: 732 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1187 phi: 474 offset: 225
+iProcessor: 0 sector: 3 phiDT: 510 phi: 782 offset: 675
+iProcessor: 0 sector: 3 phiDT: 0 phi: 675 offset: 675
+iProcessor: 0 sector: 2 phiDT: 225 phi: 272 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1076 phi: 900 offset: 675
+iProcessor: 0 sector: 3 phiDT: -475 phi: 576 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1100 phi: 455 offset: 225
+iProcessor: 0 sector: 2 phiDT: 515 phi: 333 offset: 225
+iProcessor: 0 sector: 2 phiDT: 497 phi: 329 offset: 225
+iProcessor: 0 sector: 2 phiDT: -471 phi: 127 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1151 phi: 466 offset: 225
+iProcessor: 0 sector: 3 phiDT: 355 phi: 749 offset: 675
+iProcessor: 0 sector: 3 phiDT: 412 phi: 761 offset: 675
+iProcessor: 0 sector: 2 phiDT: -463 phi: 128 offset: 225
+iProcessor: 0 sector: 2 phiDT: -436 phi: 134 offset: 225
+iProcessor: 0 sector: 2 phiDT: 961 phi: 426 offset: 225
+iProcessor: 0 sector: 1 phiDT: -459 phi: -321 offset: -225
+iSector: 1 iPhi: -321
+iProcessor: 0 sector: 3 phiDT: 338 phi: 745 offset: 675
+iProcessor: 0 sector: 3 phiDT: -362 phi: 600 offset: 675
+iProcessor: 0 sector: 2 phiDT: 145 phi: 255 offset: 225
+iProcessor: 0 sector: 1 phiDT: 428 phi: -136 offset: -225
+iSector: 1 iPhi: -136
+iProcessor: 0 sector: 1 phiDT: 247 phi: -174 offset: -225
+iSector: 1 iPhi: -174
+iProcessor: 0 sector: 2 phiDT: 567 phi: 343 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1035 phi: -8 offset: -225
+iSector: 1 iPhi: -8
+iInput: 0 phiRef: -8 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 541 phi: 788 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1165 phi: 469 offset: 225
+iProcessor: 0 sector: 3 phiDT: 308 phi: 739 offset: 675
+iProcessor: 0 sector: 1 phiDT: -131 phi: -252 offset: -225
+iSector: 1 iPhi: -252
+iProcessor: 0 sector: 1 phiDT: 973 phi: -21 offset: -225
+iSector: 1 iPhi: -21
+iInput: 0 phiRef: -21 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 579 phi: -104 offset: -225
+iSector: 1 iPhi: -104
+iProcessor: 0 sector: 3 phiDT: 658 phi: 813 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1202 phi: 27 offset: -225
+iSector: 1 iPhi: 27
+iInput: 0 phiRef: 27 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -85 phi: 208 offset: 225
+iProcessor: 0 sector: 2 phiDT: -389 phi: 144 offset: 225
+iProcessor: 0 sector: 3 phiDT: -458 phi: 579 offset: 675
+iProcessor: 0 sector: 2 phiDT: 174 phi: 261 offset: 225
+iProcessor: 0 sector: 2 phiDT: 383 phi: 305 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1086 phi: 2 offset: -225
+iSector: 1 iPhi: 2
+iInput: 0 phiRef: 2 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -554 phi: 109 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1006 phi: 436 offset: 225
+iProcessor: 0 sector: 1 phiDT: -193 phi: -265 offset: -225
+iSector: 1 iPhi: -265
+iProcessor: 0 sector: 3 phiDT: 628 phi: 806 offset: 675
+iProcessor: 0 sector: 1 phiDT: 364 phi: -149 offset: -225
+iSector: 1 iPhi: -149
+iProcessor: 0 sector: 3 phiDT: 92 phi: 694 offset: 675
+iProcessor: 0 sector: 1 phiDT: 709 phi: -77 offset: -225
+iSector: 1 iPhi: -77
+iInput: 0 phiRef: -77 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 820 phi: 397 offset: 225
+iProcessor: 0 sector: 3 phiDT: -70 phi: 661 offset: 675
+iProcessor: 0 sector: 2 phiDT: -158 phi: 192 offset: 225
+iProcessor: 0 sector: 1 phiDT: 317 phi: -159 offset: -225
+iSector: 1 iPhi: -159
+iProcessor: 0 sector: 1 phiDT: 535 phi: -113 offset: -225
+iSector: 1 iPhi: -113
+iProcessor: 0 sector: 1 phiDT: 929 phi: -31 offset: -225
+iSector: 1 iPhi: -31
+iInput: 0 phiRef: -31 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 934 phi: 870 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1125 phi: 911 offset: 675
+iProcessor: 0 sector: 1 phiDT: -357 phi: -299 offset: -225
+iSector: 1 iPhi: -299
+iProcessor: 0 sector: 2 phiDT: 196 phi: 266 offset: 225
+iProcessor: 0 sector: 1 phiDT: -409 phi: -310 offset: -225
+iSector: 1 iPhi: -310
+iProcessor: 0 sector: 2 phiDT: 339 phi: 296 offset: 225
+iProcessor: 0 sector: 1 phiDT: -167 phi: -260 offset: -225
+iSector: 1 iPhi: -260
+iProcessor: 0 sector: 2 phiDT: -496 phi: 121 offset: 225
+iProcessor: 0 sector: 2 phiDT: 500 phi: 329 offset: 225
+iProcessor: 0 sector: 2 phiDT: 374 phi: 303 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1042 phi: 443 offset: 225
+iProcessor: 0 sector: 1 phiDT: -277 phi: -283 offset: -225
+iSector: 1 iPhi: -283
+iProcessor: 0 sector: 2 phiDT: 493 phi: 328 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1239 phi: 934 offset: 675
+iProcessor: 0 sector: 3 phiDT: 261 phi: 729 offset: 675
+iProcessor: 0 sector: 2 phiDT: 419 phi: 312 offset: 225
+iProcessor: 0 sector: 3 phiDT: 945 phi: 873 offset: 675
+iProcessor: 0 sector: 1 phiDT: 773 phi: -63 offset: -225
+iSector: 1 iPhi: -63
+iInput: 0 phiRef: -63 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -436 phi: -316 offset: -225
+iSector: 1 iPhi: -316
+iProcessor: 0 sector: 2 phiDT: -473 phi: 126 offset: 225
+iProcessor: 0 sector: 3 phiDT: 520 phi: 784 offset: 675
+iProcessor: 0 sector: 3 phiDT: 150 phi: 706 offset: 675
+iProcessor: 0 sector: 3 phiDT: 896 phi: 863 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1222 phi: 931 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1198 phi: 476 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1111 phi: 908 offset: 675
+iProcessor: 0 sector: 3 phiDT: -286 phi: 615 offset: 675
+iProcessor: 0 sector: 3 phiDT: 180 phi: 712 offset: 675
+iProcessor: 0 sector: 3 phiDT: 322 phi: 742 offset: 675
+iProcessor: 0 sector: 3 phiDT: 166 phi: 709 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1239 phi: 484 offset: 225
+iProcessor: 0 sector: 3 phiDT: 665 phi: 814 offset: 675
+iProcessor: 0 sector: 2 phiDT: -93 phi: 206 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1151 phi: 16 offset: -225
+iSector: 1 iPhi: 16
+iInput: 0 phiRef: 16 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -484 phi: 574 offset: 675
+iProcessor: 0 sector: 3 phiDT: 631 phi: 807 offset: 675
+iProcessor: 0 sector: 3 phiDT: 546 phi: 789 offset: 675
+iProcessor: 0 sector: 2 phiDT: 314 phi: 290 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1071 phi: -1 offset: -225
+iSector: 1 iPhi: -1
+iInput: 0 phiRef: -1 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -550 phi: -340 offset: -225
+iSector: 1 iPhi: -340
+iProcessor: 0 sector: 2 phiDT: 64 phi: 238 offset: 225
+iProcessor: 0 sector: 2 phiDT: 176 phi: 261 offset: 225
+iProcessor: 0 sector: 2 phiDT: 949 phi: 424 offset: 225
+iProcessor: 0 sector: 3 phiDT: 554 phi: 791 offset: 675
+iProcessor: 0 sector: 3 phiDT: 345 phi: 747 offset: 675
+iProcessor: 0 sector: 2 phiDT: 927 phi: 419 offset: 225
+iProcessor: 0 sector: 2 phiDT: 422 phi: 313 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1224 phi: 931 offset: 675
+iProcessor: 0 sector: 1 phiDT: 391 phi: -143 offset: -225
+iSector: 1 iPhi: -143
+iProcessor: 0 sector: 3 phiDT: 1088 phi: 903 offset: 675
+iProcessor: 0 sector: 1 phiDT: -388 phi: -306 offset: -225
+iSector: 1 iPhi: -306
+iProcessor: 0 sector: 1 phiDT: 1173 phi: 21 offset: -225
+iSector: 1 iPhi: 21
+iInput: 0 phiRef: 21 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1008 phi: 436 offset: 225
+iProcessor: 0 sector: 3 phiDT: 539 phi: 788 offset: 675
+iProcessor: 0 sector: 3 phiDT: 154 phi: 707 offset: 675
+iProcessor: 0 sector: 3 phiDT: -113 phi: 652 offset: 675
+iProcessor: 0 sector: 1 phiDT: 471 phi: -127 offset: -225
+iSector: 1 iPhi: -127
+iProcessor: 0 sector: 1 phiDT: 1234 phi: 33 offset: -225
+iSector: 1 iPhi: 33
+iInput: 0 phiRef: 33 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 967 phi: -23 offset: -225
+iSector: 1 iPhi: -23
+iInput: 0 phiRef: -23 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -379 phi: 146 offset: 225
+iProcessor: 0 sector: 1 phiDT: -81 phi: -241 offset: -225
+iSector: 1 iPhi: -241
+iProcessor: 0 sector: 3 phiDT: 8 phi: 676 offset: 675
+iProcessor: 0 sector: 1 phiDT: 330 phi: -156 offset: -225
+iSector: 1 iPhi: -156
+iProcessor: 0 sector: 1 phiDT: 1026 phi: -10 offset: -225
+iSector: 1 iPhi: -10
+iInput: 0 phiRef: -10 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 710 phi: -77 offset: -225
+iSector: 1 iPhi: -77
+iInput: 0 phiRef: -77 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -541 phi: 112 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1069 phi: -1 offset: -225
+iSector: 1 iPhi: -1
+iInput: 0 phiRef: -1 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 817 phi: -54 offset: -225
+iSector: 1 iPhi: -54
+iInput: 0 phiRef: -54 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 601 phi: -99 offset: -225
+iSector: 1 iPhi: -99
+iInput: 0 phiRef: -99 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 278 phi: 733 offset: 675
+iProcessor: 0 sector: 3 phiDT: 853 phi: 853 offset: 675
+iProcessor: 0 sector: 1 phiDT: -234 phi: -274 offset: -225
+iSector: 1 iPhi: -274
+iProcessor: 0 sector: 2 phiDT: 541 phi: 338 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1091 phi: 903 offset: 675
+iProcessor: 0 sector: 1 phiDT: -485 phi: -326 offset: -225
+iSector: 1 iPhi: -326
+iProcessor: 0 sector: 3 phiDT: 587 phi: 798 offset: 675
+iProcessor: 0 sector: 2 phiDT: -295 phi: 164 offset: 225
+iProcessor: 0 sector: 1 phiDT: 716 phi: -75 offset: -225
+iSector: 1 iPhi: -75
+iInput: 0 phiRef: -75 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1156 phi: 17 offset: -225
+iSector: 1 iPhi: 17
+iInput: 0 phiRef: 17 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -303 phi: 612 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1114 phi: 908 offset: 675
+iProcessor: 0 sector: 2 phiDT: -394 phi: 143 offset: 225
+iProcessor: 0 sector: 3 phiDT: 451 phi: 769 offset: 675
+iProcessor: 0 sector: 2 phiDT: 631 phi: 357 offset: 225
+iProcessor: 0 sector: 1 phiDT: 878 phi: -41 offset: -225
+iSector: 1 iPhi: -41
+iInput: 0 phiRef: -41 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 939 phi: -28 offset: -225
+iSector: 1 iPhi: -28
+iInput: 0 phiRef: -28 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -13 phi: -227 offset: -225
+iSector: 1 iPhi: -227
+iProcessor: 0 sector: 3 phiDT: 462 phi: 771 offset: 675
+iProcessor: 0 sector: 1 phiDT: -172 phi: -261 offset: -225
+iSector: 1 iPhi: -261
+iProcessor: 0 sector: 1 phiDT: 185 phi: -187 offset: -225
+iSector: 1 iPhi: -187
+iProcessor: 0 sector: 1 phiDT: 182 phi: -187 offset: -225
+iSector: 1 iPhi: -187
+iProcessor: 0 sector: 3 phiDT: -93 phi: 656 offset: 675
+iProcessor: 0 sector: 2 phiDT: -108 phi: 203 offset: 225
+iProcessor: 0 sector: 1 phiDT: -183 phi: -263 offset: -225
+iSector: 1 iPhi: -263
+iProcessor: 0 sector: 1 phiDT: -485 phi: -326 offset: -225
+iSector: 1 iPhi: -326
+iProcessor: 0 sector: 2 phiDT: -521 phi: 116 offset: 225
+iProcessor: 0 sector: 2 phiDT: -73 phi: 210 offset: 225
+iProcessor: 0 sector: 1 phiDT: -118 phi: -249 offset: -225
+iSector: 1 iPhi: -249
+iProcessor: 0 sector: 2 phiDT: -355 phi: 151 offset: 225
+iProcessor: 0 sector: 2 phiDT: -267 phi: 169 offset: 225
+iProcessor: 0 sector: 2 phiDT: -465 phi: 128 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1015 phi: 887 offset: 675
+iProcessor: 0 sector: 1 phiDT: 923 phi: -32 offset: -225
+iSector: 1 iPhi: -32
+iInput: 0 phiRef: -32 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -250 phi: -277 offset: -225
+iSector: 1 iPhi: -277
+iProcessor: 0 sector: 3 phiDT: -106 phi: 653 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1159 phi: 468 offset: 225
+iProcessor: 0 sector: 3 phiDT: 94 phi: 694 offset: 675
+iProcessor: 0 sector: 3 phiDT: -406 phi: 590 offset: 675
+iProcessor: 0 sector: 3 phiDT: 450 phi: 769 offset: 675
+iProcessor: 0 sector: 2 phiDT: -116 phi: 201 offset: 225
+iProcessor: 0 sector: 3 phiDT: 606 phi: 802 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1022 phi: -11 offset: -225
+iSector: 1 iPhi: -11
+iInput: 0 phiRef: -11 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -544 phi: -339 offset: -225
+iSector: 1 iPhi: -339
+iProcessor: 0 sector: 2 phiDT: 101 phi: 246 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1252 phi: 937 offset: 675
+iProcessor: 0 sector: 2 phiDT: 748 phi: 381 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1054 phi: -4 offset: -225
+iSector: 1 iPhi: -4
+iInput: 0 phiRef: -4 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 823 phi: 397 offset: 225
+iProcessor: 0 sector: 2 phiDT: 273 phi: 282 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1155 phi: 17 offset: -225
+iSector: 1 iPhi: 17
+iInput: 0 phiRef: 17 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 334 phi: 745 offset: 675
+iProcessor: 0 sector: 1 phiDT: 187 phi: -186 offset: -225
+iSector: 1 iPhi: -186
+iProcessor: 0 sector: 1 phiDT: 606 phi: -98 offset: -225
+iSector: 1 iPhi: -98
+iInput: 0 phiRef: -98 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 319 phi: 741 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1175 phi: 21 offset: -225
+iSector: 1 iPhi: 21
+iInput: 0 phiRef: 21 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 579 phi: -104 offset: -225
+iSector: 1 iPhi: -104
+iProcessor: 0 sector: 2 phiDT: -38 phi: 218 offset: 225
+iProcessor: 0 sector: 2 phiDT: 380 phi: 304 offset: 225
+iProcessor: 0 sector: 1 phiDT: 820 phi: -53 offset: -225
+iSector: 1 iPhi: -53
+iInput: 0 phiRef: -53 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1232 phi: 33 offset: -225
+iSector: 1 iPhi: 33
+iInput: 0 phiRef: 33 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -425 phi: -314 offset: -225
+iSector: 1 iPhi: -314
+iProcessor: 0 sector: 1 phiDT: 1104 phi: 6 offset: -225
+iSector: 1 iPhi: 6
+iInput: 0 phiRef: 6 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 287 phi: 735 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1034 phi: -9 offset: -225
+iSector: 1 iPhi: -9
+iInput: 0 phiRef: -9 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 251 phi: -173 offset: -225
+iSector: 1 iPhi: -173
+iProcessor: 0 sector: 2 phiDT: 131 phi: 252 offset: 225
+iProcessor: 0 sector: 1 phiDT: 143 phi: -195 offset: -225
+iSector: 1 iPhi: -195
+iProcessor: 0 sector: 2 phiDT: 23 phi: 229 offset: 225
+iProcessor: 0 sector: 1 phiDT: -372 phi: -303 offset: -225
+iSector: 1 iPhi: -303
+iProcessor: 0 sector: 3 phiDT: -177 phi: 638 offset: 675
+iProcessor: 0 sector: 3 phiDT: -354 phi: 601 offset: 675
+iProcessor: 0 sector: 1 phiDT: -417 phi: -312 offset: -225
+iSector: 1 iPhi: -312
+iProcessor: 0 sector: 2 phiDT: 705 phi: 372 offset: 225
+iProcessor: 0 sector: 3 phiDT: 428 phi: 764 offset: 675
+iProcessor: 0 sector: 2 phiDT: 857 phi: 404 offset: 225
+iProcessor: 0 sector: 1 phiDT: 664 phi: -86 offset: -225
+iSector: 1 iPhi: -86
+iInput: 0 phiRef: -86 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 284 phi: 734 offset: 675
+iProcessor: 0 sector: 3 phiDT: -86 phi: 657 offset: 675
+iProcessor: 0 sector: 1 phiDT: -142 phi: -254 offset: -225
+iSector: 1 iPhi: -254
+iProcessor: 0 sector: 1 phiDT: 1102 phi: 6 offset: -225
+iSector: 1 iPhi: 6
+iInput: 0 phiRef: 6 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 195 phi: 265 offset: 225
+iProcessor: 0 sector: 1 phiDT: 457 phi: -130 offset: -225
+iSector: 1 iPhi: -130
+iProcessor: 0 sector: 1 phiDT: 1083 phi: 2 offset: -225
+iSector: 1 iPhi: 2
+iInput: 0 phiRef: 2 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1054 phi: 896 offset: 675
+iProcessor: 0 sector: 3 phiDT: -457 phi: 580 offset: 675
+iProcessor: 0 sector: 3 phiDT: 441 phi: 767 offset: 675
+iProcessor: 0 sector: 1 phiDT: 759 phi: -66 offset: -225
+iSector: 1 iPhi: -66
+iInput: 0 phiRef: -66 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 625 phi: 356 offset: 225
+iProcessor: 0 sector: 3 phiDT: 508 phi: 781 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1136 phi: 463 offset: 225
+iProcessor: 0 sector: 2 phiDT: -455 phi: 130 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1208 phi: 928 offset: 675
+iProcessor: 0 sector: 3 phiDT: 352 phi: 748 offset: 675
+iProcessor: 0 sector: 3 phiDT: 89 phi: 693 offset: 675
+iProcessor: 0 sector: 2 phiDT: 349 phi: 298 offset: 225
+iProcessor: 0 sector: 1 phiDT: 144 phi: -195 offset: -225
+iSector: 1 iPhi: -195
+iProcessor: 0 sector: 2 phiDT: -391 phi: 143 offset: 225
+iProcessor: 0 sector: 1 phiDT: -124 phi: -251 offset: -225
+iSector: 1 iPhi: -251
+iProcessor: 0 sector: 1 phiDT: 448 phi: -131 offset: -225
+iSector: 1 iPhi: -131
+iProcessor: 0 sector: 1 phiDT: -540 phi: -338 offset: -225
+iSector: 1 iPhi: -338
+iProcessor: 0 sector: 2 phiDT: 59 phi: 237 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1213 phi: 29 offset: -225
+iSector: 1 iPhi: 29
+iInput: 0 phiRef: 29 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1235 phi: 34 offset: -225
+iSector: 1 iPhi: 34
+iInput: 0 phiRef: 34 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 461 phi: 321 offset: 225
+iProcessor: 0 sector: 1 phiDT: 500 phi: -121 offset: -225
+iSector: 1 iPhi: -121
+iProcessor: 0 sector: 3 phiDT: -489 phi: 573 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1143 phi: 914 offset: 675
+iProcessor: 0 sector: 1 phiDT: 255 phi: -172 offset: -225
+iSector: 1 iPhi: -172
+iProcessor: 0 sector: 1 phiDT: 392 phi: -143 offset: -225
+iSector: 1 iPhi: -143
+iProcessor: 0 sector: 1 phiDT: 68 phi: -211 offset: -225
+iSector: 1 iPhi: -211
+iProcessor: 0 sector: 1 phiDT: 1104 phi: 6 offset: -225
+iSector: 1 iPhi: 6
+iInput: 0 phiRef: 6 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -449 phi: -319 offset: -225
+iSector: 1 iPhi: -319
+iProcessor: 0 sector: 2 phiDT: 845 phi: 402 offset: 225
+iProcessor: 0 sector: 3 phiDT: 469 phi: 773 offset: 675
+iProcessor: 0 sector: 3 phiDT: -194 phi: 635 offset: 675
+iProcessor: 0 sector: 1 phiDT: 551 phi: -110 offset: -225
+iSector: 1 iPhi: -110
+iProcessor: 0 sector: 3 phiDT: -328 phi: 607 offset: 675
+iProcessor: 0 sector: 1 phiDT: 720 phi: -74 offset: -225
+iSector: 1 iPhi: -74
+iInput: 0 phiRef: -74 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -213 phi: 631 offset: 675
+iProcessor: 0 sector: 1 phiDT: 427 phi: -136 offset: -225
+iSector: 1 iPhi: -136
+iProcessor: 0 sector: 2 phiDT: 95 phi: 244 offset: 225
+iProcessor: 0 sector: 2 phiDT: -506 phi: 119 offset: 225
+iProcessor: 0 sector: 2 phiDT: 204 phi: 267 offset: 225
+iProcessor: 0 sector: 2 phiDT: -46 phi: 216 offset: 225
+iProcessor: 0 sector: 1 phiDT: -244 phi: -276 offset: -225
+iSector: 1 iPhi: -276
+iProcessor: 0 sector: 1 phiDT: 126 phi: -199 offset: -225
+iSector: 1 iPhi: -199
+iProcessor: 0 sector: 1 phiDT: 257 phi: -172 offset: -225
+iSector: 1 iPhi: -172
+iProcessor: 0 sector: 2 phiDT: 165 phi: 259 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1125 phi: 461 offset: 225
+iProcessor: 0 sector: 3 phiDT: 933 phi: 870 offset: 675
+iProcessor: 0 sector: 3 phiDT: -543 phi: 562 offset: 675
+iProcessor: 0 sector: 2 phiDT: 769 phi: 386 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1215 phi: 929 offset: 675
+iProcessor: 0 sector: 3 phiDT: -399 phi: 592 offset: 675
+iProcessor: 0 sector: 2 phiDT: -209 phi: 182 offset: 225
+iProcessor: 0 sector: 1 phiDT: 508 phi: -119 offset: -225
+iSector: 1 iPhi: -119
+iProcessor: 0 sector: 1 phiDT: 943 phi: -28 offset: -225
+iSector: 1 iPhi: -28
+iInput: 0 phiRef: -28 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 523 phi: 784 offset: 675
+iProcessor: 0 sector: 3 phiDT: 607 phi: 802 offset: 675
+iProcessor: 0 sector: 2 phiDT: -390 phi: 144 offset: 225
+iProcessor: 0 sector: 2 phiDT: 640 phi: 359 offset: 225
+iProcessor: 0 sector: 1 phiDT: -417 phi: -312 offset: -225
+iSector: 1 iPhi: -312
+iProcessor: 0 sector: 3 phiDT: -265 phi: 620 offset: 675
+iProcessor: 0 sector: 1 phiDT: 679 phi: -83 offset: -225
+iSector: 1 iPhi: -83
+iInput: 0 phiRef: -83 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 785 phi: 839 offset: 675
+iProcessor: 0 sector: 3 phiDT: -492 phi: 572 offset: 675
+iProcessor: 0 sector: 2 phiDT: 295 phi: 286 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1189 phi: 24 offset: -225
+iSector: 1 iPhi: 24
+iInput: 0 phiRef: 24 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 562 phi: 342 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1151 phi: 16 offset: -225
+iSector: 1 iPhi: 16
+iInput: 0 phiRef: 16 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -385 phi: -305 offset: -225
+iSector: 1 iPhi: -305
+iProcessor: 0 sector: 1 phiDT: 1119 phi: 9 offset: -225
+iSector: 1 iPhi: 9
+iInput: 0 phiRef: 9 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 104 phi: -204 offset: -225
+iSector: 1 iPhi: -204
+iProcessor: 0 sector: 3 phiDT: 236 phi: 724 offset: 675
+iProcessor: 0 sector: 1 phiDT: -513 phi: -332 offset: -225
+iSector: 1 iPhi: -332
+iProcessor: 0 sector: 3 phiDT: 252 phi: 727 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1089 phi: 453 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1107 phi: 457 offset: 225
+iProcessor: 0 sector: 2 phiDT: 242 phi: 275 offset: 225
+iProcessor: 0 sector: 3 phiDT: -151 phi: 644 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1095 phi: 4 offset: -225
+iSector: 1 iPhi: 4
+iInput: 0 phiRef: 4 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 542 phi: -112 offset: -225
+iSector: 1 iPhi: -112
+iProcessor: 0 sector: 1 phiDT: 757 phi: -67 offset: -225
+iSector: 1 iPhi: -67
+iInput: 0 phiRef: -67 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -103 phi: 654 offset: 675
+iProcessor: 0 sector: 3 phiDT: -83 phi: 658 offset: 675
+iProcessor: 0 sector: 1 phiDT: -421 phi: -313 offset: -225
+iSector: 1 iPhi: -313
+iProcessor: 0 sector: 1 phiDT: 1062 phi: -3 offset: -225
+iSector: 1 iPhi: -3
+iInput: 0 phiRef: -3 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 707 phi: 823 offset: 675
+iProcessor: 0 sector: 2 phiDT: 547 phi: 339 offset: 225
+iProcessor: 0 sector: 2 phiDT: -224 phi: 178 offset: 225
+iProcessor: 0 sector: 2 phiDT: -459 phi: 129 offset: 225
+iProcessor: 0 sector: 3 phiDT: 47 phi: 684 offset: 675
+iProcessor: 0 sector: 1 phiDT: 185 phi: -187 offset: -225
+iSector: 1 iPhi: -187
+iProcessor: 0 sector: 1 phiDT: 258 phi: -171 offset: -225
+iSector: 1 iPhi: -171
+iProcessor: 0 sector: 1 phiDT: 146 phi: -195 offset: -225
+iSector: 1 iPhi: -195
+iProcessor: 0 sector: 2 phiDT: 279 phi: 283 offset: 225
+iProcessor: 0 sector: 1 phiDT: -388 phi: -306 offset: -225
+iSector: 1 iPhi: -306
+iProcessor: 0 sector: 3 phiDT: 374 phi: 753 offset: 675
+iProcessor: 0 sector: 2 phiDT: 154 phi: 257 offset: 225
+iProcessor: 0 sector: 3 phiDT: 163 phi: 709 offset: 675
+iProcessor: 0 sector: 1 phiDT: 842 phi: -49 offset: -225
+iSector: 1 iPhi: -49
+iInput: 0 phiRef: -49 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 106 phi: -203 offset: -225
+iSector: 1 iPhi: -203
+iProcessor: 0 sector: 1 phiDT: 1205 phi: 27 offset: -225
+iSector: 1 iPhi: 27
+iInput: 0 phiRef: 27 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1145 phi: 15 offset: -225
+iSector: 1 iPhi: 15
+iInput: 0 phiRef: 15 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 288 phi: 285 offset: 225
+iProcessor: 0 sector: 1 phiDT: 12 phi: -223 offset: -225
+iSector: 1 iPhi: -223
+iProcessor: 0 sector: 3 phiDT: 134 phi: 703 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1078 phi: 901 offset: 675
+iProcessor: 0 sector: 2 phiDT: 247 phi: 276 offset: 225
+iProcessor: 0 sector: 3 phiDT: 320 phi: 742 offset: 675
+iProcessor: 0 sector: 1 phiDT: 539 phi: -112 offset: -225
+iSector: 1 iPhi: -112
+iProcessor: 0 sector: 3 phiDT: -173 phi: 639 offset: 675
+iProcessor: 0 sector: 2 phiDT: -550 phi: 110 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1239 phi: 34 offset: -225
+iSector: 1 iPhi: 34
+iInput: 0 phiRef: 34 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 525 phi: 335 offset: 225
+iProcessor: 0 sector: 3 phiDT: 698 phi: 821 offset: 675
+iProcessor: 0 sector: 3 phiDT: 698 phi: 821 offset: 675
+iProcessor: 0 sector: 2 phiDT: 828 phi: 398 offset: 225
+iProcessor: 0 sector: 1 phiDT: 623 phi: -95 offset: -225
+iSector: 1 iPhi: -95
+iInput: 0 phiRef: -95 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 827 phi: 398 offset: 225
+iProcessor: 0 sector: 2 phiDT: -396 phi: 142 offset: 225
+iProcessor: 0 sector: 2 phiDT: -350 phi: 152 offset: 225
+iProcessor: 0 sector: 3 phiDT: 350 phi: 748 offset: 675
+iProcessor: 0 sector: 3 phiDT: 697 phi: 821 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1240 phi: 485 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1220 phi: 930 offset: 675
+iProcessor: 0 sector: 1 phiDT: -507 phi: -331 offset: -225
+iSector: 1 iPhi: -331
+iProcessor: 0 sector: 2 phiDT: -284 phi: 166 offset: 225
+iProcessor: 0 sector: 3 phiDT: 805 phi: 843 offset: 675
+iProcessor: 0 sector: 2 phiDT: -18 phi: 222 offset: 225
+iProcessor: 0 sector: 2 phiDT: 797 phi: 392 offset: 225
+iProcessor: 0 sector: 1 phiDT: 731 phi: -72 offset: -225
+iSector: 1 iPhi: -72
+iInput: 0 phiRef: -72 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1132 phi: 462 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1243 phi: 485 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1262 phi: 489 offset: 225
+iProcessor: 0 sector: 2 phiDT: -289 phi: 165 offset: 225
+iProcessor: 0 sector: 3 phiDT: -449 phi: 581 offset: 675
+iProcessor: 0 sector: 3 phiDT: -441 phi: 583 offset: 675
+iProcessor: 0 sector: 2 phiDT: -332 phi: 156 offset: 225
+iProcessor: 0 sector: 2 phiDT: 460 phi: 321 offset: 225
+iProcessor: 0 sector: 2 phiDT: -266 phi: 170 offset: 225
+iProcessor: 0 sector: 2 phiDT: 374 phi: 303 offset: 225
+iProcessor: 0 sector: 2 phiDT: -417 phi: 138 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1062 phi: 897 offset: 675
+iProcessor: 0 sector: 2 phiDT: 343 phi: 296 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1254 phi: 938 offset: 675
+iProcessor: 0 sector: 1 phiDT: 261 phi: -171 offset: -225
+iSector: 1 iPhi: -171
+iProcessor: 0 sector: 1 phiDT: 637 phi: -92 offset: -225
+iSector: 1 iPhi: -92
+iInput: 0 phiRef: -92 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 787 phi: 390 offset: 225
+iProcessor: 0 sector: 1 phiDT: 146 phi: -195 offset: -225
+iSector: 1 iPhi: -195
+iProcessor: 0 sector: 2 phiDT: 834 phi: 399 offset: 225
+iProcessor: 0 sector: 2 phiDT: -543 phi: 112 offset: 225
+iProcessor: 0 sector: 2 phiDT: -225 phi: 178 offset: 225
+iProcessor: 0 sector: 3 phiDT: 797 phi: 842 offset: 675
+iProcessor: 0 sector: 3 phiDT: 115 phi: 699 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1142 phi: 464 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1030 phi: -9 offset: -225
+iSector: 1 iPhi: -9
+iInput: 0 phiRef: -9 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 798 phi: 392 offset: 225
+iProcessor: 0 sector: 1 phiDT: 170 phi: -190 offset: -225
+iSector: 1 iPhi: -190
+iProcessor: 0 sector: 3 phiDT: 691 phi: 819 offset: 675
+iProcessor: 0 sector: 3 phiDT: 865 phi: 856 offset: 675
+iProcessor: 0 sector: 3 phiDT: 913 phi: 866 offset: 675
+iProcessor: 0 sector: 1 phiDT: 854 phi: -46 offset: -225
+iSector: 1 iPhi: -46
+iInput: 0 phiRef: -46 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -483 phi: 574 offset: 675
+iProcessor: 0 sector: 3 phiDT: 93 phi: 694 offset: 675
+iProcessor: 0 sector: 2 phiDT: 325 phi: 293 offset: 225
+iProcessor: 0 sector: 2 phiDT: 289 phi: 285 offset: 225
+iProcessor: 0 sector: 3 phiDT: -476 phi: 576 offset: 675
+iProcessor: 0 sector: 1 phiDT: -343 phi: -296 offset: -225
+iSector: 1 iPhi: -296
+iProcessor: 0 sector: 2 phiDT: 780 phi: 388 offset: 225
+iProcessor: 0 sector: 1 phiDT: -455 phi: -320 offset: -225
+iSector: 1 iPhi: -320
+iProcessor: 0 sector: 1 phiDT: 1117 phi: 9 offset: -225
+iSector: 1 iPhi: 9
+iInput: 0 phiRef: 9 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 281 phi: 733 offset: 675
+iProcessor: 0 sector: 2 phiDT: 30 phi: 231 offset: 225
+iProcessor: 0 sector: 3 phiDT: -552 phi: 560 offset: 675
+iProcessor: 0 sector: 3 phiDT: 825 phi: 848 offset: 675
+iProcessor: 0 sector: 3 phiDT: 541 phi: 788 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1215 phi: 29 offset: -225
+iSector: 1 iPhi: 29
+iInput: 0 phiRef: 29 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 261 phi: 279 offset: 225
+iProcessor: 0 sector: 3 phiDT: 189 phi: 714 offset: 675
+iProcessor: 0 sector: 2 phiDT: 182 phi: 263 offset: 225
+iProcessor: 0 sector: 1 phiDT: 730 phi: -72 offset: -225
+iSector: 1 iPhi: -72
+iInput: 0 phiRef: -72 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -187 phi: -264 offset: -225
+iSector: 1 iPhi: -264
+iProcessor: 0 sector: 1 phiDT: 1049 phi: -5 offset: -225
+iSector: 1 iPhi: -5
+iInput: 0 phiRef: -5 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 303 phi: -162 offset: -225
+iSector: 1 iPhi: -162
+iProcessor: 0 sector: 2 phiDT: 1086 phi: 452 offset: 225
+iProcessor: 0 sector: 3 phiDT: -21 phi: 671 offset: 675
+iProcessor: 0 sector: 3 phiDT: -35 phi: 668 offset: 675
+iProcessor: 0 sector: 3 phiDT: -321 phi: 608 offset: 675
+iProcessor: 0 sector: 3 phiDT: 59 phi: 687 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1234 phi: 933 offset: 675
+iProcessor: 0 sector: 1 phiDT: -556 phi: -341 offset: -225
+iSector: 1 iPhi: -341
+iProcessor: 0 sector: 1 phiDT: -487 phi: -327 offset: -225
+iSector: 1 iPhi: -327
+iProcessor: 0 sector: 1 phiDT: 1111 phi: 8 offset: -225
+iSector: 1 iPhi: 8
+iInput: 0 phiRef: 8 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 597 phi: 350 offset: 225
+iProcessor: 0 sector: 3 phiDT: 320 phi: 742 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1032 phi: 441 offset: 225
+iProcessor: 0 sector: 1 phiDT: 757 phi: -67 offset: -225
+iSector: 1 iPhi: -67
+iInput: 0 phiRef: -67 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 952 phi: -26 offset: -225
+iSector: 1 iPhi: -26
+iInput: 0 phiRef: -26 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -372 phi: -303 offset: -225
+iSector: 1 iPhi: -303
+iProcessor: 0 sector: 2 phiDT: -255 phi: 172 offset: 225
+iProcessor: 0 sector: 3 phiDT: 766 phi: 835 offset: 675
+iProcessor: 0 sector: 2 phiDT: 954 phi: 425 offset: 225
+iProcessor: 0 sector: 1 phiDT: 639 phi: -91 offset: -225
+iSector: 1 iPhi: -91
+iInput: 0 phiRef: -91 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 297 phi: 737 offset: 675
+iProcessor: 0 sector: 2 phiDT: 550 phi: 340 offset: 225
+iProcessor: 0 sector: 3 phiDT: 783 phi: 839 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1244 phi: 936 offset: 675
+iProcessor: 0 sector: 1 phiDT: 435 phi: -134 offset: -225
+iSector: 1 iPhi: -134
+iProcessor: 0 sector: 3 phiDT: -98 phi: 655 offset: 675
+iProcessor: 0 sector: 2 phiDT: -224 phi: 178 offset: 225
+iProcessor: 0 sector: 2 phiDT: -355 phi: 151 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1118 phi: 909 offset: 675
+iProcessor: 0 sector: 3 phiDT: -17 phi: 672 offset: 675
+iProcessor: 0 sector: 3 phiDT: 708 phi: 823 offset: 675
+iProcessor: 0 sector: 1 phiDT: 592 phi: -101 offset: -225
+iSector: 1 iPhi: -101
+iProcessor: 0 sector: 1 phiDT: 396 phi: -142 offset: -225
+iSector: 1 iPhi: -142
+iProcessor: 0 sector: 3 phiDT: 790 phi: 840 offset: 675
+iProcessor: 0 sector: 2 phiDT: -221 phi: 179 offset: 225
+iProcessor: 0 sector: 1 phiDT: -481 phi: -325 offset: -225
+iSector: 1 iPhi: -325
+iProcessor: 0 sector: 1 phiDT: -21 phi: -229 offset: -225
+iSector: 1 iPhi: -229
+iProcessor: 0 sector: 3 phiDT: -55 phi: 664 offset: 675
+iProcessor: 0 sector: 1 phiDT: 92 phi: -206 offset: -225
+iSector: 1 iPhi: -206
+iProcessor: 0 sector: 3 phiDT: -28 phi: 670 offset: 675
+iProcessor: 0 sector: 2 phiDT: 367 phi: 302 offset: 225
+iProcessor: 0 sector: 1 phiDT: 470 phi: -127 offset: -225
+iSector: 1 iPhi: -127
+iProcessor: 0 sector: 1 phiDT: 483 phi: -124 offset: -225
+iSector: 1 iPhi: -124
+iProcessor: 0 sector: 3 phiDT: 199 phi: 716 offset: 675
+iProcessor: 0 sector: 3 phiDT: -485 phi: 574 offset: 675
+iProcessor: 0 sector: 1 phiDT: -428 phi: -314 offset: -225
+iSector: 1 iPhi: -314
+iProcessor: 0 sector: 2 phiDT: 772 phi: 386 offset: 225
+iProcessor: 0 sector: 1 phiDT: 573 phi: -105 offset: -225
+iSector: 1 iPhi: -105
+iProcessor: 0 sector: 1 phiDT: 552 phi: -110 offset: -225
+iSector: 1 iPhi: -110
+iProcessor: 0 sector: 3 phiDT: 1084 phi: 902 offset: 675
+iProcessor: 0 sector: 3 phiDT: 977 phi: 879 offset: 675
+iProcessor: 0 sector: 2 phiDT: 227 phi: 272 offset: 225
+iProcessor: 0 sector: 2 phiDT: -127 phi: 199 offset: 225
+iProcessor: 0 sector: 3 phiDT: 412 phi: 761 offset: 675
+iProcessor: 0 sector: 1 phiDT: 500 phi: -121 offset: -225
+iSector: 1 iPhi: -121
+iProcessor: 0 sector: 1 phiDT: -98 phi: -245 offset: -225
+iSector: 1 iPhi: -245
+iProcessor: 0 sector: 3 phiDT: 109 phi: 697 offset: 675
+iProcessor: 0 sector: 2 phiDT: 153 phi: 257 offset: 225
+iProcessor: 0 sector: 2 phiDT: -358 phi: 150 offset: 225
+iProcessor: 0 sector: 1 phiDT: -448 phi: -319 offset: -225
+iSector: 1 iPhi: -319
+iProcessor: 0 sector: 3 phiDT: -511 phi: 568 offset: 675
+iProcessor: 0 sector: 3 phiDT: 367 phi: 752 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1152 phi: 16 offset: -225
+iSector: 1 iPhi: 16
+iInput: 0 phiRef: 16 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 687 phi: 819 offset: 675
+iProcessor: 0 sector: 2 phiDT: 119 phi: 249 offset: 225
+iProcessor: 0 sector: 2 phiDT: 167 phi: 260 offset: 225
+iProcessor: 0 sector: 2 phiDT: 92 phi: 244 offset: 225
+iProcessor: 0 sector: 3 phiDT: 607 phi: 802 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1118 phi: 9 offset: -225
+iSector: 1 iPhi: 9
+iInput: 0 phiRef: 9 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 272 phi: 282 offset: 225
+iProcessor: 0 sector: 3 phiDT: 29 phi: 681 offset: 675
+iProcessor: 0 sector: 1 phiDT: -163 phi: -259 offset: -225
+iSector: 1 iPhi: -259
+iProcessor: 0 sector: 2 phiDT: 756 phi: 383 offset: 225
+iProcessor: 0 sector: 1 phiDT: 236 phi: -176 offset: -225
+iSector: 1 iPhi: -176
+iProcessor: 0 sector: 1 phiDT: 787 phi: -60 offset: -225
+iSector: 1 iPhi: -60
+iInput: 0 phiRef: -60 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 743 phi: 830 offset: 675
+iProcessor: 0 sector: 3 phiDT: 196 phi: 716 offset: 675
+iProcessor: 0 sector: 1 phiDT: 661 phi: -87 offset: -225
+iSector: 1 iPhi: -87
+iInput: 0 phiRef: -87 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -414 phi: -311 offset: -225
+iSector: 1 iPhi: -311
+iProcessor: 0 sector: 2 phiDT: 1004 phi: 435 offset: 225
+iProcessor: 0 sector: 1 phiDT: -444 phi: -318 offset: -225
+iSector: 1 iPhi: -318
+iProcessor: 0 sector: 2 phiDT: 352 phi: 298 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1148 phi: 15 offset: -225
+iSector: 1 iPhi: 15
+iInput: 0 phiRef: 15 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 263 phi: 730 offset: 675
+iProcessor: 0 sector: 1 phiDT: -503 phi: -330 offset: -225
+iSector: 1 iPhi: -330
+iProcessor: 0 sector: 3 phiDT: 1144 phi: 915 offset: 675
+iProcessor: 0 sector: 2 phiDT: -454 phi: 130 offset: 225
+iProcessor: 0 sector: 3 phiDT: -386 phi: 595 offset: 675
+iProcessor: 0 sector: 3 phiDT: -532 phi: 564 offset: 675
+iProcessor: 0 sector: 3 phiDT: 445 phi: 768 offset: 675
+iProcessor: 0 sector: 3 phiDT: 717 phi: 825 offset: 675
+iProcessor: 0 sector: 2 phiDT: -141 phi: 196 offset: 225
+iProcessor: 0 sector: 2 phiDT: 413 phi: 311 offset: 225
+iProcessor: 0 sector: 3 phiDT: 376 phi: 753 offset: 675
+iProcessor: 0 sector: 3 phiDT: 464 phi: 772 offset: 675
+iProcessor: 0 sector: 1 phiDT: 817 phi: -54 offset: -225
+iSector: 1 iPhi: -54
+iInput: 0 phiRef: -54 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -180 phi: -262 offset: -225
+iSector: 1 iPhi: -262
+iProcessor: 0 sector: 3 phiDT: 484 phi: 776 offset: 675
+iProcessor: 0 sector: 3 phiDT: -267 phi: 619 offset: 675
+iProcessor: 0 sector: 2 phiDT: 971 phi: 428 offset: 225
+iProcessor: 0 sector: 2 phiDT: 697 phi: 371 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1140 phi: 14 offset: -225
+iSector: 1 iPhi: 14
+iInput: 0 phiRef: 14 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 744 phi: -69 offset: -225
+iSector: 1 iPhi: -69
+iInput: 0 phiRef: -69 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1211 phi: 929 offset: 675
+iProcessor: 0 sector: 2 phiDT: -464 phi: 128 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1153 phi: 916 offset: 675
+iProcessor: 0 sector: 3 phiDT: -78 phi: 659 offset: 675
+iProcessor: 0 sector: 3 phiDT: -180 phi: 638 offset: 675
+iProcessor: 0 sector: 2 phiDT: 964 phi: 427 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1020 phi: 439 offset: 225
+iProcessor: 0 sector: 1 phiDT: 155 phi: -193 offset: -225
+iSector: 1 iPhi: -193
+iProcessor: 0 sector: 2 phiDT: -428 phi: 136 offset: 225
+iProcessor: 0 sector: 1 phiDT: 39 phi: -217 offset: -225
+iSector: 1 iPhi: -217
+iProcessor: 0 sector: 2 phiDT: -333 phi: 156 offset: 225
+iProcessor: 0 sector: 2 phiDT: 124 phi: 251 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1006 phi: 886 offset: 675
+iProcessor: 0 sector: 1 phiDT: 792 phi: -59 offset: -225
+iSector: 1 iPhi: -59
+iInput: 0 phiRef: -59 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 348 phi: 298 offset: 225
+iProcessor: 0 sector: 2 phiDT: 277 phi: 283 offset: 225
+iProcessor: 0 sector: 2 phiDT: 331 phi: 294 offset: 225
+iProcessor: 0 sector: 1 phiDT: 872 phi: -43 offset: -225
+iSector: 1 iPhi: -43
+iInput: 0 phiRef: -43 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 625 phi: 806 offset: 675
+iProcessor: 0 sector: 3 phiDT: -98 phi: 655 offset: 675
+iProcessor: 0 sector: 1 phiDT: 496 phi: -121 offset: -225
+iSector: 1 iPhi: -121
+iProcessor: 0 sector: 1 phiDT: 1039 phi: -7 offset: -225
+iSector: 1 iPhi: -7
+iInput: 0 phiRef: -7 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -448 phi: 131 offset: 225
+iProcessor: 0 sector: 1 phiDT: 786 phi: -61 offset: -225
+iSector: 1 iPhi: -61
+iInput: 0 phiRef: -61 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -374 phi: -303 offset: -225
+iSector: 1 iPhi: -303
+iProcessor: 0 sector: 2 phiDT: 598 phi: 350 offset: 225
+iProcessor: 0 sector: 2 phiDT: 901 phi: 414 offset: 225
+iProcessor: 0 sector: 1 phiDT: -249 phi: -277 offset: -225
+iSector: 1 iPhi: -277
+iProcessor: 0 sector: 1 phiDT: 277 phi: -167 offset: -225
+iSector: 1 iPhi: -167
+iProcessor: 0 sector: 1 phiDT: 795 phi: -59 offset: -225
+iSector: 1 iPhi: -59
+iInput: 0 phiRef: -59 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1236 phi: 934 offset: 675
+iProcessor: 0 sector: 2 phiDT: -389 phi: 144 offset: 225
+iProcessor: 0 sector: 1 phiDT: -3 phi: -225 offset: -225
+iSector: 1 iPhi: -225
+iProcessor: 0 sector: 2 phiDT: 746 phi: 381 offset: 225
+iProcessor: 0 sector: 3 phiDT: 667 phi: 814 offset: 675
+iProcessor: 0 sector: 1 phiDT: -347 phi: -297 offset: -225
+iSector: 1 iPhi: -297
+iProcessor: 0 sector: 2 phiDT: 489 phi: 327 offset: 225
+iProcessor: 0 sector: 3 phiDT: -182 phi: 637 offset: 675
+iProcessor: 0 sector: 2 phiDT: -15 phi: 222 offset: 225
+iProcessor: 0 sector: 2 phiDT: -187 phi: 186 offset: 225
+iProcessor: 0 sector: 3 phiDT: 281 phi: 733 offset: 675
+iProcessor: 0 sector: 1 phiDT: 189 phi: -186 offset: -225
+iSector: 1 iPhi: -186
+iProcessor: 0 sector: 3 phiDT: -18 phi: 672 offset: 675
+iProcessor: 0 sector: 1 phiDT: 206 phi: -182 offset: -225
+iSector: 1 iPhi: -182
+iProcessor: 0 sector: 2 phiDT: -32 phi: 219 offset: 225
+iProcessor: 0 sector: 1 phiDT: 736 phi: -71 offset: -225
+iSector: 1 iPhi: -71
+iInput: 0 phiRef: -71 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 969 phi: -22 offset: -225
+iSector: 1 iPhi: -22
+iInput: 0 phiRef: -22 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 330 phi: 744 offset: 675
+iProcessor: 0 sector: 3 phiDT: -369 phi: 598 offset: 675
+iProcessor: 0 sector: 2 phiDT: -6 phi: 224 offset: 225
+iProcessor: 0 sector: 1 phiDT: -184 phi: -263 offset: -225
+iSector: 1 iPhi: -263
+iProcessor: 0 sector: 3 phiDT: -267 phi: 619 offset: 675
+iProcessor: 0 sector: 3 phiDT: -556 phi: 559 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1228 phi: 32 offset: -225
+iSector: 1 iPhi: 32
+iInput: 0 phiRef: 32 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 326 phi: 293 offset: 225
+iProcessor: 0 sector: 3 phiDT: -437 phi: 584 offset: 675
+iProcessor: 0 sector: 1 phiDT: 135 phi: -197 offset: -225
+iSector: 1 iPhi: -197
+iProcessor: 0 sector: 3 phiDT: 341 phi: 746 offset: 675
+iProcessor: 0 sector: 3 phiDT: 261 phi: 729 offset: 675
+iProcessor: 0 sector: 2 phiDT: 743 phi: 380 offset: 225
+iProcessor: 0 sector: 1 phiDT: -83 phi: -242 offset: -225
+iSector: 1 iPhi: -242
+iProcessor: 0 sector: 2 phiDT: -113 phi: 202 offset: 225
+iProcessor: 0 sector: 2 phiDT: 114 phi: 248 offset: 225
+iProcessor: 0 sector: 3 phiDT: 310 phi: 740 offset: 675
+iProcessor: 0 sector: 2 phiDT: -154 phi: 193 offset: 225
+iProcessor: 0 sector: 1 phiDT: 87 phi: -207 offset: -225
+iSector: 1 iPhi: -207
+iProcessor: 0 sector: 1 phiDT: 730 phi: -72 offset: -225
+iSector: 1 iPhi: -72
+iInput: 0 phiRef: -72 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -262 phi: 171 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1190 phi: 474 offset: 225
+iProcessor: 0 sector: 2 phiDT: 922 phi: 418 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1134 phi: 912 offset: 675
+iProcessor: 0 sector: 2 phiDT: -463 phi: 128 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1069 phi: 899 offset: 675
+iProcessor: 0 sector: 2 phiDT: 382 phi: 305 offset: 225
+iProcessor: 0 sector: 1 phiDT: 583 phi: -103 offset: -225
+iSector: 1 iPhi: -103
+iProcessor: 0 sector: 1 phiDT: -324 phi: -292 offset: -225
+iSector: 1 iPhi: -292
+iProcessor: 0 sector: 3 phiDT: 233 phi: 723 offset: 675
+iProcessor: 0 sector: 2 phiDT: -447 phi: 132 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1128 phi: 11 offset: -225
+iSector: 1 iPhi: 11
+iInput: 0 phiRef: 11 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 324 phi: -158 offset: -225
+iSector: 1 iPhi: -158
+iProcessor: 0 sector: 3 phiDT: -265 phi: 620 offset: 675
+iProcessor: 0 sector: 1 phiDT: 871 phi: -43 offset: -225
+iSector: 1 iPhi: -43
+iInput: 0 phiRef: -43 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 896 phi: 863 offset: 675
+iProcessor: 0 sector: 3 phiDT: 696 phi: 821 offset: 675
+iProcessor: 0 sector: 2 phiDT: -216 phi: 180 offset: 225
+iProcessor: 0 sector: 3 phiDT: 580 phi: 796 offset: 675
+iProcessor: 0 sector: 1 phiDT: 197 phi: -184 offset: -225
+iSector: 1 iPhi: -184
+iProcessor: 0 sector: 2 phiDT: 171 phi: 260 offset: 225
+iProcessor: 0 sector: 3 phiDT: 150 phi: 706 offset: 675
+iProcessor: 0 sector: 3 phiDT: 628 phi: 806 offset: 675
+iProcessor: 0 sector: 1 phiDT: 489 phi: -123 offset: -225
+iSector: 1 iPhi: -123
+iProcessor: 0 sector: 3 phiDT: 1028 phi: 890 offset: 675
+iProcessor: 0 sector: 3 phiDT: 346 phi: 747 offset: 675
+iProcessor: 0 sector: 3 phiDT: -77 phi: 659 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1174 phi: 471 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1251 phi: 37 offset: -225
+iSector: 1 iPhi: 37
+iInput: 0 phiRef: 37 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1127 phi: 911 offset: 675
+iProcessor: 0 sector: 2 phiDT: 488 phi: 327 offset: 225
+iProcessor: 0 sector: 2 phiDT: -293 phi: 164 offset: 225
+iProcessor: 0 sector: 3 phiDT: -180 phi: 638 offset: 675
+iProcessor: 0 sector: 2 phiDT: 591 phi: 349 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1026 phi: 440 offset: 225
+iProcessor: 0 sector: 3 phiDT: -337 phi: 605 offset: 675
+iProcessor: 0 sector: 1 phiDT: 791 phi: -60 offset: -225
+iSector: 1 iPhi: -60
+iInput: 0 phiRef: -60 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 308 phi: 289 offset: 225
+iProcessor: 0 sector: 3 phiDT: -220 phi: 629 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1046 phi: 444 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1039 phi: 893 offset: 675
+iProcessor: 0 sector: 1 phiDT: -113 phi: -248 offset: -225
+iSector: 1 iPhi: -248
+iProcessor: 0 sector: 3 phiDT: 404 phi: 759 offset: 675
+iProcessor: 0 sector: 1 phiDT: -352 phi: -298 offset: -225
+iSector: 1 iPhi: -298
+iProcessor: 0 sector: 2 phiDT: 1224 phi: 481 offset: 225
+iProcessor: 0 sector: 2 phiDT: -230 phi: 177 offset: 225
+iProcessor: 0 sector: 3 phiDT: 844 phi: 852 offset: 675
+iProcessor: 0 sector: 3 phiDT: 404 phi: 759 offset: 675
+iProcessor: 0 sector: 3 phiDT: 248 phi: 727 offset: 675
+iProcessor: 0 sector: 3 phiDT: 524 phi: 784 offset: 675
+iProcessor: 0 sector: 3 phiDT: 699 phi: 821 offset: 675
+iProcessor: 0 sector: 3 phiDT: 89 phi: 693 offset: 675
+iProcessor: 0 sector: 2 phiDT: 642 phi: 359 offset: 225
+iProcessor: 0 sector: 2 phiDT: -494 phi: 122 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1040 phi: 893 offset: 675
+iProcessor: 0 sector: 1 phiDT: 467 phi: -128 offset: -225
+iSector: 1 iPhi: -128
+iProcessor: 0 sector: 3 phiDT: 1126 phi: 911 offset: 675
+iProcessor: 0 sector: 2 phiDT: 863 phi: 406 offset: 225
+iProcessor: 0 sector: 3 phiDT: -352 phi: 602 offset: 675
+iProcessor: 0 sector: 2 phiDT: 150 phi: 256 offset: 225
+iProcessor: 0 sector: 1 phiDT: -192 phi: -265 offset: -225
+iSector: 1 iPhi: -265
+iProcessor: 0 sector: 1 phiDT: -27 phi: -230 offset: -225
+iSector: 1 iPhi: -230
+iProcessor: 0 sector: 3 phiDT: 498 phi: 779 offset: 675
+iProcessor: 0 sector: 1 phiDT: 140 phi: -196 offset: -225
+iSector: 1 iPhi: -196
+iProcessor: 0 sector: 3 phiDT: 702 phi: 822 offset: 675
+iProcessor: 0 sector: 2 phiDT: -66 phi: 212 offset: 225
+iProcessor: 0 sector: 3 phiDT: -282 phi: 616 offset: 675
+iProcessor: 0 sector: 1 phiDT: 802 phi: -57 offset: -225
+iSector: 1 iPhi: -57
+iInput: 0 phiRef: -57 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 852 phi: 853 offset: 675
+iProcessor: 0 sector: 3 phiDT: -76 phi: 660 offset: 675
+iProcessor: 0 sector: 3 phiDT: -513 phi: 568 offset: 675
+iProcessor: 0 sector: 3 phiDT: -321 phi: 608 offset: 675
+iProcessor: 0 sector: 2 phiDT: -381 phi: 146 offset: 225
+iProcessor: 0 sector: 2 phiDT: 955 phi: 425 offset: 225
+iProcessor: 0 sector: 2 phiDT: -460 phi: 129 offset: 225
+iProcessor: 0 sector: 2 phiDT: -339 phi: 154 offset: 225
+iProcessor: 0 sector: 2 phiDT: 323 phi: 292 offset: 225
+iProcessor: 0 sector: 3 phiDT: -374 phi: 597 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1119 phi: 459 offset: 225
+iProcessor: 0 sector: 2 phiDT: 757 phi: 383 offset: 225
+iProcessor: 0 sector: 2 phiDT: 952 phi: 424 offset: 225
+iProcessor: 0 sector: 3 phiDT: 33 phi: 681 offset: 675
+iProcessor: 0 sector: 3 phiDT: 527 phi: 785 offset: 675
+iProcessor: 0 sector: 2 phiDT: 276 phi: 282 offset: 225
+iProcessor: 0 sector: 3 phiDT: 699 phi: 821 offset: 675
+iProcessor: 0 sector: 2 phiDT: 251 phi: 277 offset: 225
+iProcessor: 0 sector: 2 phiDT: 269 phi: 281 offset: 225
+iProcessor: 0 sector: 2 phiDT: 119 phi: 249 offset: 225
+iProcessor: 0 sector: 1 phiDT: -246 phi: -276 offset: -225
+iSector: 1 iPhi: -276
+iProcessor: 0 sector: 3 phiDT: 881 phi: 859 offset: 675
+iProcessor: 0 sector: 3 phiDT: 969 phi: 878 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1119 phi: 909 offset: 675
+iProcessor: 0 sector: 1 phiDT: 938 phi: -29 offset: -225
+iSector: 1 iPhi: -29
+iInput: 0 phiRef: -29 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 661 phi: 363 offset: 225
+iProcessor: 0 sector: 3 phiDT: 951 phi: 874 offset: 675
+iProcessor: 0 sector: 1 phiDT: 885 phi: -40 offset: -225
+iSector: 1 iPhi: -40
+iInput: 0 phiRef: -40 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1032 phi: 441 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1016 phi: 888 offset: 675
+iProcessor: 0 sector: 3 phiDT: 697 phi: 821 offset: 675
+iProcessor: 0 sector: 3 phiDT: 374 phi: 753 offset: 675
+iProcessor: 0 sector: 1 phiDT: 8 phi: -224 offset: -225
+iSector: 1 iPhi: -224
+iProcessor: 0 sector: 1 phiDT: 1166 phi: 19 offset: -225
+iSector: 1 iPhi: 19
+iInput: 0 phiRef: 19 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 639 phi: -91 offset: -225
+iSector: 1 iPhi: -91
+iInput: 0 phiRef: -91 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -261 phi: -279 offset: -225
+iSector: 1 iPhi: -279
+iProcessor: 0 sector: 2 phiDT: -46 phi: 216 offset: 225
+iProcessor: 0 sector: 3 phiDT: 814 phi: 845 offset: 675
+iProcessor: 0 sector: 3 phiDT: 815 phi: 846 offset: 675
+iProcessor: 0 sector: 1 phiDT: -174 phi: -261 offset: -225
+iSector: 1 iPhi: -261
+iProcessor: 0 sector: 1 phiDT: 915 phi: -34 offset: -225
+iSector: 1 iPhi: -34
+iInput: 0 phiRef: -34 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 751 phi: 382 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1202 phi: 927 offset: 675
+iProcessor: 0 sector: 2 phiDT: 247 phi: 276 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1195 phi: 925 offset: 675
+iProcessor: 0 sector: 3 phiDT: 441 phi: 767 offset: 675
+iProcessor: 0 sector: 3 phiDT: 882 phi: 860 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1212 phi: 929 offset: 675
+iProcessor: 0 sector: 3 phiDT: 9 phi: 676 offset: 675
+iProcessor: 0 sector: 1 phiDT: 209 phi: -182 offset: -225
+iSector: 1 iPhi: -182
+iProcessor: 0 sector: 1 phiDT: 922 phi: -32 offset: -225
+iSector: 1 iPhi: -32
+iInput: 0 phiRef: -32 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -234 phi: -274 offset: -225
+iSector: 1 iPhi: -274
+iProcessor: 0 sector: 2 phiDT: 261 phi: 279 offset: 225
+iProcessor: 0 sector: 1 phiDT: 113 phi: -202 offset: -225
+iSector: 1 iPhi: -202
+iProcessor: 0 sector: 3 phiDT: 148 phi: 706 offset: 675
+iProcessor: 0 sector: 2 phiDT: 489 phi: 327 offset: 225
+iProcessor: 0 sector: 1 phiDT: 238 phi: -176 offset: -225
+iSector: 1 iPhi: -176
+iProcessor: 0 sector: 3 phiDT: -537 phi: 563 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1240 phi: 935 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1085 phi: 2 offset: -225
+iSector: 1 iPhi: 2
+iInput: 0 phiRef: 2 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 541 phi: -112 offset: -225
+iSector: 1 iPhi: -112
+iProcessor: 0 sector: 1 phiDT: 919 phi: -33 offset: -225
+iSector: 1 iPhi: -33
+iInput: 0 phiRef: -33 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 844 phi: 852 offset: 675
+iProcessor: 0 sector: 2 phiDT: -346 phi: 153 offset: 225
+iProcessor: 0 sector: 3 phiDT: -540 phi: 562 offset: 675
+iProcessor: 0 sector: 1 phiDT: -266 phi: -280 offset: -225
+iSector: 1 iPhi: -280
+iProcessor: 0 sector: 3 phiDT: 987 phi: 882 offset: 675
+iProcessor: 0 sector: 1 phiDT: -376 phi: -303 offset: -225
+iSector: 1 iPhi: -303
+iProcessor: 0 sector: 1 phiDT: -86 phi: -243 offset: -225
+iSector: 1 iPhi: -243
+iProcessor: 0 sector: 1 phiDT: 252 phi: -173 offset: -225
+iSector: 1 iPhi: -173
+iProcessor: 0 sector: 3 phiDT: -302 phi: 612 offset: 675
+iProcessor: 0 sector: 1 phiDT: 94 phi: -206 offset: -225
+iSector: 1 iPhi: -206
+iProcessor: 0 sector: 3 phiDT: 1085 phi: 902 offset: 675
+iProcessor: 0 sector: 2 phiDT: 221 phi: 271 offset: 225
+iProcessor: 0 sector: 2 phiDT: 514 phi: 332 offset: 225
+iProcessor: 0 sector: 1 phiDT: -396 phi: -308 offset: -225
+iSector: 1 iPhi: -308
+iProcessor: 0 sector: 3 phiDT: 792 phi: 841 offset: 675
+iProcessor: 0 sector: 2 phiDT: 134 phi: 253 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1203 phi: 927 offset: 675
+iProcessor: 0 sector: 3 phiDT: -367 phi: 598 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1218 phi: 930 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1175 phi: 21 offset: -225
+iSector: 1 iPhi: 21
+iInput: 0 phiRef: 21 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 576 phi: -105 offset: -225
+iSector: 1 iPhi: -105
+iProcessor: 0 sector: 2 phiDT: 1159 phi: 468 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1071 phi: -1 offset: -225
+iSector: 1 iPhi: -1
+iInput: 0 phiRef: -1 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 781 phi: -62 offset: -225
+iSector: 1 iPhi: -62
+iInput: 0 phiRef: -62 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 195 phi: 715 offset: 675
+iProcessor: 0 sector: 1 phiDT: -55 phi: -236 offset: -225
+iSector: 1 iPhi: -236
+iProcessor: 0 sector: 3 phiDT: 703 phi: 822 offset: 675
+iProcessor: 0 sector: 1 phiDT: 288 phi: -165 offset: -225
+iSector: 1 iPhi: -165
+iProcessor: 0 sector: 1 phiDT: 1077 phi: 0 offset: -225
+iSector: 1 iPhi: 0
+iInput: 0 phiRef: 0 iRegion: 0
+iProcessor: 0 sector: 3 phiDT: 247 phi: 726 offset: 675
+iProcessor: 0 sector: 2 phiDT: 713 phi: 374 offset: 225
+iProcessor: 0 sector: 2 phiDT: 811 phi: 395 offset: 225
+iProcessor: 0 sector: 1 phiDT: 186 phi: -186 offset: -225
+iSector: 1 iPhi: -186
+iProcessor: 0 sector: 2 phiDT: 900 phi: 413 offset: 225
+iProcessor: 0 sector: 3 phiDT: -133 phi: 648 offset: 675
+iProcessor: 0 sector: 2 phiDT: -165 phi: 191 offset: 225
+iProcessor: 0 sector: 3 phiDT: -323 phi: 608 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1149 phi: 466 offset: 225
+iProcessor: 0 sector: 3 phiDT: -295 phi: 614 offset: 675
+iProcessor: 0 sector: 2 phiDT: 720 phi: 376 offset: 225
+iProcessor: 0 sector: 1 phiDT: -523 phi: -334 offset: -225
+iSector: 1 iPhi: -334
+iProcessor: 0 sector: 2 phiDT: 852 phi: 403 offset: 225
+iProcessor: 0 sector: 2 phiDT: 140 phi: 254 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1244 phi: 486 offset: 225
+iProcessor: 0 sector: 1 phiDT: -437 phi: -316 offset: -225
+iSector: 1 iPhi: -316
+iProcessor: 0 sector: 1 phiDT: -129 phi: -252 offset: -225
+iSector: 1 iPhi: -252
+iProcessor: 0 sector: 1 phiDT: 470 phi: -127 offset: -225
+iSector: 1 iPhi: -127
+iProcessor: 0 sector: 3 phiDT: -193 phi: 635 offset: 675
+iProcessor: 0 sector: 1 phiDT: -529 phi: -335 offset: -225
+iSector: 1 iPhi: -335
+iProcessor: 0 sector: 3 phiDT: -66 phi: 662 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1143 phi: 914 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1121 phi: 910 offset: 675
+iProcessor: 0 sector: 2 phiDT: 709 phi: 373 offset: 225
+iProcessor: 0 sector: 2 phiDT: -317 phi: 159 offset: 225
+iProcessor: 0 sector: 2 phiDT: 548 phi: 339 offset: 225
+iProcessor: 0 sector: 1 phiDT: -185 phi: -263 offset: -225
+iSector: 1 iPhi: -263
+iProcessor: 0 sector: 3 phiDT: 1048 phi: 894 offset: 675
+iProcessor: 0 sector: 1 phiDT: 572 phi: -105 offset: -225
+iSector: 1 iPhi: -105
+iProcessor: 0 sector: 1 phiDT: 835 phi: -50 offset: -225
+iSector: 1 iPhi: -50
+iInput: 0 phiRef: -50 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -203 phi: 183 offset: 225
+iProcessor: 0 sector: 1 phiDT: 53 phi: -214 offset: -225
+iSector: 1 iPhi: -214
+iProcessor: 0 sector: 2 phiDT: 823 phi: 397 offset: 225
+iProcessor: 0 sector: 1 phiDT: -40 phi: -233 offset: -225
+iSector: 1 iPhi: -233
+iProcessor: 0 sector: 3 phiDT: 1104 phi: 906 offset: 675
+iProcessor: 0 sector: 1 phiDT: 721 phi: -74 offset: -225
+iSector: 1 iPhi: -74
+iInput: 0 phiRef: -74 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1000 phi: 884 offset: 675
+iProcessor: 0 sector: 3 phiDT: -43 phi: 666 offset: 675
+iProcessor: 0 sector: 3 phiDT: 548 phi: 789 offset: 675
+iProcessor: 0 sector: 1 phiDT: -5 phi: -226 offset: -225
+iSector: 1 iPhi: -226
+iProcessor: 0 sector: 2 phiDT: 413 phi: 311 offset: 225
+iProcessor: 0 sector: 1 phiDT: 612 phi: -97 offset: -225
+iSector: 1 iPhi: -97
+iInput: 0 phiRef: -97 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 777 phi: 388 offset: 225
+iProcessor: 0 sector: 2 phiDT: 500 phi: 329 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1028 phi: 440 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1153 phi: 466 offset: 225
+iProcessor: 0 sector: 3 phiDT: 630 phi: 807 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1163 phi: 469 offset: 225
+iProcessor: 0 sector: 3 phiDT: 85 phi: 692 offset: 675
+iProcessor: 0 sector: 1 phiDT: 636 phi: -92 offset: -225
+iSector: 1 iPhi: -92
+iInput: 0 phiRef: -92 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 893 phi: -38 offset: -225
+iSector: 1 iPhi: -38
+iInput: 0 phiRef: -38 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 367 phi: 752 offset: 675
+iProcessor: 0 sector: 1 phiDT: 542 phi: -112 offset: -225
+iSector: 1 iPhi: -112
+iProcessor: 0 sector: 3 phiDT: 396 phi: 758 offset: 675
+iProcessor: 0 sector: 1 phiDT: 927 phi: -31 offset: -225
+iSector: 1 iPhi: -31
+iInput: 0 phiRef: -31 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1106 phi: 907 offset: 675
+iProcessor: 0 sector: 2 phiDT: -430 phi: 135 offset: 225
+iProcessor: 0 sector: 2 phiDT: 526 phi: 335 offset: 225
+iProcessor: 0 sector: 2 phiDT: -220 phi: 179 offset: 225
+iProcessor: 0 sector: 2 phiDT: 445 phi: 318 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1023 phi: 439 offset: 225
+iProcessor: 0 sector: 3 phiDT: 969 phi: 878 offset: 675
+iProcessor: 0 sector: 1 phiDT: 828 phi: -52 offset: -225
+iSector: 1 iPhi: -52
+iInput: 0 phiRef: -52 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 841 phi: -49 offset: -225
+iSector: 1 iPhi: -49
+iInput: 0 phiRef: -49 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -476 phi: 576 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1202 phi: 27 offset: -225
+iSector: 1 iPhi: 27
+iInput: 0 phiRef: 27 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1082 phi: 2 offset: -225
+iSector: 1 iPhi: 2
+iInput: 0 phiRef: 2 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1097 phi: 455 offset: 225
+iProcessor: 0 sector: 2 phiDT: -282 phi: 166 offset: 225
+iProcessor: 0 sector: 2 phiDT: 138 phi: 253 offset: 225
+iProcessor: 0 sector: 1 phiDT: -391 phi: -307 offset: -225
+iSector: 1 iPhi: -307
+iProcessor: 0 sector: 2 phiDT: -212 phi: 181 offset: 225
+iProcessor: 0 sector: 3 phiDT: 118 phi: 699 offset: 675
+iProcessor: 0 sector: 2 phiDT: 413 phi: 311 offset: 225
+iProcessor: 0 sector: 1 phiDT: -207 phi: -268 offset: -225
+iSector: 1 iPhi: -268
+iProcessor: 0 sector: 3 phiDT: -151 phi: 644 offset: 675
+iProcessor: 0 sector: 2 phiDT: 709 phi: 373 offset: 225
+iProcessor: 0 sector: 2 phiDT: 936 phi: 421 offset: 225
+iProcessor: 0 sector: 1 phiDT: 883 phi: -40 offset: -225
+iSector: 1 iPhi: -40
+iInput: 0 phiRef: -40 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 631 phi: 807 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1070 phi: -1 offset: -225
+iSector: 1 iPhi: -1
+iInput: 0 phiRef: -1 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1121 phi: 910 offset: 675
+iProcessor: 0 sector: 1 phiDT: 167 phi: -190 offset: -225
+iSector: 1 iPhi: -190
+iProcessor: 0 sector: 1 phiDT: 912 phi: -34 offset: -225
+iSector: 1 iPhi: -34
+iInput: 0 phiRef: -34 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1102 phi: 906 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1158 phi: 17 offset: -225
+iSector: 1 iPhi: 17
+iInput: 0 phiRef: 17 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1163 phi: 469 offset: 225
+iProcessor: 0 sector: 3 phiDT: 252 phi: 727 offset: 675
+iProcessor: 0 sector: 3 phiDT: -525 phi: 565 offset: 675
+iProcessor: 0 sector: 3 phiDT: -21 phi: 671 offset: 675
+iProcessor: 0 sector: 2 phiDT: 802 phi: 393 offset: 225
+iProcessor: 0 sector: 2 phiDT: -333 phi: 156 offset: 225
+iProcessor: 0 sector: 3 phiDT: 669 phi: 815 offset: 675
+iProcessor: 0 sector: 1 phiDT: 141 phi: -196 offset: -225
+iSector: 1 iPhi: -196
+iProcessor: 0 sector: 2 phiDT: -460 phi: 129 offset: 225
+iProcessor: 0 sector: 2 phiDT: 897 phi: 413 offset: 225
+iProcessor: 0 sector: 2 phiDT: 525 phi: 335 offset: 225
+iProcessor: 0 sector: 1 phiDT: -70 phi: -239 offset: -225
+iSector: 1 iPhi: -239
+iProcessor: 0 sector: 3 phiDT: 682 phi: 818 offset: 675
+iProcessor: 0 sector: 2 phiDT: -116 phi: 201 offset: 225
+iProcessor: 0 sector: 1 phiDT: -165 phi: -259 offset: -225
+iSector: 1 iPhi: -259
+iProcessor: 0 sector: 2 phiDT: 1097 phi: 455 offset: 225
+iProcessor: 0 sector: 1 phiDT: 348 phi: -152 offset: -225
+iSector: 1 iPhi: -152
+iProcessor: 0 sector: 2 phiDT: 822 phi: 397 offset: 225
+iProcessor: 0 sector: 2 phiDT: -68 phi: 211 offset: 225
+iProcessor: 0 sector: 3 phiDT: -416 phi: 588 offset: 675
+iProcessor: 0 sector: 1 phiDT: -528 phi: -335 offset: -225
+iSector: 1 iPhi: -335
+iProcessor: 0 sector: 3 phiDT: -546 phi: 561 offset: 675
+iProcessor: 0 sector: 2 phiDT: -503 phi: 120 offset: 225
+iProcessor: 0 sector: 1 phiDT: 974 phi: -21 offset: -225
+iSector: 1 iPhi: -21
+iInput: 0 phiRef: -21 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -550 phi: -340 offset: -225
+iSector: 1 iPhi: -340
+iProcessor: 0 sector: 3 phiDT: 100 phi: 695 offset: 675
+iProcessor: 0 sector: 2 phiDT: 370 phi: 302 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1086 phi: 2 offset: -225
+iSector: 1 iPhi: 2
+iInput: 0 phiRef: 2 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 279 phi: -167 offset: -225
+iSector: 1 iPhi: -167
+iProcessor: 0 sector: 2 phiDT: -168 phi: 190 offset: 225
+iProcessor: 0 sector: 3 phiDT: -430 phi: 585 offset: 675
+iProcessor: 0 sector: 3 phiDT: 778 phi: 838 offset: 675
+iProcessor: 0 sector: 3 phiDT: 690 phi: 819 offset: 675
+iProcessor: 0 sector: 2 phiDT: 596 phi: 350 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1265 phi: 490 offset: 225
+iProcessor: 0 sector: 2 phiDT: -157 phi: 193 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1199 phi: 926 offset: 675
+iProcessor: 0 sector: 2 phiDT: 831 phi: 399 offset: 225
+iProcessor: 0 sector: 2 phiDT: 382 phi: 305 offset: 225
+iProcessor: 0 sector: 2 phiDT: 514 phi: 332 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1004 phi: 435 offset: 225
+iProcessor: 0 sector: 2 phiDT: 805 phi: 393 offset: 225
+iProcessor: 0 sector: 3 phiDT: 460 phi: 771 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1119 phi: 909 offset: 675
+iProcessor: 0 sector: 3 phiDT: -494 phi: 572 offset: 675
+iProcessor: 0 sector: 2 phiDT: -146 phi: 195 offset: 225
+iProcessor: 0 sector: 3 phiDT: 998 phi: 884 offset: 675
+iProcessor: 0 sector: 2 phiDT: 680 phi: 367 offset: 225
+iProcessor: 0 sector: 2 phiDT: 472 phi: 324 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1175 phi: 471 offset: 225
+iProcessor: 0 sector: 1 phiDT: 772 phi: -64 offset: -225
+iSector: 1 iPhi: -64
+iInput: 0 phiRef: -64 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 787 phi: -60 offset: -225
+iSector: 1 iPhi: -60
+iInput: 0 phiRef: -60 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -13 phi: -227 offset: -225
+iSector: 1 iPhi: -227
+iProcessor: 0 sector: 1 phiDT: 645 phi: -90 offset: -225
+iSector: 1 iPhi: -90
+iInput: 0 phiRef: -90 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 838 phi: -50 offset: -225
+iSector: 1 iPhi: -50
+iInput: 0 phiRef: -50 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 307 phi: 739 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1200 phi: 476 offset: 225
+iProcessor: 0 sector: 2 phiDT: 131 phi: 252 offset: 225
+iProcessor: 0 sector: 1 phiDT: -65 phi: -238 offset: -225
+iSector: 1 iPhi: -238
+iProcessor: 0 sector: 1 phiDT: 998 phi: -16 offset: -225
+iSector: 1 iPhi: -16
+iInput: 0 phiRef: -16 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -406 phi: 590 offset: 675
+iProcessor: 0 sector: 2 phiDT: 22 phi: 229 offset: 225
+iProcessor: 0 sector: 2 phiDT: 42 phi: 233 offset: 225
+iProcessor: 0 sector: 2 phiDT: -215 phi: 180 offset: 225
+iProcessor: 0 sector: 3 phiDT: 518 phi: 783 offset: 675
+iProcessor: 0 sector: 3 phiDT: 255 phi: 728 offset: 675
+iProcessor: 0 sector: 2 phiDT: 775 phi: 387 offset: 225
+iProcessor: 0 sector: 1 phiDT: 536 phi: -113 offset: -225
+iSector: 1 iPhi: -113
+iProcessor: 0 sector: 1 phiDT: 894 phi: -38 offset: -225
+iSector: 1 iPhi: -38
+iInput: 0 phiRef: -38 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1137 phi: 463 offset: 225
+iProcessor: 0 sector: 3 phiDT: -298 phi: 613 offset: 675
+iProcessor: 0 sector: 3 phiDT: 545 phi: 789 offset: 675
+iProcessor: 0 sector: 2 phiDT: 738 phi: 379 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1220 phi: 930 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1208 phi: 928 offset: 675
+iProcessor: 0 sector: 3 phiDT: -281 phi: 617 offset: 675
+iProcessor: 0 sector: 1 phiDT: -204 phi: -267 offset: -225
+iSector: 1 iPhi: -267
+iProcessor: 0 sector: 1 phiDT: -326 phi: -293 offset: -225
+iSector: 1 iPhi: -293
+iProcessor: 0 sector: 1 phiDT: 658 phi: -87 offset: -225
+iSector: 1 iPhi: -87
+iInput: 0 phiRef: -87 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 644 phi: 360 offset: 225
+iProcessor: 0 sector: 2 phiDT: 487 phi: 327 offset: 225
+iProcessor: 0 sector: 3 phiDT: 90 phi: 693 offset: 675
+iProcessor: 0 sector: 3 phiDT: 622 phi: 805 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1144 phi: 465 offset: 225
+iProcessor: 0 sector: 3 phiDT: 291 phi: 736 offset: 675
+iProcessor: 0 sector: 3 phiDT: 93 phi: 694 offset: 675
+iProcessor: 0 sector: 3 phiDT: -422 phi: 587 offset: 675
+iProcessor: 0 sector: 1 phiDT: 919 phi: -33 offset: -225
+iSector: 1 iPhi: -33
+iInput: 0 phiRef: -33 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 658 phi: -87 offset: -225
+iSector: 1 iPhi: -87
+iInput: 0 phiRef: -87 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -420 phi: 587 offset: 675
+iProcessor: 0 sector: 3 phiDT: 261 phi: 729 offset: 675
+iProcessor: 0 sector: 1 phiDT: -169 phi: -260 offset: -225
+iSector: 1 iPhi: -260
+iProcessor: 0 sector: 1 phiDT: 756 phi: -67 offset: -225
+iSector: 1 iPhi: -67
+iInput: 0 phiRef: -67 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 70 phi: -211 offset: -225
+iSector: 1 iPhi: -211
+iProcessor: 0 sector: 3 phiDT: 99 phi: 695 offset: 675
+iProcessor: 0 sector: 2 phiDT: 158 phi: 258 offset: 225
+iProcessor: 0 sector: 1 phiDT: 945 phi: -27 offset: -225
+iSector: 1 iPhi: -27
+iInput: 0 phiRef: -27 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 910 phi: -35 offset: -225
+iSector: 1 iPhi: -35
+iInput: 0 phiRef: -35 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -331 phi: 606 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1251 phi: 37 offset: -225
+iSector: 1 iPhi: 37
+iInput: 0 phiRef: 37 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 165 phi: 709 offset: 675
+iProcessor: 0 sector: 1 phiDT: 772 phi: -64 offset: -225
+iSector: 1 iPhi: -64
+iInput: 0 phiRef: -64 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1164 phi: 19 offset: -225
+iSector: 1 iPhi: 19
+iInput: 0 phiRef: 19 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 399 phi: 758 offset: 675
+iProcessor: 0 sector: 2 phiDT: -136 phi: 197 offset: 225
+iProcessor: 0 sector: 3 phiDT: -131 phi: 648 offset: 675
+iProcessor: 0 sector: 1 phiDT: -291 phi: -286 offset: -225
+iSector: 1 iPhi: -286
+iProcessor: 0 sector: 1 phiDT: 381 phi: -146 offset: -225
+iSector: 1 iPhi: -146
+iProcessor: 0 sector: 1 phiDT: -459 phi: -321 offset: -225
+iSector: 1 iPhi: -321
+iProcessor: 0 sector: 2 phiDT: 563 phi: 343 offset: 225
+iProcessor: 0 sector: 3 phiDT: 822 phi: 847 offset: 675
+iProcessor: 0 sector: 2 phiDT: 724 phi: 376 offset: 225
+iProcessor: 0 sector: 2 phiDT: 328 phi: 293 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1008 phi: 886 offset: 675
+iProcessor: 0 sector: 2 phiDT: -476 phi: 126 offset: 225
+iProcessor: 0 sector: 3 phiDT: -260 phi: 621 offset: 675
+iProcessor: 0 sector: 1 phiDT: 52 phi: -215 offset: -225
+iSector: 1 iPhi: -215
+iProcessor: 0 sector: 3 phiDT: -194 phi: 635 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1227 phi: 932 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1192 phi: 925 offset: 675
+iProcessor: 0 sector: 3 phiDT: -255 phi: 622 offset: 675
+iProcessor: 0 sector: 1 phiDT: -67 phi: -239 offset: -225
+iSector: 1 iPhi: -239
+iProcessor: 0 sector: 3 phiDT: 1183 phi: 923 offset: 675
+iProcessor: 0 sector: 2 phiDT: 115 phi: 249 offset: 225
+iProcessor: 0 sector: 1 phiDT: 4 phi: -225 offset: -225
+iSector: 1 iPhi: -225
+iProcessor: 0 sector: 3 phiDT: 964 phi: 877 offset: 675
+iProcessor: 0 sector: 3 phiDT: -30 phi: 669 offset: 675
+iProcessor: 0 sector: 3 phiDT: -396 phi: 592 offset: 675
+iProcessor: 0 sector: 1 phiDT: -235 phi: -274 offset: -225
+iSector: 1 iPhi: -274
+iProcessor: 0 sector: 2 phiDT: 746 phi: 381 offset: 225
+iProcessor: 0 sector: 2 phiDT: 430 phi: 315 offset: 225
+iProcessor: 0 sector: 1 phiDT: -374 phi: -303 offset: -225
+iSector: 1 iPhi: -303
+iProcessor: 0 sector: 2 phiDT: 195 phi: 265 offset: 225
+iProcessor: 0 sector: 2 phiDT: 613 phi: 353 offset: 225
+iProcessor: 0 sector: 3 phiDT: 612 phi: 803 offset: 675
+iProcessor: 0 sector: 2 phiDT: 114 phi: 248 offset: 225
+iProcessor: 0 sector: 3 phiDT: 608 phi: 802 offset: 675
+iProcessor: 0 sector: 3 phiDT: 609 phi: 802 offset: 675
+iProcessor: 0 sector: 2 phiDT: 709 phi: 373 offset: 225
+iProcessor: 0 sector: 1 phiDT: 370 phi: -148 offset: -225
+iSector: 1 iPhi: -148
+iProcessor: 0 sector: 3 phiDT: 615 phi: 804 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1027 phi: 440 offset: 225
+iProcessor: 0 sector: 2 phiDT: -426 phi: 136 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1125 phi: 11 offset: -225
+iSector: 1 iPhi: 11
+iInput: 0 phiRef: 11 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 58 phi: 237 offset: 225
+iProcessor: 0 sector: 2 phiDT: -208 phi: 182 offset: 225
+iProcessor: 0 sector: 2 phiDT: 167 phi: 260 offset: 225
+iProcessor: 0 sector: 3 phiDT: -511 phi: 568 offset: 675
+iProcessor: 0 sector: 1 phiDT: 527 phi: -115 offset: -225
+iSector: 1 iPhi: -115
+iProcessor: 0 sector: 3 phiDT: 82 phi: 692 offset: 675
+iProcessor: 0 sector: 2 phiDT: 710 phi: 373 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1262 phi: 489 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1071 phi: 449 offset: 225
+iProcessor: 0 sector: 1 phiDT: 289 phi: -165 offset: -225
+iSector: 1 iPhi: -165
+iProcessor: 0 sector: 2 phiDT: 93 phi: 244 offset: 225
+iProcessor: 0 sector: 3 phiDT: 992 phi: 883 offset: 675
+iProcessor: 0 sector: 2 phiDT: -86 phi: 207 offset: 225
+iProcessor: 0 sector: 1 phiDT: 27 phi: -220 offset: -225
+iSector: 1 iPhi: -220
+iProcessor: 0 sector: 1 phiDT: 30 phi: -219 offset: -225
+iSector: 1 iPhi: -219
+iProcessor: 0 sector: 1 phiDT: -112 phi: -248 offset: -225
+iSector: 1 iPhi: -248
+iProcessor: 0 sector: 3 phiDT: 144 phi: 705 offset: 675
+iProcessor: 0 sector: 3 phiDT: 596 phi: 800 offset: 675
+iProcessor: 0 sector: 2 phiDT: -132 phi: 198 offset: 225
+iProcessor: 0 sector: 1 phiDT: -8 phi: -226 offset: -225
+iSector: 1 iPhi: -226
+iProcessor: 0 sector: 3 phiDT: 325 phi: 743 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1055 phi: 446 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1159 phi: 18 offset: -225
+iSector: 1 iPhi: 18
+iInput: 0 phiRef: 18 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 331 phi: -156 offset: -225
+iSector: 1 iPhi: -156
+iProcessor: 0 sector: 3 phiDT: -87 phi: 657 offset: 675
+iProcessor: 0 sector: 3 phiDT: -439 phi: 583 offset: 675
+iProcessor: 0 sector: 3 phiDT: 312 phi: 740 offset: 675
+iProcessor: 0 sector: 2 phiDT: 376 phi: 303 offset: 225
+iProcessor: 0 sector: 3 phiDT: 732 phi: 828 offset: 675
+iProcessor: 0 sector: 3 phiDT: 754 phi: 833 offset: 675
+iProcessor: 0 sector: 3 phiDT: 87 phi: 693 offset: 675
+iProcessor: 0 sector: 3 phiDT: -451 phi: 581 offset: 675
+iProcessor: 0 sector: 1 phiDT: 831 phi: -51 offset: -225
+iSector: 1 iPhi: -51
+iInput: 0 phiRef: -51 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 579 phi: -104 offset: -225
+iSector: 1 iPhi: -104
+iProcessor: 0 sector: 2 phiDT: -55 phi: 214 offset: 225
+iProcessor: 0 sector: 1 phiDT: 884 phi: -40 offset: -225
+iSector: 1 iPhi: -40
+iInput: 0 phiRef: -40 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 309 phi: 739 offset: 675
+iProcessor: 0 sector: 2 phiDT: -359 phi: 150 offset: 225
+iProcessor: 0 sector: 3 phiDT: 146 phi: 705 offset: 675
+iProcessor: 0 sector: 2 phiDT: -394 phi: 143 offset: 225
+iProcessor: 0 sector: 2 phiDT: 340 phi: 296 offset: 225
+iProcessor: 0 sector: 3 phiDT: 10 phi: 677 offset: 675
+iProcessor: 0 sector: 3 phiDT: 497 phi: 779 offset: 675
+iProcessor: 0 sector: 3 phiDT: 803 phi: 843 offset: 675
+iProcessor: 0 sector: 2 phiDT: 349 phi: 298 offset: 225
+iProcessor: 0 sector: 3 phiDT: -378 phi: 596 offset: 675
+iProcessor: 0 sector: 3 phiDT: -297 phi: 613 offset: 675
+iProcessor: 0 sector: 2 phiDT: 402 phi: 309 offset: 225
+iProcessor: 0 sector: 2 phiDT: -501 phi: 120 offset: 225
+iProcessor: 0 sector: 1 phiDT: 123 phi: -200 offset: -225
+iSector: 1 iPhi: -200
+iProcessor: 0 sector: 3 phiDT: 1184 phi: 923 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1184 phi: 23 offset: -225
+iSector: 1 iPhi: 23
+iInput: 0 phiRef: 23 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -153 phi: -257 offset: -225
+iSector: 1 iPhi: -257
+iProcessor: 0 sector: 2 phiDT: 453 phi: 320 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1036 phi: 892 offset: 675
+iProcessor: 0 sector: 2 phiDT: 250 phi: 277 offset: 225
+iProcessor: 0 sector: 1 phiDT: -447 phi: -318 offset: -225
+iSector: 1 iPhi: -318
+iProcessor: 0 sector: 3 phiDT: 454 phi: 770 offset: 675
+iProcessor: 0 sector: 3 phiDT: 446 phi: 768 offset: 675
+iProcessor: 0 sector: 3 phiDT: 124 phi: 701 offset: 675
+iProcessor: 0 sector: 3 phiDT: 856 phi: 854 offset: 675
+iProcessor: 0 sector: 2 phiDT: 320 phi: 292 offset: 225
+iProcessor: 0 sector: 2 phiDT: 808 phi: 394 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1173 phi: 921 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1236 phi: 34 offset: -225
+iSector: 1 iPhi: 34
+iInput: 0 phiRef: 34 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1063 phi: -2 offset: -225
+iSector: 1 iPhi: -2
+iInput: 0 phiRef: -2 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 52 phi: -215 offset: -225
+iSector: 1 iPhi: -215
+iProcessor: 0 sector: 2 phiDT: 637 phi: 358 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1078 phi: 451 offset: 225
+iProcessor: 0 sector: 3 phiDT: -188 phi: 636 offset: 675
+iProcessor: 0 sector: 2 phiDT: 656 phi: 362 offset: 225
+iProcessor: 0 sector: 3 phiDT: 324 phi: 742 offset: 675
+iProcessor: 0 sector: 3 phiDT: -415 phi: 588 offset: 675
+iProcessor: 0 sector: 3 phiDT: 171 phi: 710 offset: 675
+iProcessor: 0 sector: 2 phiDT: 498 phi: 329 offset: 225
+iProcessor: 0 sector: 1 phiDT: 797 phi: -58 offset: -225
+iSector: 1 iPhi: -58
+iInput: 0 phiRef: -58 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 916 phi: 867 offset: 675
+iProcessor: 0 sector: 1 phiDT: 123 phi: -200 offset: -225
+iSector: 1 iPhi: -200
+iProcessor: 0 sector: 2 phiDT: -218 phi: 180 offset: 225
+iProcessor: 0 sector: 1 phiDT: 393 phi: -143 offset: -225
+iSector: 1 iPhi: -143
+iProcessor: 0 sector: 1 phiDT: 1236 phi: 34 offset: -225
+iSector: 1 iPhi: 34
+iInput: 0 phiRef: 34 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -253 phi: -278 offset: -225
+iSector: 1 iPhi: -278
+iProcessor: 0 sector: 1 phiDT: 128 phi: -199 offset: -225
+iSector: 1 iPhi: -199
+iProcessor: 0 sector: 1 phiDT: 642 phi: -91 offset: -225
+iSector: 1 iPhi: -91
+iInput: 0 phiRef: -91 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -194 phi: 635 offset: 675
+iProcessor: 0 sector: 3 phiDT: 454 phi: 770 offset: 675
+iProcessor: 0 sector: 1 phiDT: 274 phi: -168 offset: -225
+iSector: 1 iPhi: -168
+iProcessor: 0 sector: 1 phiDT: 1239 phi: 34 offset: -225
+iSector: 1 iPhi: 34
+iInput: 0 phiRef: 34 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 119 phi: 249 offset: 225
+iProcessor: 0 sector: 3 phiDT: -533 phi: 564 offset: 675
+iProcessor: 0 sector: 2 phiDT: -338 phi: 155 offset: 225
+iProcessor: 0 sector: 1 phiDT: 877 phi: -41 offset: -225
+iSector: 1 iPhi: -41
+iInput: 0 phiRef: -41 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 644 phi: 810 offset: 675
+iProcessor: 0 sector: 1 phiDT: 887 phi: -39 offset: -225
+iSector: 1 iPhi: -39
+iInput: 0 phiRef: -39 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 999 phi: -16 offset: -225
+iSector: 1 iPhi: -16
+iInput: 0 phiRef: -16 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 845 phi: 402 offset: 225
+iProcessor: 0 sector: 3 phiDT: 242 phi: 725 offset: 675
+iProcessor: 0 sector: 3 phiDT: 92 phi: 694 offset: 675
+iProcessor: 0 sector: 1 phiDT: -10 phi: -227 offset: -225
+iSector: 1 iPhi: -227
+iProcessor: 0 sector: 2 phiDT: 1042 phi: 443 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1253 phi: 487 offset: 225
+iProcessor: 0 sector: 1 phiDT: 470 phi: -127 offset: -225
+iSector: 1 iPhi: -127
+iProcessor: 0 sector: 2 phiDT: 640 phi: 359 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1119 phi: 909 offset: 675
+iProcessor: 0 sector: 2 phiDT: -108 phi: 203 offset: 225
+iProcessor: 0 sector: 1 phiDT: 109 phi: -203 offset: -225
+iSector: 1 iPhi: -203
+iProcessor: 0 sector: 3 phiDT: -432 phi: 585 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1205 phi: 27 offset: -225
+iSector: 1 iPhi: 27
+iInput: 0 phiRef: 27 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 997 phi: 884 offset: 675
+iProcessor: 0 sector: 2 phiDT: 304 phi: 288 offset: 225
+iProcessor: 0 sector: 3 phiDT: -234 phi: 626 offset: 675
+iProcessor: 0 sector: 1 phiDT: 92 phi: -206 offset: -225
+iSector: 1 iPhi: -206
+iProcessor: 0 sector: 1 phiDT: -147 phi: -255 offset: -225
+iSector: 1 iPhi: -255
+iProcessor: 0 sector: 2 phiDT: 1237 phi: 484 offset: 225
+iProcessor: 0 sector: 2 phiDT: -554 phi: 109 offset: 225
+iProcessor: 0 sector: 2 phiDT: 973 phi: 429 offset: 225
+iProcessor: 0 sector: 2 phiDT: -131 phi: 198 offset: 225
+iProcessor: 0 sector: 1 phiDT: 594 phi: -101 offset: -225
+iSector: 1 iPhi: -101
+iProcessor: 0 sector: 3 phiDT: 691 phi: 819 offset: 675
+iProcessor: 0 sector: 1 phiDT: 903 phi: -36 offset: -225
+iSector: 1 iPhi: -36
+iInput: 0 phiRef: -36 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 69 phi: -211 offset: -225
+iSector: 1 iPhi: -211
+iProcessor: 0 sector: 3 phiDT: -210 phi: 631 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1119 phi: 909 offset: 675
+iProcessor: 0 sector: 3 phiDT: -311 phi: 610 offset: 675
+iProcessor: 0 sector: 2 phiDT: -32 phi: 219 offset: 225
+iProcessor: 0 sector: 2 phiDT: 108 phi: 247 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1127 phi: 461 offset: 225
+iProcessor: 0 sector: 1 phiDT: 959 phi: -24 offset: -225
+iSector: 1 iPhi: -24
+iInput: 0 phiRef: -24 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -279 phi: -283 offset: -225
+iSector: 1 iPhi: -283
+iProcessor: 0 sector: 1 phiDT: 261 phi: -171 offset: -225
+iSector: 1 iPhi: -171
+iProcessor: 0 sector: 2 phiDT: 365 phi: 301 offset: 225
+iProcessor: 0 sector: 3 phiDT: -318 phi: 609 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1268 phi: 941 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1060 phi: -3 offset: -225
+iSector: 1 iPhi: -3
+iInput: 0 phiRef: -3 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 140 phi: 704 offset: 675
+iProcessor: 0 sector: 1 phiDT: 853 phi: -47 offset: -225
+iSector: 1 iPhi: -47
+iInput: 0 phiRef: -47 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -23 phi: 221 offset: 225
+iProcessor: 0 sector: 2 phiDT: -168 phi: 190 offset: 225
+iProcessor: 0 sector: 3 phiDT: 900 phi: 863 offset: 675
+iProcessor: 0 sector: 1 phiDT: 594 phi: -101 offset: -225
+iSector: 1 iPhi: -101
+iProcessor: 0 sector: 1 phiDT: 187 phi: -186 offset: -225
+iSector: 1 iPhi: -186
+iProcessor: 0 sector: 1 phiDT: 90 phi: -207 offset: -225
+iSector: 1 iPhi: -207
+iProcessor: 0 sector: 2 phiDT: -106 phi: 203 offset: 225
+iProcessor: 0 sector: 2 phiDT: 847 phi: 402 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1205 phi: 27 offset: -225
+iSector: 1 iPhi: 27
+iInput: 0 phiRef: 27 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1216 phi: 930 offset: 675
+iProcessor: 0 sector: 3 phiDT: 717 phi: 825 offset: 675
+iProcessor: 0 sector: 2 phiDT: -200 phi: 184 offset: 225
+iProcessor: 0 sector: 3 phiDT: 455 phi: 770 offset: 675
+iProcessor: 0 sector: 1 phiDT: 116 phi: -201 offset: -225
+iSector: 1 iPhi: -201
+iProcessor: 0 sector: 1 phiDT: -352 phi: -298 offset: -225
+iSector: 1 iPhi: -298
+iProcessor: 0 sector: 1 phiDT: 813 phi: -55 offset: -225
+iSector: 1 iPhi: -55
+iInput: 0 phiRef: -55 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -404 phi: 141 offset: 225
+iProcessor: 0 sector: 2 phiDT: 906 phi: 415 offset: 225
+iProcessor: 0 sector: 3 phiDT: 814 phi: 845 offset: 675
+iProcessor: 0 sector: 2 phiDT: 170 phi: 260 offset: 225
+iProcessor: 0 sector: 3 phiDT: -224 phi: 628 offset: 675
+iProcessor: 0 sector: 1 phiDT: 390 phi: -144 offset: -225
+iSector: 1 iPhi: -144
+iProcessor: 0 sector: 1 phiDT: -129 phi: -252 offset: -225
+iSector: 1 iPhi: -252
+iProcessor: 0 sector: 2 phiDT: 89 phi: 243 offset: 225
+iProcessor: 0 sector: 3 phiDT: 413 phi: 761 offset: 675
+iProcessor: 0 sector: 1 phiDT: 647 phi: -90 offset: -225
+iSector: 1 iPhi: -90
+iInput: 0 phiRef: -90 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 727 phi: 827 offset: 675
+iProcessor: 0 sector: 2 phiDT: 917 phi: 417 offset: 225
+iProcessor: 0 sector: 1 phiDT: 878 phi: -41 offset: -225
+iSector: 1 iPhi: -41
+iInput: 0 phiRef: -41 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 946 phi: 423 offset: 225
+iProcessor: 0 sector: 2 phiDT: 100 phi: 245 offset: 225
+iProcessor: 0 sector: 2 phiDT: 403 phi: 309 offset: 225
+iProcessor: 0 sector: 3 phiDT: -399 phi: 592 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1000 phi: -16 offset: -225
+iSector: 1 iPhi: -16
+iInput: 0 phiRef: -16 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1125 phi: 11 offset: -225
+iSector: 1 iPhi: 11
+iInput: 0 phiRef: 11 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 685 phi: 368 offset: 225
+iProcessor: 0 sector: 3 phiDT: 884 phi: 860 offset: 675
+iProcessor: 0 sector: 2 phiDT: 169 phi: 260 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1067 phi: 448 offset: 225
+iProcessor: 0 sector: 1 phiDT: -290 phi: -285 offset: -225
+iSector: 1 iPhi: -285
+iProcessor: 0 sector: 1 phiDT: 44 phi: -216 offset: -225
+iSector: 1 iPhi: -216
+iProcessor: 0 sector: 3 phiDT: 440 phi: 767 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1253 phi: 937 offset: 675
+iProcessor: 0 sector: 3 phiDT: 581 phi: 796 offset: 675
+iProcessor: 0 sector: 1 phiDT: 725 phi: -73 offset: -225
+iSector: 1 iPhi: -73
+iInput: 0 phiRef: -73 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 70 phi: -211 offset: -225
+iSector: 1 iPhi: -211
+iProcessor: 0 sector: 3 phiDT: 529 phi: 785 offset: 675
+iProcessor: 0 sector: 3 phiDT: -399 phi: 592 offset: 675
+iProcessor: 0 sector: 1 phiDT: 5 phi: -224 offset: -225
+iSector: 1 iPhi: -224
+iProcessor: 0 sector: 3 phiDT: -245 phi: 624 offset: 675
+iProcessor: 0 sector: 1 phiDT: -183 phi: -263 offset: -225
+iSector: 1 iPhi: -263
+iProcessor: 0 sector: 1 phiDT: 742 phi: -70 offset: -225
+iSector: 1 iPhi: -70
+iInput: 0 phiRef: -70 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 512 phi: 332 offset: 225
+iProcessor: 0 sector: 1 phiDT: -464 phi: -322 offset: -225
+iSector: 1 iPhi: -322
+iProcessor: 0 sector: 2 phiDT: -153 phi: 193 offset: 225
+iProcessor: 0 sector: 1 phiDT: -83 phi: -242 offset: -225
+iSector: 1 iPhi: -242
+iProcessor: 0 sector: 3 phiDT: -111 phi: 652 offset: 675
+iProcessor: 0 sector: 2 phiDT: 288 phi: 285 offset: 225
+iProcessor: 0 sector: 2 phiDT: -529 phi: 115 offset: 225
+iProcessor: 0 sector: 3 phiDT: 901 phi: 864 offset: 675
+iProcessor: 0 sector: 1 phiDT: 732 phi: -72 offset: -225
+iSector: 1 iPhi: -72
+iInput: 0 phiRef: -72 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -502 phi: -330 offset: -225
+iSector: 1 iPhi: -330
+iProcessor: 0 sector: 1 phiDT: 682 phi: -82 offset: -225
+iSector: 1 iPhi: -82
+iInput: 0 phiRef: -82 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 754 phi: 383 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1041 phi: -7 offset: -225
+iSector: 1 iPhi: -7
+iInput: 0 phiRef: -7 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 288 phi: -165 offset: -225
+iSector: 1 iPhi: -165
+iProcessor: 0 sector: 2 phiDT: 496 phi: 329 offset: 225
+iProcessor: 0 sector: 3 phiDT: -561 phi: 558 offset: 675
+iProcessor: 0 sector: 1 phiDT: 146 phi: -195 offset: -225
+iSector: 1 iPhi: -195
+iProcessor: 0 sector: 1 phiDT: 1218 phi: 30 offset: -225
+iSector: 1 iPhi: 30
+iInput: 0 phiRef: 30 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 580 phi: -104 offset: -225
+iSector: 1 iPhi: -104
+iProcessor: 0 sector: 2 phiDT: 939 phi: 422 offset: 225
+iProcessor: 0 sector: 1 phiDT: 5 phi: -224 offset: -225
+iSector: 1 iPhi: -224
+iProcessor: 0 sector: 1 phiDT: -270 phi: -281 offset: -225
+iSector: 1 iPhi: -281
+iProcessor: 0 sector: 3 phiDT: 914 phi: 866 offset: 675
+iProcessor: 0 sector: 2 phiDT: 448 phi: 319 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1196 phi: 925 offset: 675
+iProcessor: 0 sector: 3 phiDT: 383 phi: 755 offset: 675
+iProcessor: 0 sector: 3 phiDT: -496 phi: 571 offset: 675
+iProcessor: 0 sector: 3 phiDT: -312 phi: 610 offset: 675
+iProcessor: 0 sector: 3 phiDT: -204 phi: 633 offset: 675
+iProcessor: 0 sector: 1 phiDT: 499 phi: -121 offset: -225
+iSector: 1 iPhi: -121
+iProcessor: 0 sector: 2 phiDT: 647 phi: 360 offset: 225
+iProcessor: 0 sector: 2 phiDT: 614 phi: 353 offset: 225
+iProcessor: 0 sector: 3 phiDT: 844 phi: 852 offset: 675
+iProcessor: 0 sector: 2 phiDT: 205 phi: 268 offset: 225
+iProcessor: 0 sector: 1 phiDT: -378 phi: -304 offset: -225
+iSector: 1 iPhi: -304
+iProcessor: 0 sector: 1 phiDT: 138 phi: -197 offset: -225
+iSector: 1 iPhi: -197
+iProcessor: 0 sector: 3 phiDT: 862 phi: 855 offset: 675
+iProcessor: 0 sector: 2 phiDT: -175 phi: 189 offset: 225
+iProcessor: 0 sector: 2 phiDT: 870 phi: 407 offset: 225
+iProcessor: 0 sector: 2 phiDT: -563 phi: 107 offset: 225
+iProcessor: 0 sector: 1 phiDT: 359 phi: -150 offset: -225
+iSector: 1 iPhi: -150
+iProcessor: 0 sector: 3 phiDT: 391 phi: 757 offset: 675
+iProcessor: 0 sector: 2 phiDT: 215 phi: 270 offset: 225
+iProcessor: 0 sector: 3 phiDT: 467 phi: 772 offset: 675
+iProcessor: 0 sector: 3 phiDT: 972 phi: 878 offset: 675
+iProcessor: 0 sector: 2 phiDT: -180 phi: 188 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1040 phi: 443 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1082 phi: 452 offset: 225
+iProcessor: 0 sector: 3 phiDT: -131 phi: 648 offset: 675
+iProcessor: 0 sector: 2 phiDT: 617 phi: 354 offset: 225
+iProcessor: 0 sector: 2 phiDT: -559 phi: 108 offset: 225
+iProcessor: 0 sector: 2 phiDT: -432 phi: 135 offset: 225
+iProcessor: 0 sector: 1 phiDT: -446 phi: -318 offset: -225
+iSector: 1 iPhi: -318
+iProcessor: 0 sector: 3 phiDT: 334 phi: 745 offset: 675
+iProcessor: 0 sector: 3 phiDT: 640 phi: 809 offset: 675
+iProcessor: 0 sector: 1 phiDT: 192 phi: -185 offset: -225
+iSector: 1 iPhi: -185
+iProcessor: 0 sector: 3 phiDT: 62 phi: 688 offset: 675
+iProcessor: 0 sector: 1 phiDT: 108 phi: -203 offset: -225
+iSector: 1 iPhi: -203
+iProcessor: 0 sector: 3 phiDT: 1158 phi: 917 offset: 675
+iProcessor: 0 sector: 1 phiDT: -467 phi: -322 offset: -225
+iSector: 1 iPhi: -322
+iProcessor: 0 sector: 3 phiDT: 879 phi: 859 offset: 675
+iProcessor: 0 sector: 3 phiDT: 716 phi: 825 offset: 675
+iProcessor: 0 sector: 1 phiDT: -386 phi: -305 offset: -225
+iSector: 1 iPhi: -305
+iProcessor: 0 sector: 2 phiDT: 413 phi: 311 offset: 225
+iProcessor: 0 sector: 2 phiDT: 913 phi: 416 offset: 225
+iProcessor: 0 sector: 2 phiDT: -498 phi: 121 offset: 225
+iProcessor: 0 sector: 2 phiDT: 969 phi: 428 offset: 225
+iProcessor: 0 sector: 1 phiDT: 579 phi: -104 offset: -225
+iSector: 1 iPhi: -104
+iProcessor: 0 sector: 1 phiDT: -469 phi: -323 offset: -225
+iSector: 1 iPhi: -323
+iProcessor: 0 sector: 1 phiDT: 1231 phi: 33 offset: -225
+iSector: 1 iPhi: 33
+iInput: 0 phiRef: 33 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 390 phi: -144 offset: -225
+iSector: 1 iPhi: -144
+iProcessor: 0 sector: 2 phiDT: 734 phi: 379 offset: 225
+iProcessor: 0 sector: 3 phiDT: 210 phi: 719 offset: 675
+iProcessor: 0 sector: 3 phiDT: 615 phi: 804 offset: 675
+iProcessor: 0 sector: 2 phiDT: 985 phi: 431 offset: 225
+iProcessor: 0 sector: 1 phiDT: 331 phi: -156 offset: -225
+iSector: 1 iPhi: -156
+iProcessor: 0 sector: 2 phiDT: 968 phi: 428 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1135 phi: 463 offset: 225
+iProcessor: 0 sector: 3 phiDT: 339 phi: 746 offset: 675
+iProcessor: 0 sector: 2 phiDT: -318 phi: 159 offset: 225
+iProcessor: 0 sector: 1 phiDT: 57 phi: -214 offset: -225
+iSector: 1 iPhi: -214
+iProcessor: 0 sector: 1 phiDT: 323 phi: -158 offset: -225
+iSector: 1 iPhi: -158
+iProcessor: 0 sector: 3 phiDT: 559 phi: 792 offset: 675
+iProcessor: 0 sector: 2 phiDT: -167 phi: 190 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1103 phi: 456 offset: 225
+iProcessor: 0 sector: 2 phiDT: 546 phi: 339 offset: 225
+iProcessor: 0 sector: 3 phiDT: 192 phi: 715 offset: 675
+iProcessor: 0 sector: 2 phiDT: 558 phi: 342 offset: 225
+iProcessor: 0 sector: 2 phiDT: 440 phi: 317 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1105 phi: 6 offset: -225
+iSector: 1 iPhi: 6
+iInput: 0 phiRef: 6 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 1270 phi: 941 offset: 675
+iProcessor: 0 sector: 2 phiDT: 59 phi: 237 offset: 225
+iProcessor: 0 sector: 2 phiDT: 722 phi: 376 offset: 225
+iProcessor: 0 sector: 2 phiDT: 19 phi: 228 offset: 225
+iProcessor: 0 sector: 2 phiDT: 613 phi: 353 offset: 225
+iProcessor: 0 sector: 1 phiDT: -162 phi: -258 offset: -225
+iSector: 1 iPhi: -258
+iProcessor: 0 sector: 3 phiDT: -395 phi: 593 offset: 675
+iProcessor: 0 sector: 1 phiDT: 540 phi: -112 offset: -225
+iSector: 1 iPhi: -112
+iProcessor: 0 sector: 3 phiDT: 416 phi: 762 offset: 675
+iProcessor: 0 sector: 3 phiDT: 359 phi: 750 offset: 675
+iProcessor: 0 sector: 3 phiDT: -303 phi: 612 offset: 675
+iProcessor: 0 sector: 1 phiDT: -410 phi: -311 offset: -225
+iSector: 1 iPhi: -311
+iProcessor: 0 sector: 3 phiDT: -35 phi: 668 offset: 675
+iProcessor: 0 sector: 1 phiDT: -442 phi: -317 offset: -225
+iSector: 1 iPhi: -317
+iProcessor: 0 sector: 1 phiDT: 919 phi: -33 offset: -225
+iSector: 1 iPhi: -33
+iInput: 0 phiRef: -33 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1071 phi: -1 offset: -225
+iSector: 1 iPhi: -1
+iInput: 0 phiRef: -1 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 17 phi: 228 offset: 225
+iProcessor: 0 sector: 1 phiDT: -359 phi: -300 offset: -225
+iSector: 1 iPhi: -300
+iProcessor: 0 sector: 3 phiDT: 496 phi: 779 offset: 675
+iProcessor: 0 sector: 1 phiDT: 991 phi: -18 offset: -225
+iSector: 1 iPhi: -18
+iInput: 0 phiRef: -18 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1251 phi: 37 offset: -225
+iSector: 1 iPhi: 37
+iInput: 0 phiRef: 37 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -111 phi: 652 offset: 675
+iProcessor: 0 sector: 2 phiDT: -62 phi: 212 offset: 225
+iProcessor: 0 sector: 2 phiDT: -451 phi: 131 offset: 225
+iProcessor: 0 sector: 2 phiDT: 252 phi: 277 offset: 225
+iProcessor: 0 sector: 2 phiDT: -235 phi: 176 offset: 225
+iProcessor: 0 sector: 1 phiDT: 403 phi: -141 offset: -225
+iSector: 1 iPhi: -141
+iProcessor: 0 sector: 2 phiDT: 472 phi: 324 offset: 225
+iProcessor: 0 sector: 2 phiDT: -409 phi: 140 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1055 phi: -4 offset: -225
+iSector: 1 iPhi: -4
+iInput: 0 phiRef: -4 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -285 phi: 616 offset: 675
+iProcessor: 0 sector: 3 phiDT: -119 phi: 651 offset: 675
+iProcessor: 0 sector: 1 phiDT: -152 phi: -256 offset: -225
+iSector: 1 iPhi: -256
+iProcessor: 0 sector: 2 phiDT: -132 phi: 198 offset: 225
+iProcessor: 0 sector: 2 phiDT: 309 phi: 289 offset: 225
+iProcessor: 0 sector: 1 phiDT: 446 phi: -132 offset: -225
+iSector: 1 iPhi: -132
+iProcessor: 0 sector: 1 phiDT: 202 phi: -183 offset: -225
+iSector: 1 iPhi: -183
+iProcessor: 0 sector: 2 phiDT: -46 phi: 216 offset: 225
+iProcessor: 0 sector: 3 phiDT: -397 phi: 592 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1032 phi: 891 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1070 phi: 449 offset: 225
+iProcessor: 0 sector: 3 phiDT: 20 phi: 679 offset: 675
+iProcessor: 0 sector: 2 phiDT: -317 phi: 159 offset: 225
+iProcessor: 0 sector: 2 phiDT: -426 phi: 136 offset: 225
+iProcessor: 0 sector: 3 phiDT: 626 phi: 806 offset: 675
+iProcessor: 0 sector: 1 phiDT: 685 phi: -82 offset: -225
+iSector: 1 iPhi: -82
+iInput: 0 phiRef: -82 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 826 phi: -52 offset: -225
+iSector: 1 iPhi: -52
+iInput: 0 phiRef: -52 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 796 phi: 392 offset: 225
+iProcessor: 0 sector: 2 phiDT: 842 phi: 401 offset: 225
+iProcessor: 0 sector: 3 phiDT: 231 phi: 723 offset: 675
+iProcessor: 0 sector: 2 phiDT: 532 phi: 336 offset: 225
+iProcessor: 0 sector: 2 phiDT: -31 phi: 219 offset: 225
+iProcessor: 0 sector: 2 phiDT: -364 phi: 149 offset: 225
+iProcessor: 0 sector: 2 phiDT: 923 phi: 418 offset: 225
+iProcessor: 0 sector: 3 phiDT: 467 phi: 772 offset: 675
+iProcessor: 0 sector: 1 phiDT: 875 phi: -42 offset: -225
+iSector: 1 iPhi: -42
+iInput: 0 phiRef: -42 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 186 phi: 264 offset: 225
+iProcessor: 0 sector: 3 phiDT: 243 phi: 725 offset: 675
+iProcessor: 0 sector: 1 phiDT: 872 phi: -43 offset: -225
+iSector: 1 iPhi: -43
+iInput: 0 phiRef: -43 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 263 phi: 280 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1108 phi: 7 offset: -225
+iSector: 1 iPhi: 7
+iInput: 0 phiRef: 7 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -411 phi: 589 offset: 675
+iProcessor: 0 sector: 2 phiDT: 991 phi: 432 offset: 225
+iProcessor: 0 sector: 2 phiDT: -370 phi: 148 offset: 225
+iProcessor: 0 sector: 2 phiDT: -220 phi: 179 offset: 225
+iProcessor: 0 sector: 2 phiDT: -523 phi: 116 offset: 225
+iProcessor: 0 sector: 1 phiDT: 731 phi: -72 offset: -225
+iSector: 1 iPhi: -72
+iInput: 0 phiRef: -72 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 295 phi: -164 offset: -225
+iSector: 1 iPhi: -164
+iProcessor: 0 sector: 1 phiDT: 507 phi: -119 offset: -225
+iSector: 1 iPhi: -119
+iProcessor: 0 sector: 2 phiDT: 919 phi: 417 offset: 225
+iProcessor: 0 sector: 2 phiDT: 647 phi: 360 offset: 225
+iProcessor: 0 sector: 3 phiDT: 329 phi: 744 offset: 675
+iProcessor: 0 sector: 2 phiDT: 884 phi: 410 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1027 phi: -10 offset: -225
+iSector: 1 iPhi: -10
+iInput: 0 phiRef: -10 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 678 phi: -83 offset: -225
+iSector: 1 iPhi: -83
+iInput: 0 phiRef: -83 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 656 phi: 362 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1261 phi: 39 offset: -225
+iSector: 1 iPhi: 39
+iInput: 0 phiRef: 39 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 852 phi: -47 offset: -225
+iSector: 1 iPhi: -47
+iInput: 0 phiRef: -47 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -269 phi: -281 offset: -225
+iSector: 1 iPhi: -281
+iProcessor: 0 sector: 1 phiDT: 839 phi: -49 offset: -225
+iSector: 1 iPhi: -49
+iInput: 0 phiRef: -49 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 570 phi: 794 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1009 phi: 436 offset: 225
+iProcessor: 0 sector: 3 phiDT: 247 phi: 726 offset: 675
+iProcessor: 0 sector: 2 phiDT: 425 phi: 314 offset: 225
+iProcessor: 0 sector: 2 phiDT: 182 phi: 263 offset: 225
+iProcessor: 0 sector: 2 phiDT: 790 phi: 390 offset: 225
+iProcessor: 0 sector: 3 phiDT: 276 phi: 732 offset: 675
+iProcessor: 0 sector: 3 phiDT: 583 phi: 797 offset: 675
+iProcessor: 0 sector: 2 phiDT: 922 phi: 418 offset: 225
+iProcessor: 0 sector: 3 phiDT: 220 phi: 721 offset: 675
+iProcessor: 0 sector: 3 phiDT: -285 phi: 616 offset: 675
+iProcessor: 0 sector: 1 phiDT: 715 phi: -75 offset: -225
+iSector: 1 iPhi: -75
+iInput: 0 phiRef: -75 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 138 phi: -197 offset: -225
+iSector: 1 iPhi: -197
+iProcessor: 0 sector: 1 phiDT: 43 phi: -216 offset: -225
+iSector: 1 iPhi: -216
+iProcessor: 0 sector: 3 phiDT: 289 phi: 735 offset: 675
+iProcessor: 0 sector: 1 phiDT: 60 phi: -213 offset: -225
+iSector: 1 iPhi: -213
+iProcessor: 0 sector: 3 phiDT: 393 phi: 757 offset: 675
+iProcessor: 0 sector: 2 phiDT: -540 phi: 112 offset: 225
+iProcessor: 0 sector: 2 phiDT: 433 phi: 315 offset: 225
+iProcessor: 0 sector: 2 phiDT: 625 phi: 356 offset: 225
+iProcessor: 0 sector: 1 phiDT: 34 phi: -218 offset: -225
+iSector: 1 iPhi: -218
+iProcessor: 0 sector: 3 phiDT: -394 phi: 593 offset: 675
+iProcessor: 0 sector: 2 phiDT: -381 phi: 146 offset: 225
+iProcessor: 0 sector: 1 phiDT: 857 phi: -46 offset: -225
+iSector: 1 iPhi: -46
+iInput: 0 phiRef: -46 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1025 phi: -10 offset: -225
+iSector: 1 iPhi: -10
+iInput: 0 phiRef: -10 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: -266 phi: 620 offset: 675
+iProcessor: 0 sector: 1 phiDT: -269 phi: -281 offset: -225
+iSector: 1 iPhi: -281
+iProcessor: 0 sector: 3 phiDT: 580 phi: 796 offset: 675
+iProcessor: 0 sector: 2 phiDT: 241 phi: 275 offset: 225
+iProcessor: 0 sector: 3 phiDT: -246 phi: 624 offset: 675
+iProcessor: 0 sector: 2 phiDT: -333 phi: 156 offset: 225
+iProcessor: 0 sector: 1 phiDT: -20 phi: -229 offset: -225
+iSector: 1 iPhi: -229
+iProcessor: 0 sector: 3 phiDT: 1030 phi: 891 offset: 675
+iProcessor: 0 sector: 3 phiDT: 392 phi: 757 offset: 675
+iProcessor: 0 sector: 1 phiDT: 760 phi: -66 offset: -225
+iSector: 1 iPhi: -66
+iInput: 0 phiRef: -66 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -197 phi: -266 offset: -225
+iSector: 1 iPhi: -266
+iProcessor: 0 sector: 1 phiDT: 750 phi: -68 offset: -225
+iSector: 1 iPhi: -68
+iInput: 0 phiRef: -68 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1042 phi: -7 offset: -225
+iSector: 1 iPhi: -7
+iInput: 0 phiRef: -7 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -157 phi: 193 offset: 225
+iProcessor: 0 sector: 3 phiDT: 294 phi: 736 offset: 675
+iProcessor: 0 sector: 2 phiDT: 22 phi: 229 offset: 225
+iProcessor: 0 sector: 1 phiDT: 181 phi: -188 offset: -225
+iSector: 1 iPhi: -188
+iProcessor: 0 sector: 2 phiDT: 226 phi: 272 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1033 phi: 441 offset: 225
+iProcessor: 0 sector: 3 phiDT: -342 phi: 604 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1265 phi: 490 offset: 225
+iProcessor: 0 sector: 2 phiDT: 965 phi: 427 offset: 225
+iProcessor: 0 sector: 1 phiDT: 231 phi: -177 offset: -225
+iSector: 1 iPhi: -177
+iProcessor: 0 sector: 3 phiDT: -167 phi: 640 offset: 675
+iProcessor: 0 sector: 2 phiDT: -290 phi: 165 offset: 225
+iProcessor: 0 sector: 3 phiDT: -210 phi: 631 offset: 675
+iProcessor: 0 sector: 1 phiDT: 927 phi: -31 offset: -225
+iSector: 1 iPhi: -31
+iInput: 0 phiRef: -31 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: -479 phi: -325 offset: -225
+iSector: 1 iPhi: -325
+iProcessor: 0 sector: 1 phiDT: 64 phi: -212 offset: -225
+iSector: 1 iPhi: -212
+iProcessor: 0 sector: 1 phiDT: 914 phi: -34 offset: -225
+iSector: 1 iPhi: -34
+iInput: 0 phiRef: -34 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -368 phi: 148 offset: 225
+iProcessor: 0 sector: 2 phiDT: 401 phi: 309 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1133 phi: 12 offset: -225
+iSector: 1 iPhi: 12
+iInput: 0 phiRef: 12 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 1200 phi: 26 offset: -225
+iSector: 1 iPhi: 26
+iInput: 0 phiRef: 26 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 482 phi: 776 offset: 675
+iProcessor: 0 sector: 1 phiDT: 155 phi: -193 offset: -225
+iSector: 1 iPhi: -193
+iProcessor: 0 sector: 3 phiDT: 454 phi: 770 offset: 675
+iProcessor: 0 sector: 3 phiDT: 67 phi: 689 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1256 phi: 938 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1117 phi: 459 offset: 225
+iProcessor: 0 sector: 3 phiDT: 211 phi: 719 offset: 675
+iProcessor: 0 sector: 1 phiDT: 38 phi: -218 offset: -225
+iSector: 1 iPhi: -218
+iProcessor: 0 sector: 2 phiDT: -428 phi: 136 offset: 225
+iProcessor: 0 sector: 2 phiDT: -297 phi: 163 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1175 phi: 921 offset: 675
+iProcessor: 0 sector: 2 phiDT: -164 phi: 191 offset: 225
+iProcessor: 0 sector: 1 phiDT: 811 phi: -55 offset: -225
+iSector: 1 iPhi: -55
+iInput: 0 phiRef: -55 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -524 phi: 116 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1153 phi: 16 offset: -225
+iSector: 1 iPhi: 16
+iInput: 0 phiRef: 16 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 545 phi: 339 offset: 225
+iProcessor: 0 sector: 2 phiDT: -163 phi: 191 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1212 phi: 929 offset: 675
+iProcessor: 0 sector: 1 phiDT: 701 phi: -78 offset: -225
+iSector: 1 iPhi: -78
+iInput: 0 phiRef: -78 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 494 phi: 328 offset: 225
+iProcessor: 0 sector: 2 phiDT: -416 phi: 138 offset: 225
+iProcessor: 0 sector: 1 phiDT: 752 phi: -68 offset: -225
+iSector: 1 iPhi: -68
+iInput: 0 phiRef: -68 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 1222 phi: 481 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1151 phi: 466 offset: 225
+iProcessor: 0 sector: 3 phiDT: -369 phi: 598 offset: 675
+iProcessor: 0 sector: 2 phiDT: 890 phi: 411 offset: 225
+iProcessor: 0 sector: 2 phiDT: 821 phi: 397 offset: 225
+iProcessor: 0 sector: 1 phiDT: 921 phi: -32 offset: -225
+iSector: 1 iPhi: -32
+iInput: 0 phiRef: -32 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 202 phi: 717 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1268 phi: 41 offset: -225
+iSector: 1 iPhi: 41
+iInput: 0 phiRef: 41 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 366 phi: 751 offset: 675
+iProcessor: 0 sector: 3 phiDT: -529 phi: 565 offset: 675
+iProcessor: 0 sector: 3 phiDT: -276 phi: 618 offset: 675
+iProcessor: 0 sector: 3 phiDT: -310 phi: 610 offset: 675
+iProcessor: 0 sector: 2 phiDT: -22 phi: 221 offset: 225
+iProcessor: 0 sector: 3 phiDT: -266 phi: 620 offset: 675
+iProcessor: 0 sector: 1 phiDT: 230 phi: -177 offset: -225
+iSector: 1 iPhi: -177
+iProcessor: 0 sector: 2 phiDT: 1029 phi: 440 offset: 225
+iProcessor: 0 sector: 3 phiDT: 125 phi: 701 offset: 675
+iProcessor: 0 sector: 1 phiDT: 251 phi: -173 offset: -225
+iSector: 1 iPhi: -173
+iProcessor: 0 sector: 3 phiDT: 745 phi: 831 offset: 675
+iProcessor: 0 sector: 2 phiDT: 462 phi: 321 offset: 225
+iProcessor: 0 sector: 2 phiDT: -527 phi: 115 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1043 phi: 443 offset: 225
+iProcessor: 0 sector: 2 phiDT: 305 phi: 288 offset: 225
+iProcessor: 0 sector: 3 phiDT: 58 phi: 687 offset: 675
+iProcessor: 0 sector: 2 phiDT: 320 phi: 292 offset: 225
+iProcessor: 0 sector: 3 phiDT: -447 phi: 582 offset: 675
+iProcessor: 0 sector: 2 phiDT: 775 phi: 387 offset: 225
+iProcessor: 0 sector: 3 phiDT: 65 phi: 688 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1168 phi: 470 offset: 225
+iProcessor: 0 sector: 3 phiDT: -462 phi: 579 offset: 675
+iProcessor: 0 sector: 3 phiDT: 341 phi: 746 offset: 675
+iProcessor: 0 sector: 3 phiDT: -448 phi: 581 offset: 675
+iProcessor: 0 sector: 1 phiDT: 1232 phi: 33 offset: -225
+iSector: 1 iPhi: 33
+iInput: 0 phiRef: 33 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -423 phi: 137 offset: 225
+iProcessor: 0 sector: 3 phiDT: 679 phi: 817 offset: 675
+iProcessor: 0 sector: 1 phiDT: 199 phi: -184 offset: -225
+iSector: 1 iPhi: -184
+iProcessor: 0 sector: 2 phiDT: 214 phi: 269 offset: 225
+iProcessor: 0 sector: 3 phiDT: -209 phi: 632 offset: 675
+iProcessor: 0 sector: 3 phiDT: -117 phi: 651 offset: 675
+iProcessor: 0 sector: 1 phiDT: -402 phi: -309 offset: -225
+iSector: 1 iPhi: -309
+iProcessor: 0 sector: 2 phiDT: -122 phi: 200 offset: 225
+iProcessor: 0 sector: 1 phiDT: 962 phi: -24 offset: -225
+iSector: 1 iPhi: -24
+iInput: 0 phiRef: -24 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 55 phi: 236 offset: 225
+iProcessor: 0 sector: 2 phiDT: 951 phi: 424 offset: 225
+iProcessor: 0 sector: 3 phiDT: -525 phi: 565 offset: 675
+iProcessor: 0 sector: 2 phiDT: 648 phi: 360 offset: 225
+iProcessor: 0 sector: 1 phiDT: -385 phi: -305 offset: -225
+iSector: 1 iPhi: -305
+iProcessor: 0 sector: 1 phiDT: 710 phi: -77 offset: -225
+iSector: 1 iPhi: -77
+iInput: 0 phiRef: -77 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 486 phi: -124 offset: -225
+iSector: 1 iPhi: -124
+iProcessor: 0 sector: 2 phiDT: 823 phi: 397 offset: 225
+iProcessor: 0 sector: 2 phiDT: 617 phi: 354 offset: 225
+iProcessor: 0 sector: 1 phiDT: 209 phi: -182 offset: -225
+iSector: 1 iPhi: -182
+iProcessor: 0 sector: 3 phiDT: 589 phi: 798 offset: 675
+iProcessor: 0 sector: 3 phiDT: 1264 phi: 940 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1181 phi: 472 offset: 225
+iProcessor: 0 sector: 2 phiDT: 279 phi: 283 offset: 225
+iProcessor: 0 sector: 1 phiDT: 1251 phi: 37 offset: -225
+iSector: 1 iPhi: 37
+iInput: 0 phiRef: 37 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -152 phi: 194 offset: 225
+iProcessor: 0 sector: 2 phiDT: 1086 phi: 452 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1079 phi: 901 offset: 675
+iProcessor: 0 sector: 1 phiDT: 773 phi: -63 offset: -225
+iSector: 1 iPhi: -63
+iInput: 0 phiRef: -63 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: 383 phi: 305 offset: 225
+iProcessor: 0 sector: 3 phiDT: 1004 phi: 885 offset: 675
+iProcessor: 0 sector: 2 phiDT: 1223 phi: 481 offset: 225
+iProcessor: 0 sector: 2 phiDT: -349 phi: 152 offset: 225
+iProcessor: 0 sector: 3 phiDT: -101 phi: 654 offset: 675
+iProcessor: 0 sector: 2 phiDT: -94 phi: 206 offset: 225
+iProcessor: 0 sector: 2 phiDT: 623 phi: 355 offset: 225
+iProcessor: 0 sector: 1 phiDT: 961 phi: -24 offset: -225
+iSector: 1 iPhi: -24
+iInput: 0 phiRef: -24 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 516 phi: 783 offset: 675
+iProcessor: 0 sector: 3 phiDT: 96 phi: 695 offset: 675
+iProcessor: 0 sector: 3 phiDT: 393 phi: 757 offset: 675
+iProcessor: 0 sector: 1 phiDT: 630 phi: -93 offset: -225
+iSector: 1 iPhi: -93
+iInput: 0 phiRef: -93 iRegion: 1
+iProcessor: 0 sector: 1 phiDT: 374 phi: -147 offset: -225
+iSector: 1 iPhi: -147
+iProcessor: 0 sector: 1 phiDT: 305 phi: -162 offset: -225
+iSector: 1 iPhi: -162
+iProcessor: 0 sector: 1 phiDT: 907 phi: -35 offset: -225
+iSector: 1 iPhi: -35
+iInput: 0 phiRef: -35 iRegion: 1
+iProcessor: 0 sector: 3 phiDT: 930 phi: 870 offset: 675
+iProcessor: 0 sector: 1 phiDT: -427 phi: -314 offset: -225
+iSector: 1 iPhi: -314
+iProcessor: 0 sector: 1 phiDT: 72 phi: -210 offset: -225
+iSector: 1 iPhi: -210
+iProcessor: 0 sector: 1 phiDT: -202 phi: -267 offset: -225
+iSector: 1 iPhi: -267
+iProcessor: 0 sector: 2 phiDT: 251 phi: 277 offset: 225
+iProcessor: 0 sector: 2 phiDT: 797 phi: 392 offset: 225
+iProcessor: 0 sector: 1 phiDT: 692 phi: -80 offset: -225
+iSector: 1 iPhi: -80
+iInput: 0 phiRef: -80 iRegion: 1
+iProcessor: 0 sector: 2 phiDT: -249 phi: 173 offset: 225
+iProcessor: 0 sector: 3 phiDT: 206 phi: 718 offset: 675
+iProcessor: 0 sector: 3 phiDT: -114 phi: 652 offset: 675
+iProcessor: 0 sector: 3 phiDT: 985 phi: 881 offset: 675
+iProcessor: 0 sector: 1 phiDT: 532 phi: -114 offset: -225
+iSector: 1 iPhi: -114
+iProcessor: 0 sector: 2 phiDT: 669 phi: 365 offset: 225
+iProcessor: 0 sector: 2 phiDT: -320 phi: 158 offset: 225
+iProcessor: 0 sector: 1 phiDT: 230 phi: -177 offset: -225
+iSector: 1 iPhi: -177
+iProcessor: 0 sector: 2 phiDT: 602 phi: 351 offset: 225
+iProcessor: 0 sector: 1 phiDT: 93 phi: -206 offset: -225
+iSector: 1 iPhi: -206
+iProcessor: 0 sector: 2 phiDT: 1 phi: 225 offset: 225
+iProcessor: 0 iRegion: 0
+Ref hits
+Logic layer: 0 Hits: 4	4	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 2 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 1
+Ref hits
+Logic layer: 0 Hits: 337	337	95	95	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 10	10	263	263	5	5	0	0	0	0	0	0	0	0	
+Logic layer: 2 Hits: 87	87	339	339	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	190	190	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	295	296	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 190	190	194	194	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 248	250	218	221	98	98	86	87	0	0	0	0	0	0	
+Logic layer: 7 Hits: 115	117	164	166	89	90	80	80	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 2
+Ref hits
+Logic layer: 0 Hits: 0	0	334	334	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	7	7	251	251	2	2	0	0	0	0	0	0	
+Logic layer: 2 Hits: 0	0	338	338	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	194	194	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	291	291	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	301	301	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	259	260	173	173	0	0	0	0	0	0	
+Logic layer: 7 Hits: 0	0	0	0	233	233	209	210	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 3
+Ref hits
+Logic layer: 0 Hits: 0	0	405	405	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	12	12	265	265	12	12	0	0	0	0	
+Logic layer: 2 Hits: 0	0	184	184	222	222	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	168	168	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	248	248	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	279	279	87	87	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	304	307	295	296	30	30	21	21	0	0	
+Logic layer: 7 Hits: 0	0	0	0	247	249	237	237	31	31	26	26	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 4
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	88	88	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	6	6	246	246	8	8	0	0	
+Logic layer: 2 Hits: 0	0	0	0	102	102	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	163	163	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	284	284	0	0	0	0	
+Logic layer: 5 Hits: 0	0	0	0	87	87	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	60	61	58	58	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	52	52	43	43	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 5
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	318	318	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	6	6	230	230	12	12	
+Logic layer: 2 Hits: 0	0	0	0	339	339	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	164	164	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	267	267	0	0	
+Logic layer: 5 Hits: 0	0	0	0	274	274	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	225	227	214	215	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	238	243	192	192	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 6
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	430	430	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	0	0	11	11	287	287	
+Logic layer: 2 Hits: 0	0	0	0	213	213	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	174	174	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	318	318	
+Logic layer: 5 Hits: 0	0	0	0	272	272	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	309	309	336	336	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	254	254	254	255	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+

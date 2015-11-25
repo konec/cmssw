@@ -1,0 +1,168 @@
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+min Phi in each logicRegion (X) in each ref Layer (Y): 
+          10800	          108	          150	          300	          10800	          10800	          10800	
+          10800	          0	          150	          300	          450	          746	          10800	
+          10800	          -9	          150	          300	          10800	          10800	          10800	
+          10800	          18	          167	          318	          467	          10800	          10800	
+          10800	          2	          152	          302	          452	          10800	          10800	
+          10800	          52	          150	          300	          10800	          10800	          10800	
+          10800	          93	          153	          301	          10800	          10800	          10800	
+          10800	          94	          150	          300	          10800	          10800	          10800	
+
+max Phi in each logicRegion (X) in each ref Layer (Y): 
+          -10800	          149	          299	          492	          -10800	          -10800	          -10800	
+          -10800	          149	          299	          449	          599	          749	          -10800	
+          -10800	          149	          299	          549	          -10800	          -10800	          -10800	
+          -10800	          129	          281	          942	          582	          -10800	          -10800	
+          -10800	          148	          298	          -307	          598	          -10800	          -10800	
+          -10800	          149	          299	          512	          -10800	          -10800	          -10800	
+          -10800	          149	          296	          -397	          -10800	          -10800	          -10800	
+          -10800	          145	          295	          -114	          -10800	          -10800	          -10800	
+
+iProcessor: 0 iRegion: 0
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 2 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 1
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 2 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 2
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 2 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 3
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 2 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 4
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 2 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 5
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 2 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+iProcessor: 0 iRegion: 6
+Ref hits
+Logic layer: 0 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 1 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 2 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 3 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 4 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 5 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 6 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 7 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 8 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 9 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 10 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 11 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 12 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 13 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 14 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 15 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 16 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+Logic layer: 17 Hits: 0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
