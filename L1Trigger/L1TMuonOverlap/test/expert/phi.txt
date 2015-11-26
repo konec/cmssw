@@ -1,0 +1,24 @@
+
+
+
+refLayer 0: 
+processor 1: 107             150             300             557             600             750	
+processor 2: 108             150             300             558             600             750
+processor 3: 108             150             300             558             600             750
+processor 4: 108             150             300             558             600             750
+processor 5: 108             150             300             10800           10800           10800
+
+refLayer 2: 
+processor 1: -9              150             300             442             600             750
+processor 2: -8              150             300             441             600             750
+processor 3: -8              150             300             442             600             750
+processor 4: -8              150             300             441             600             750
+processor 5: -9              150             300             10800           10800           10800
+
+refLayer 5:
+processor 1: 52              150             300             502             600             750
+processor 2: 52              150             300             502             600             750
+processor 3: 52              150             300             502             600             750
+processor 4: 53              150             300             502             600             750
+processor 5: 52              150             300             10800           10800           10800
+

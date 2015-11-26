@@ -34,3 +34,5 @@ void L1MTFOverlapParamsDBProducer::analyze(const edm::Event& ev, const edm::Even
 }
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
+#include "FWCore/Framework/interface/MakerMacros.h"
+DEFINE_FWK_MODULE(L1MTFOverlapParamsDBProducer);

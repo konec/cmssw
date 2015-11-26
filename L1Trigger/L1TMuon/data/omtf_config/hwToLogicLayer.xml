@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<OMTF xmlns:xi="http://www.w3.org/2001/XInclude" version="0x00020004">
+<OMTF xmlns:xi="http://www.w3.org/2001/XInclude" version="0x00020005">
 
 <GlobalData nPdfAddrBits="7" nPdfValBits="6" nHitsPerLayer="6" nPhiBits="11" nPhiBins="5400" nRefHits="128" nTestRefHits="4" nProcessors="6" nLogicRegions="6" nInputs="14" nLayers="18" nRefLayers="8" nGoldenPatterns="52"/>
 
@@ -19,7 +19,7 @@
 <LayerMap hwName = "ME1/3"  hwNumber = "201"  logicNumber = "6"  bendingLayer = "0" connectedToLayer="6"/>
 <LayerMap hwName = "ME2/3"  hwNumber = "202"  logicNumber = "7"  bendingLayer = "0" connectedToLayer="7"/>
 <LayerMap hwName = "ME3/3"  hwNumber = "203"  logicNumber = "8"  bendingLayer = "0" connectedToLayer="8"/>
-<LayerMap hwName = "ME1/2"  hwNumber = "204"  logicNumber = "9"  bendingLayer = "0" connectedToLayer="9"/>
+<LayerMap hwName = "ME1/2"  hwNumber = "2011"  logicNumber = "9"  bendingLayer = "0" connectedToLayer="9"/>
 <LayerMap hwName = "RB1in"  hwNumber = "301"  logicNumber = "10" bendingLayer = "0" connectedToLayer="10"/>
 <LayerMap hwName = "RB1out" hwNumber = "302"  logicNumber = "11" bendingLayer = "0" connectedToLayer="11"/>
 <LayerMap hwName = "RB2in"  hwNumber = "303"  logicNumber = "12" bendingLayer = "0" connectedToLayer="12"/>

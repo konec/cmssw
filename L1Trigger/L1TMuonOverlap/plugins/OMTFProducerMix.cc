@@ -20,8 +20,6 @@
 #include "L1Trigger/L1TMuonOverlap/interface/XMLConfigWriter.h"
 #include "L1Trigger/L1TMuonOverlap/interface/XMLConfigReader.h"
 
-using namespace L1TMuon;
-
 OMTFProducerMix::OMTFProducerMix(const edm::ParameterSet& cfg):
   theConfig(cfg){
 
@@ -85,7 +83,7 @@ void OMTFProducerMix::beginRun(edm::Run const& run, edm::EventSetup const& iSetu
   edm::ESHandle<L1TMuonOverlapParams> omtfParamsHandle;
   omtfParamsRcd.get(omtfParamsHandle);
 
-  omtfParams = std::unique_ptr<L1TMuonOverlapParams>(new L1TMuonOverlapParams(*omtfParamsHandle.product()));
+  const L1TMuonOverlapParams* omtfParams = omtfParamsHandle.product();
   if (!omtfParams) {
     edm::LogError("L1TMuonOverlapTrackProducer") << "Could not retrieve parameters from Event Setup" << std::endl;
   }
@@ -155,10 +153,6 @@ void OMTFProducerMix::produce(edm::Event& iEvent, const edm::EventSetup& evSetup
 									 iProcessor,
 									 l1t::tftype::omtf_pos);
       
-
-      ///Input data with phi ranges shifted for each processor, so it fits 11 bits range
-      //OMTFinput myShiftedInput =  myOMTF->shiftInput(iProcessor,*myInput);
-
       ///Every second BX contains the mixed event
       if(iEventMix%2==1 && iEventMix>0) myInput.clear();
       ///First BX contains the original event
@@ -214,4 +208,6 @@ void OMTFProducerMix::produce(edm::Event& iEvent, const edm::EventSetup& evSetup
 }
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
+#include "FWCore/Framework/interface/MakerMacros.h"
+DEFINE_FWK_MODULE(OMTFProducerMix);
 

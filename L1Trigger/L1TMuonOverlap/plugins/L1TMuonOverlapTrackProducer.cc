@@ -166,7 +166,7 @@ void L1TMuonOverlapTrackProducer::beginRun(edm::Run const& run, edm::EventSetup 
   edm::ESHandle<L1TMuonOverlapParams> omtfParamsHandle;
   omtfParamsRcd.get(omtfParamsHandle);
 
-  omtfParams = std::unique_ptr<L1TMuonOverlapParams>(new L1TMuonOverlapParams(*omtfParamsHandle.product()));
+  const L1TMuonOverlapParams* omtfParams = omtfParamsHandle.product();
   if (!omtfParams) {
     edm::LogError("L1TMuonOverlapTrackProducer") << "Could not retrieve parameters from Event Setup" << std::endl;
   }

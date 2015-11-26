@@ -64,10 +64,11 @@ int AngleConverter::getProcessorPhi(unsigned int iProcessor, l1t::tftype part, c
   int ichamber = sector-1-2*(processor-1);
   if (ichamber < 0) ichamber += 12;
 
-  int offsetLoc = lround( ((ichamber-1)*M_PI/6+M_PI/12.)/hsPhiPitch );
+  int offsetLoc = lround((ichamber*M_PI/6-M_PI/12.)/hsPhiPitch );
   double scale = 1./4096/hsPhiPitch;
 
   int phi = static_cast<int>(phiDT*scale) + offsetLoc;
+
   return phi;
 }
 

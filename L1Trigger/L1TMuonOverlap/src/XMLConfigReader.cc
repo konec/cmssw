@@ -24,7 +24,7 @@
 #include "xercesc/util/XercesDefs.hpp"
 XERCES_CPP_NAMESPACE_USE
 
-
+#include "L1Trigger/RPCTrigger/interface/RPCConst.h"
 //////////////////////////////////
 // XMLConfigReader
 //////////////////////////////////
@@ -63,7 +63,7 @@ void XMLConfigReader::readLUT(l1t::LUT *lut, const std::string & type){
 
   if(type=="iCharge") outWidth = 1;
   if(type=="iEta") outWidth = 2;
-  if(type=="iPt") outWidth = 6;
+  if(type=="iPt") outWidth = 9;
   if(type=="meanDistPhi"){
     outWidth = 11;
     totalInWidth = 14;
@@ -81,9 +81,13 @@ void XMLConfigReader::readLUT(l1t::LUT *lut, const std::string & type){
   unsigned int in = 0;
   int out = 0;
   for(auto it: aGPs){
-    if(type=="iCharge") out = it->key().theCharge + 1*(it->key().theCharge<0);
+    if(type=="iCharge") out = it->key().theCharge + 1*(it->key().theCharge<0);//FIXME will change convention
     if(type=="iEta") out = it->key().theEtaCode;
-    if(type=="iPt") out = it->key().thePtCode;
+    if(type=="iPt"){
+      int ipt = it->key().thePtCode+1;
+      if(ipt>31) out = 200*2;//FIXME will change convention. Arbitrary pt beyond PAC scale is uesed.
+      else out = RPCConst::ptFromIpt(ipt)*2.0;//FIXME will change convention      
+    }
     if(type=="meanDistPhi"){
       for(unsigned int iLayer = 0;iLayer<OMTFConfiguration::nLayers;++iLayer){
 	for(unsigned int iRefLayer=0;iRefLayer<OMTFConfiguration::nRefLayers;++iRefLayer){
@@ -315,7 +319,7 @@ void XMLConfigReader::readConfig( L1TMuonOverlapParams *aConfig){
   DOMNode *aNode = doc->getElementsByTagName(_toDOMS("OMTF"))->item(0);
   DOMElement* aOMTFElement = static_cast<DOMElement *>(aNode);
 
-  unsigned int version = std::atoi(_toString(aOMTFElement->getAttribute(_toDOMS("version"))).c_str());
+  unsigned int version = std::stoul(_toString(aOMTFElement->getAttribute(_toDOMS("version"))), nullptr, 16);
   aConfig->setFwVersion(version);
 
   ///Addresing bits numbers
@@ -515,6 +519,7 @@ void XMLConfigReader::readConfig(OMTFConfiguration *aConfig){
   }
   DOMNode *aNode = doc->getElementsByTagName(_toDOMS("OMTF"))->item(0);
   DOMElement* aOMTFElement = static_cast<DOMElement *>(aNode);  
+  unsigned int fwVersion = std::atoi(_toString(aOMTFElement->getAttribute(_toDOMS("version"))).c_str()); 
 
   ///Addresing bits numbers
   nElem = aOMTFElement->getElementsByTagName(_toDOMS("GlobalData"))->getLength();
@@ -534,6 +539,7 @@ void XMLConfigReader::readConfig(OMTFConfiguration *aConfig){
   unsigned int nLogicRegions =  std::atoi(_toString(aElement->getAttribute(_toDOMS("nLogicRegions"))).c_str());
   unsigned int nInputs =  std::atoi(_toString(aElement->getAttribute(_toDOMS("nInputs"))).c_str());
   unsigned int nGoldenPatterns =  std::atoi(_toString(aElement->getAttribute(_toDOMS("nGoldenPatterns"))).c_str()); 
+  OMTFConfiguration::fwVersion = fwVersion;
   OMTFConfiguration::minPdfVal = minPdfVal;
   OMTFConfiguration::nPdfAddrBits = nPdfAddrBits;
   OMTFConfiguration::nPdfValBits = nPdfValBits;
@@ -634,8 +640,8 @@ void XMLConfigReader::readConfig(OMTFConfiguration *aConfig){
   ///Vector of all reflayers
   std::vector<std::vector<std::pair<int,int> > > aRefHit2D;
   aRefHit2D.assign(OMTFConfiguration::nRefLayers,aRefHit1D);
-  ///Vector of all processors
-  OMTFConfiguration::regionPhisVsRefLayerVsProcessor.assign(OMTFConfiguration::nProcessors,aRefHit2D);
+  ///Vector of all inputs
+  OMTFConfiguration::regionPhisVsRefLayerVsInput.assign(OMTFConfiguration::nInputs,aRefHit2D);
 
   //Vector of ref hit definitions
   std::vector<RefHitDef> aRefHitsDefs(OMTFConfiguration::nRefHits);
@@ -673,12 +679,11 @@ void XMLConfigReader::readConfig(OMTFConfiguration *aConfig){
       unsigned int iRegion = std::atoi(_toString(aRefHitElement->getAttribute(_toDOMS("iRegion"))).c_str());
       unsigned int iRefLayer = std::atoi(_toString(aRefHitElement->getAttribute(_toDOMS("iRefLayer"))).c_str());
       /////////
-      OMTFConfiguration::regionPhisVsRefLayerVsProcessor[iProcessor][iRefLayer][iRegion] = std::pair<int,int>(iPhiMin,iPhiMax);
+      OMTFConfiguration::regionPhisVsRefLayerVsInput[iInput][iRefLayer][iRegion] = std::pair<int,int>(iPhiMin,iPhiMax);
       OMTFConfiguration::refHitsDefs[iProcessor][iRefHit] = RefHitDef(iInput,iPhiMin,iPhiMax,iRegion,iRefLayer);
       ///Fill all processors with the same setting as for processor 0.
       if(iProcessor==0){
 	for (unsigned int iProcessorTmp=0; iProcessorTmp<OMTFConfiguration::nProcessors; ++iProcessorTmp){
-	  OMTFConfiguration::regionPhisVsRefLayerVsProcessor[iProcessorTmp][iRefLayer][iRegion] = std::pair<int,int>(iPhiMin,iPhiMax);
 	  OMTFConfiguration::refHitsDefs[iProcessorTmp][iRefHit] = RefHitDef(iInput,iPhiMin,iPhiMax,iRegion,iRefLayer);
 	}      
       }

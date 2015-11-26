@@ -62,22 +62,24 @@ process.options = cms.untracked.PSet(wantSummary = cms.untracked.bool(True))
 
 process.source = cms.Source(
     'PoolSource',
-    fileNames = cms.untracked.vstring('file:/home/akalinow/scratch/CMS/OverlapTrackFinder/Crab/SingleMuFullEtaTestSample/750_FullEta_v2/data/SingleMu_12_m_1_1_hh0.root')
-    #fileNames = cms.untracked.vstring('file:/home/akalinow/scratch/CMS/OverlapTrackFinder/Crab/WToMuNu_Tune4C_13TeV-pythia8/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/GEN-SIM-RAW/data/WToMuNu_Tune4C_13TeV-pythia8_10_1_9XA.root')
+    #fileNames = cms.untracked.vstring('file:///afs/cern.ch/work/a/akalinow/CMS/OverlapTrackFinder/data/Crab/SingleMuFullEtaTestSample/720_FullEta_v1/data/SingleMu_16_p_1_2_TWz.root')
+    fileNames = cms.untracked.vstring('file:///afs/cern.ch/work/a/akalinow/CMS/OverlapTrackFinder/data/Crab/SingleMuFullEta/721_FullEta_v4/data/SingleMu_25_p_133_2_QJ1.root')
+   
 )
 
+'''
 ##Use all available events in a single job.
 ##Only for making the connections maps.
 process.source.fileNames =  cms.untracked.vstring()
-path = "/home/akalinow/scratch/CMS/OverlapTrackFinder/Crab/SingleMuFullEta/721_FullEta_v4/data/"
-command = "ls "+path+"/SingleMu_25_?_9{1,2}*"
+path = "/afs/cern.ch/work/a/akalinow/CMS/OverlapTrackFinder/data/Crab/SingleMuFullEta/721_FullEta_v4/data/"
+command = "ls "+path+"/SingleMu_25_?_*"
 fileList = commands.getoutput(command).split("\n")
 process.source.fileNames =  cms.untracked.vstring()
 for aFile in fileList:
     process.source.fileNames.append('file:'+aFile)
+'''
 
-
-process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(10000))
+process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1))
 
 ###TEST
 '''
@@ -99,6 +101,16 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condD
 from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
 
+####Event Setup Producer
+process.load('L1Trigger.L1TMuonOverlap.fakeMuonOverlapParams_cfi')
+process.esProd = cms.EDAnalyzer("EventSetupRecordDataGetter",
+   toGet = cms.VPSet(
+      cms.PSet(record = cms.string('L1TMuonOverlapParamsRcd'),
+               data = cms.vstring('L1TMuonOverlapParams'))
+                   ),
+   verbose = cms.untracked.bool(True)
+)
+
 ###OMTF pattern maker configuration
 process.omtfPatternMaker = cms.EDAnalyzer("OMTFPatternMaker",
                                           srcDTPh = cms.InputTag('simDtTriggerPrimitiveDigis'),
@@ -106,19 +118,19 @@ process.omtfPatternMaker = cms.EDAnalyzer("OMTFPatternMaker",
                                           srcCSC = cms.InputTag('simCscTriggerPrimitiveDigis','MPCSORTED'),
                                           srcRPC = cms.InputTag('simMuonRPCDigis'),                                              
                                           g4SimTrackSrc = cms.InputTag('g4SimHits'),
-                                          makeGoldenPatterns = cms.bool(False),                                     
-                                          makeConnectionsMaps = cms.bool(True),                                      
+                                          makeGoldenPatterns = cms.bool(True),                                     
+                                          makeConnectionsMaps = cms.bool(False),                                      
                                           dropRPCPrimitives = cms.bool(False),                                    
-                                          dropDTPrimitives = cms.bool(True),                                    
-                                          dropCSCPrimitives = cms.bool(True),   
-                                          ptCode = cms.int32(16),
-                                          charge = cms.int32(1),
+                                          dropDTPrimitives = cms.bool(False),                                    
+                                          dropCSCPrimitives = cms.bool(False),   
+                                          ptCode = cms.int32(25),#this is old PAC pt scale.
+                                          charge = cms.int32(1),#can be 0(corresponds to q=-1) or 1(q=1)
                                           omtf = cms.PSet(
-                                              configFromXML = cms.bool(True),   
+                                              configFromXML = cms.bool(False),   
                                               patternsXMLFiles = cms.VPSet(                                       
-                                                  cms.PSet(patternsXMLFile = cms.FileInPath("L1Trigger/L1TMuonOverlap/data/Patterns_ipt4_31_750.xml")),
+                                                  cms.PSet(patternsXMLFile = cms.FileInPath("L1Trigger/L1TMuon/data/omtf_config/Patterns_ipt6_31.xml")),
                                               ),
-                                              configXMLFile = cms.FileInPath("L1Trigger/L1TMuonOverlap/data/hwToLogicLayer_750.xml"),
+                                              configXMLFile = cms.FileInPath("L1Trigger/L1TMuon/data/omtf_config/hwToLogicLayer.xml"),
                                           )
 )
 

@@ -19,7 +19,6 @@
 #include "L1Trigger/RPCTrigger/interface/RPCConst.h"
 
 #include "SimDataFormats/Track/interface/SimTrack.h"
-
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
 OMTFProcessor::OMTFProcessor(const edm::ParameterSet & theConfig){
@@ -60,15 +59,15 @@ bool OMTFProcessor::configure(XMLConfigReader *aReader){
 }
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
-bool OMTFProcessor::configure( std::shared_ptr<L1TMuonOverlapParams> omtfParams){
+bool OMTFProcessor::configure(const L1TMuonOverlapParams* omtfParams){
 
   myResults.assign(OMTFConfiguration::nTestRefHits,OMTFProcessor::resultsMap());
   
-  l1t::LUT* chargeLUT =  omtfParams->chargeLUT();
-  l1t::LUT* etaLUT =  omtfParams->etaLUT();
-  l1t::LUT* ptLUT =  omtfParams->ptLUT();
-  l1t::LUT* pdfLUT =  omtfParams->pdfLUT();
-  l1t::LUT* meanDistPhiLUT =  omtfParams->meanDistPhiLUT();
+  const l1t::LUT* chargeLUT =  omtfParams->chargeLUT();
+  const l1t::LUT* etaLUT =  omtfParams->etaLUT();
+  const l1t::LUT* ptLUT =  omtfParams->ptLUT();
+  const l1t::LUT* pdfLUT =  omtfParams->pdfLUT();
+  const l1t::LUT* meanDistPhiLUT =  omtfParams->meanDistPhiLUT();
 
   unsigned int nGPs = OMTFConfiguration::nGoldenPatterns;
   unsigned int address = 0;
@@ -77,9 +76,7 @@ bool OMTFProcessor::configure( std::shared_ptr<L1TMuonOverlapParams> omtfParams)
     address = iGP;
     iEta = etaLUT->data(address);
     iCharge = chargeLUT->data(address);
-    if(iCharge==0) iCharge = -1;//FIXME: Standarise to 0,1
     iPt = ptLUT->data(address);
-
     GoldenPattern::vector2D meanDistPhi2D(OMTFConfiguration::nLayers);
     GoldenPattern::vector1D pdf1D(exp2(OMTFConfiguration::nPdfAddrBits));
     GoldenPattern::vector3D pdf3D(OMTFConfiguration::nLayers);
@@ -298,21 +295,6 @@ const std::vector<OMTFProcessor::resultsMap> & OMTFProcessor::processInput(unsig
 }   
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-OMTFinput OMTFProcessor::shiftInput(unsigned int iProcessor,
-				    const OMTFinput & aInput){
-
-  int minPhi =  OMTFConfiguration::globalPhiStart(iProcessor);
-
-  ///OMTFConfiguration::nPhiBins/2 to shift the minPhi to 0-nBins scale,
-  if(minPhi<0) minPhi+=OMTFConfiguration::nPhiBins;
-
-  OMTFinput myCopy = aInput;
-  myCopy.shiftMyPhi(minPhi);
-  
-  return myCopy;
-}
-////////////////////////////////////////////
-////////////////////////////////////////////
 OMTFinput::vector1D OMTFProcessor::restrictInput(unsigned int iProcessor,
 						 unsigned int iRegion,
 						 unsigned int iLayer,
@@ -336,7 +318,16 @@ void OMTFProcessor::fillCounts(unsigned int iProcessor,
 			       const SimTrack* aSimMuon){
 
   int theCharge = (abs(aSimMuon->type()) == 13) ? aSimMuon->type()/-13 : 0;
+  //Charge convention for uGMT is 0,1
+  if(theCharge<0) theCharge=0;
+  else theCharge=1;
   unsigned int  iPt =  RPCConst::iptFromPt(aSimMuon->momentum().pt());
+  ///Stupid conersion. Have to go through PAC pt scale, as we later
+  ///shitf resulting pt code by +1
+  iPt+=1;
+  if(iPt>31) iPt=200*2;
+  else iPt = RPCConst::ptFromIpt(iPt)*2.0;//MicroGMT has 0.5 GeV pt bins
+  //////
 
   //////////////////////////////////////  
   std::bitset<128> refHitsBits = aInput.getRefHits(iProcessor);

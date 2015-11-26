@@ -65,12 +65,9 @@ void XMLConfigWriter::initialiseXMLDocument(const std::string & docName){
   theDoc = domImpl->createDocument(0,_toDOMS(docName.c_str()), 0);
   theTopElement = theDoc->getDocumentElement();
   
-  unsigned int version = 1;
-  unsigned int subVersion = 0;
+  unsigned int version = OMTFConfiguration::fwVersion;
   unsigned int mask32bits = pow(2,32)-1;
   
-  version = version<<16;
-  version+=subVersion;
   version &=mask32bits;
   
   std::ostringstream stringStr;
