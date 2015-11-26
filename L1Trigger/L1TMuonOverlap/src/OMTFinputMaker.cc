@@ -32,8 +32,7 @@ OMTFinputMaker::~OMTFinputMaker(){ }
 ///////////////////////////////////////
 bool  OMTFinputMaker::acceptDigi(uint32_t rawId,
 				 unsigned int iProcessor,
-				 l1t::tftype type)
-{
+				 l1t::tftype type){
 
   unsigned int aMin = OMTFConfiguration::barrelMin[iProcessor];
   unsigned int aMax = OMTFConfiguration::barrelMax[iProcessor];
@@ -136,8 +135,7 @@ bool  OMTFinputMaker::acceptDigi(uint32_t rawId,
 ///////////////////////////////////////
 unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId, 
 					    unsigned int iProcessor,
-					    l1t::tftype type)
-{
+					    l1t::tftype type){
 
   unsigned int iInput = 99;
   unsigned int aSector = 99;
@@ -252,8 +250,7 @@ OMTFinput OMTFinputMaker::processDT(const L1MuDTChambPhContainer *dtPhDigis,
 ////////////////////////////////////////////
 OMTFinput OMTFinputMaker::processCSC(const CSCCorrelatedLCTDigiCollection *cscDigis,
 	       unsigned int iProcessor,
-	       l1t::tftype type)
-{
+	       l1t::tftype type){
 
   OMTFinput result;
   if(!cscDigis) return result;
@@ -265,7 +262,6 @@ OMTFinput OMTFinputMaker::processCSC(const CSCCorrelatedLCTDigiCollection *cscDi
     unsigned int rawid = (*chamber).first;
     ///Check it the data fits into given processor input range
     if(!acceptDigi(rawid, iProcessor, type)) continue;
-
     auto digi = (*chamber).second.first;
     auto dend = (*chamber).second.second;    
     for( ; digi != dend; ++digi ) {
@@ -297,8 +293,7 @@ bool rpcPrimitiveCmp(const  RPCDigi &a, const  RPCDigi &b) { return a.strip() < 
 ////////////////////////////////////////////
 OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
 				unsigned int iProcessor,
-				l1t::tftype type)
-{
+				l1t::tftype type){
 
   OMTFinput result; 
   if(!rpcDigis) return result;
@@ -308,7 +303,6 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
   for (auto rollDigis : rpcDigiCollection) {
     RPCDetId roll = rollDigis.first;
     unsigned int rawid = roll.rawId();
-
     if(!acceptDigi(rawid, iProcessor, type)) continue;
     ///Find clusters of consecutive fired strips.
     ///Have to copy the digis in chamber to sort them (not optimal).
@@ -356,8 +350,8 @@ OMTFinput OMTFinputMaker::buildInputForProcessor(const L1MuDTChambPhContainer *d
 							 const CSCCorrelatedLCTDigiCollection *cscDigis,
 							 const RPCDigiCollection *rpcDigis,
 							 unsigned int iProcessor,
-							 l1t::tftype type)
-{  
+							 l1t::tftype type){
+  
   OMTFinput result;
   result += processDT(dtPhDigis, dtThDigis, iProcessor, type);
   result += processCSC(cscDigis, iProcessor, type);

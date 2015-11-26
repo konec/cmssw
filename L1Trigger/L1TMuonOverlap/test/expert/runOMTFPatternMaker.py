@@ -62,8 +62,9 @@ process.options = cms.untracked.PSet(wantSummary = cms.untracked.bool(True))
 
 process.source = cms.Source(
     'PoolSource',
-    fileNames = cms.untracked.vstring('file:///afs/cern.ch/work/a/akalinow/CMS/OverlapTrackFinder/data/Crab/SingleMuFullEtaTestSample/720_FullEta_v1/data/SingleMu_16_p_1_2_TWz.root')
-    #fileNames = cms.untracked.vstring('file:/home/akalinow/scratch/CMS/OverlapTrackFinder/Crab/WToMuNu_Tune4C_13TeV-pythia8/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/GEN-SIM-RAW/data/WToMuNu_Tune4C_13TeV-pythia8_10_1_9XA.root')
+    #fileNames = cms.untracked.vstring('file:///afs/cern.ch/work/a/akalinow/CMS/OverlapTrackFinder/data/Crab/SingleMuFullEtaTestSample/720_FullEta_v1/data/SingleMu_16_p_1_2_TWz.root')
+    fileNames = cms.untracked.vstring('file:///afs/cern.ch/work/a/akalinow/CMS/OverlapTrackFinder/data/Crab/SingleMuFullEta/721_FullEta_v4/data/SingleMu_25_p_133_2_QJ1.root')
+   
 )
 
 '''
@@ -122,7 +123,7 @@ process.omtfPatternMaker = cms.EDAnalyzer("OMTFPatternMaker",
                                           dropRPCPrimitives = cms.bool(False),                                    
                                           dropDTPrimitives = cms.bool(False),                                    
                                           dropCSCPrimitives = cms.bool(False),   
-                                          ptCode = cms.int32(16),#this is old PAC pt scale.
+                                          ptCode = cms.int32(25),#this is old PAC pt scale.
                                           charge = cms.int32(1),#can be 0(corresponds to q=-1) or 1(q=1)
                                           omtf = cms.PSet(
                                               configFromXML = cms.bool(False),   

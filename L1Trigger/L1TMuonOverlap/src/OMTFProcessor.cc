@@ -318,6 +318,9 @@ void OMTFProcessor::fillCounts(unsigned int iProcessor,
 			       const SimTrack* aSimMuon){
 
   int theCharge = (abs(aSimMuon->type()) == 13) ? aSimMuon->type()/-13 : 0;
+  //Charge convention for uGMT is 0,1
+  if(theCharge<0) theCharge=0;
+  else theCharge=1;
   unsigned int  iPt =  RPCConst::iptFromPt(aSimMuon->momentum().pt());
   ///Stupid conersion. Have to go through PAC pt scale, as we later
   ///shitf resulting pt code by +1

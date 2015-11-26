@@ -169,7 +169,7 @@ void OMTFPatternMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& 
   //l1t::tftype mtfType = l1t::tftype::bmtf;
   l1t::tftype mtfType = l1t::tftype::omtf_pos;
   //l1t::tftype mtfType = l1t::tftype::emtf_pos;
-  
+ 
   ///Loop over all processors, each covering 60 deg in phi
   for(unsigned int iProcessor=0;iProcessor<6;++iProcessor){
         
