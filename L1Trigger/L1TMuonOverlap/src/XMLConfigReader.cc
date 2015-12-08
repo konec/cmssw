@@ -120,7 +120,8 @@ void XMLConfigReader::readLUT(l1t::LUT *lut, const std::string & type){
 //////////////////////////////////////////////////
 std::vector<GoldenPattern*> XMLConfigReader::readPatterns(){
 
-  if(aGPs.size()) return aGPs;
+  //TEST if(aGPs.size()) return aGPs;
+  aGPs.clear();
   
   parser->parse(patternsFile.c_str()); 
   xercesc::DOMDocument* doc = parser->getDocument();

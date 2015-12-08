@@ -51,7 +51,7 @@ bool OMTFProcessor::configure(XMLConfigReader *aReader){
   myResults.assign(OMTFConfiguration::nTestRefHits,OMTFProcessor::resultsMap());
 
   const std::vector<GoldenPattern *> & aGPs = aReader->readPatterns();
-  for(auto it: aGPs){    
+  for(auto it: aGPs){
     if(!addGP(it)) return false;
   }
   
@@ -130,7 +130,7 @@ bool OMTFProcessor::addGP(GoldenPattern *aGP){
 ///////////////////////////////////////////////
 void  OMTFProcessor::averagePatterns(int charge){
 
-  Key aKey(1, 4, charge);
+  Key aKey(1, 8, charge);
 
   while(theGPs.find(aKey)!=theGPs.end()){
 
@@ -140,20 +140,27 @@ void  OMTFProcessor::averagePatterns(int charge){
     GoldenPattern *aGP4 = aGP1;
 
     ++aKey.thePtCode;
-    if(aKey.thePtCode<=31 && theGPs.find(aKey)!=theGPs.end()) aGP2 =  theGPs.find(aKey)->second;
+    while(theGPs.find(aKey)==theGPs.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
+    if(aKey.thePtCode<=400 && theGPs.find(aKey)!=theGPs.end()) aGP2 =  theGPs.find(aKey)->second;
     
-    if(aKey.thePtCode>19){
+    if(aKey.thePtCode>70){
       ++aKey.thePtCode;
-      if(aKey.thePtCode<=31 && theGPs.find(aKey)!=theGPs.end()) aGP3 =  theGPs.find(aKey)->second;
-      
+      while(theGPs.find(aKey)==theGPs.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
+      if(aKey.thePtCode<=400 && theGPs.find(aKey)!=theGPs.end()) aGP3 =  theGPs.find(aKey)->second;
+
       ++aKey.thePtCode;
-      if(aKey.thePtCode<=31 && theGPs.find(aKey)!=theGPs.end()) aGP4 =  theGPs.find(aKey)->second;
+      while(theGPs.find(aKey)==theGPs.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
+      if(aKey.thePtCode<=400 && theGPs.find(aKey)!=theGPs.end()) aGP4 =  theGPs.find(aKey)->second;
     }
     else{
       aGP3 = aGP1;
       aGP4 = aGP2;
-    }
+    }    
+    //HACK. Have to clean this up.
+    ///Previously pt codeswere going by steps of 1, now this is not the case
     ++aKey.thePtCode;
+    while(theGPs.find(aKey)==theGPs.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
+    ///////////////////////////////
     
     
     GoldenPattern::vector2D meanDistPhi  = aGP1->getMeanDistPhi();
@@ -162,7 +169,7 @@ void  OMTFProcessor::averagePatterns(int charge){
     GoldenPattern::vector2D meanDistPhi2  = aGP2->getMeanDistPhi();
     GoldenPattern::vector2D meanDistPhi3  = aGP3->getMeanDistPhi();
     GoldenPattern::vector2D meanDistPhi4  = aGP4->getMeanDistPhi();
-    /*
+    /*    
      std::cout<<"Key: "
 	     <<aGP1->key()
 	     <<" "<<aGP2->key()

@@ -16,6 +16,7 @@
 #include "L1Trigger/L1TMuonOverlap/interface/OMTFConfiguration.h"
 #include "L1Trigger/L1TMuonOverlap/interface/XMLConfigWriter.h"
 
+#include "L1Trigger/RPCTrigger/interface/RPCConst.h"
 
 L1TMuonOverlapTrackProducer::L1TMuonOverlapTrackProducer(const edm::ParameterSet& cfg)
   :theConfig(cfg), myOMTFConfig(0), myOMTF(0), aTopElement(0), myOMTFConfigMaker(0), myWriter(0) {
@@ -91,7 +92,7 @@ void L1TMuonOverlapTrackProducer::endJob(){
     fName = "OMTF";
     myWriter->initialiseXMLDocument(fName);
     myOMTF->averagePatterns(1);
-    myOMTF->averagePatterns(-1);
+    myOMTF->averagePatterns(0);
 
     writeMergedGPs();
 
@@ -108,8 +109,8 @@ void L1TMuonOverlapTrackProducer::writeMergedGPs(){
   GoldenPattern *dummy = new GoldenPattern(Key(0,0,0));
   dummy->reset();
 
-  unsigned int iPtMin = 6;
-  Key aKey = Key(1, iPtMin,-1);
+  unsigned int iPtMin = 8;
+  Key aKey = Key(1, iPtMin,0);
   while(myGPmap.find(aKey)!=myGPmap.end()){
 
     GoldenPattern *aGP1 = myGPmap.find(aKey)->second;
@@ -118,16 +119,20 @@ void L1TMuonOverlapTrackProducer::writeMergedGPs(){
     GoldenPattern *aGP4 = dummy;
 
     ++aKey.thePtCode;
-    if(aKey.thePtCode<=31 && myGPmap.find(aKey)!=myGPmap.end()) aGP2 =  myGPmap.find(aKey)->second;
+    while(myGPmap.find(aKey)==myGPmap.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
+    if(aKey.thePtCode<=400 && myGPmap.find(aKey)!=myGPmap.end()) aGP2 =  myGPmap.find(aKey)->second;
 
-    if(aKey.thePtCode>19){
+    if(aKey.thePtCode>70){
       ++aKey.thePtCode;
-      if(aKey.thePtCode<=31 && myGPmap.find(aKey)!=myGPmap.end()) aGP3 =  myGPmap.find(aKey)->second;
+      while(myGPmap.find(aKey)==myGPmap.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
+      if(aKey.thePtCode<=400 && myGPmap.find(aKey)!=myGPmap.end()) aGP3 =  myGPmap.find(aKey)->second;
 
       ++aKey.thePtCode;
-      if(aKey.thePtCode<=31 && myGPmap.find(aKey)!=myGPmap.end()) aGP4 =  myGPmap.find(aKey)->second;
+      while(myGPmap.find(aKey)==myGPmap.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
+      if(aKey.thePtCode<=400 && myGPmap.find(aKey)!=myGPmap.end()) aGP4 =  myGPmap.find(aKey)->second;
     }
     ++aKey.thePtCode;
+    while(myGPmap.find(aKey)==myGPmap.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
     myWriter->writeGPData(*aGP1,*aGP2, *aGP3, *aGP4);
 
     ///Write the opposite charge.
