@@ -66,7 +66,7 @@ process.source = cms.Source(
     fileNames = cms.untracked.vstring('file:/home/akalinow/scratch/CMS/OverlapTrackFinder/Crab/SingleMuFullEtaTestSample/720_FullEta_v1/data/SingleMu_16_p_1_2_TWz.root')
     )
 
-process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(100))
+process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(1))
 
 ###PostLS1 geometry used
 process.load('Configuration.Geometry.GeometryExtended2015_cff')
@@ -76,45 +76,18 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condD
 from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
 
-path = "job_3_pat/7_5_0/"
+path = "../../job_3_pat/8_0_0/"
 patternsXMLFiles = cms.VPSet()
 for ipt in xrange(4,32):
     patternsXMLFiles.append(cms.PSet(patternsXMLFile = cms.FileInPath(path+"SingleMu_"+str(ipt)+"_p/GPs.xml")))
     patternsXMLFiles.append(cms.PSet(patternsXMLFile = cms.FileInPath(path+"SingleMu_"+str(ipt)+"_m/GPs.xml")))
             
-patternsXMLFiles = cms.VPSet()
-patternsXMLFiles.append(cms.PSet(patternsXMLFile = cms.FileInPath("L1Trigger/L1TMuonOverlap/data/Patterns_ipt4_31_750_4x.xml")))
-
 ###OMTF emulator configuration
-process.load('L1Trigger.L1TMuonOverlap.OMTFProducer_cfi')
+process.load('L1Trigger.L1TMuonOverlap.simMuonOverlapDigis_cfi')
 ##Load configuration directly from XML
-process.omtfEmulator.omtf.configFromXML = cms.bool(True)
+process.simOmtfDigis.omtf.configFromXML = cms.bool(True)
 
-process.omtfEmulator.omtf.patternsXMLFiles = patternsXMLFiles
-process.omtfEmulator.dumpGPToXML = cms.bool(True)  
+process.simOmtfDigis.omtf.patternsXMLFiles = patternsXMLFiles
+process.simOmtfDigis.dumpGPToXML = cms.bool(True)
 
-###Gen level filter configuration
-process.MuonEtaFilter = cms.EDFilter("SimTrackEtaFilter",
-                                minNumber = cms.uint32(1),
-                                src = cms.InputTag("g4SimHits"),
-                                cut = cms.string("momentum.eta<0.9 && momentum.eta>0.83 &&  momentum.pt>1")
-                                )
-process.GenMuPath = cms.Path(process.MuonEtaFilter)
-##########################################
-
-process.L1TMuonSeq = cms.Sequence(process.omtfEmulator)
-
-process.L1TMuonPath = cms.Path(process.MuonEtaFilter*process.L1TMuonSeq)
-
-
-process.out = cms.OutputModule("PoolOutputModule", 
-   fileName = cms.untracked.string("Test.root"),
-                               SelectEvents = cms.untracked.PSet(
-        SelectEvents = cms.vstring('GenMuPath')
-        )
-                               )
-
-process.output_step = cms.EndPath(process.out)
-
-process.schedule = cms.Schedule(process.GenMuPath,process.L1TMuonPath)
-#process.schedule.extend([process.output_step])
+process.p = cms.Path(process.simOmtfDigis)
