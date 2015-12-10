@@ -83,7 +83,7 @@ void XMLConfigReader::readLUT(l1t::LUT *lut, const std::string & type){
   for(auto it: aGPs){
     if(type=="iCharge") out = it->key().theCharge;
     if(type=="iEta") out = it->key().theEtaCode;
-    if(type=="iPt") it->key().thePtCode;
+    if(type=="iPt") out = it->key().thePtCode;
     if(type=="meanDistPhi"){
       for(unsigned int iLayer = 0;iLayer<OMTFConfiguration::nLayers;++iLayer){
 	for(unsigned int iRefLayer=0;iRefLayer<OMTFConfiguration::nRefLayers;++iRefLayer){
@@ -147,7 +147,8 @@ std::vector<GoldenPattern*> XMLConfigReader::readPatterns(){
 	if(aGP) aGPs.push_back(aGP);
       }
       else{
-	aGPs.push_back(buildGP(aGPElement));
+	aGP = buildGP(aGPElement);
+	if(aGP) aGPs.push_back(aGP);
 	break;
       }
     }

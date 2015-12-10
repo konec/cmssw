@@ -103,10 +103,11 @@ bool OMTFProcessor::configure(const L1TMuonOverlapParams* omtfParams){
       pdf3D[iLayer] = pdf2D;
     }
     Key aKey(iEta,iPt,iCharge);
+
     GoldenPattern *aGP = new GoldenPattern(aKey);
     aGP->setMeanDistPhi(meanDistPhi2D);
     aGP->setPdf(pdf3D);
-    addGP(aGP);
+    addGP(aGP);    
   }
   return true;
 }
