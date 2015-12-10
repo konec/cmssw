@@ -153,7 +153,7 @@ unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId,
       aSector = rpc.sector();
       ///on the 0-2pi border we need to add 1 30 deg sector
       ///to get the correct index
-      if(iProcessor==5 && aSector<3) aMin = 0;
+      if(iProcessor==5 && aSector<3) aMin = -1;
       //Use division into rolls
       iRoll = rpc.roll();
       ///Set roll number by hand to keep common input 
@@ -169,7 +169,7 @@ unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId,
       aMin = OMTFConfiguration::endcap10DegMin[iProcessor];
       ///on the 0-2pi border we need to add 4 10 deg sectors
       ///to get the correct index
-      if(iProcessor==5 && aSector<5) aMin = -3;
+      if(iProcessor==5 && aSector<5) aMin = -4;
     }    
     break;
   }
@@ -178,7 +178,7 @@ unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId,
     aSector = dt.sector();
     ///on the 0-2pi border we need to add 1 30 deg sector
     ///to get the correct index
-    if(iProcessor==5 && aSector<3) aMin = 0;
+    if(iProcessor==5 && aSector<3) aMin = -1;
     break;
   }
   case MuonSubdetId::CSC: {   
@@ -187,14 +187,14 @@ unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId,
     aMin = OMTFConfiguration::endcap10DegMin[iProcessor];       
     ///on the 0-2pi border we need to add 4 10deg sectors
     ///to get the correct index
-    if(iProcessor==5 && aSector<5) aMin = -3;
-    ///Endcap region covers alsgo 10 deg sectors
+    if(iProcessor==5 && aSector<5) aMin = -4;
+    ///Endcap region covers algo 10 deg sectors
     ///on the 0-2pi border we need to add 2 20deg sectors
     ///to get the correct index
     if( (type==l1t::tftype::emtf_pos || type==l1t::tftype::emtf_neg) &&
 	csc.station()>1 && csc.ring()==1){
       aMin = OMTFConfiguration::endcap20DegMin[iProcessor];
-      if(iProcessor==5 && aSector<3) aMin = -1;
+      if(iProcessor==5 && aSector<3) aMin = -2;
     }
     break;
   }
@@ -224,6 +224,7 @@ OMTFinput OMTFinputMaker::processDT(const L1MuDTChambPhContainer *dtPhDigis,
 
     ///Check it the data fits into given processor input range
     if(!acceptDigi(detid.rawId(), iProcessor, type)) continue;
+    
     ///Check Trigger primitive quality
     ///Ts2Tag() == 0 - take only first track from DT Trigger Server
     ///BxCnt()  == 0 - ??
@@ -238,7 +239,6 @@ OMTFinput OMTFinputMaker::processDT(const L1MuDTChambPhContainer *dtPhDigis,
     int iPhi =  myAngleConverter.getProcessorPhi(iProcessor, type, digiIt);
     int iEta =  myAngleConverter.getGlobalEta(detid.rawId(), digiIt, dtThDigis);
     unsigned int iInput= getInputNumber(detid.rawId(), iProcessor, type);
-
     result.addLayerHit(iLayer,iInput,iPhi,iEta);
     result.addLayerHit(iLayer+1,iInput,digiIt.phiB(),iEta);
   }
