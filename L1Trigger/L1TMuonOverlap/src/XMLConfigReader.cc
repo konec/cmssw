@@ -81,13 +81,9 @@ void XMLConfigReader::readLUT(l1t::LUT *lut, const std::string & type){
   unsigned int in = 0;
   int out = 0;
   for(auto it: aGPs){
-    if(type=="iCharge") out = it->key().theCharge + 1*(it->key().theCharge<0);//FIXME will change convention
+    if(type=="iCharge") out = it->key().theCharge;
     if(type=="iEta") out = it->key().theEtaCode;
-    if(type=="iPt"){
-      int ipt = it->key().thePtCode+1;
-      if(ipt>31) out = 200*2;//FIXME will change convention. Arbitrary pt beyond PAC scale is uesed.
-      else out = RPCConst::ptFromIpt(ipt)*2.0;//FIXME will change convention      
-    }
+    if(type=="iPt") it->key().thePtCode;
     if(type=="meanDistPhi"){
       for(unsigned int iLayer = 0;iLayer<OMTFConfiguration::nLayers;++iLayer){
 	for(unsigned int iRefLayer=0;iRefLayer<OMTFConfiguration::nRefLayers;++iRefLayer){
@@ -120,7 +116,7 @@ void XMLConfigReader::readLUT(l1t::LUT *lut, const std::string & type){
 //////////////////////////////////////////////////
 std::vector<GoldenPattern*> XMLConfigReader::readPatterns(){
 
-  //TEST if(aGPs.size()) return aGPs;
+  //if(aGPs.size()) return aGPs;
   aGPs.clear();
   
   parser->parse(patternsFile.c_str()); 

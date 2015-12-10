@@ -80,13 +80,12 @@ void L1TMuonOverlapTrackProducer::endJob(){
     myWriter->initialiseXMLDocument(fName);
     const std::map<Key,GoldenPattern*> & myGPmap = myOMTF->getPatterns();
     for(auto itGP: myGPmap){
-      if(itGP.second->key().thePtCode==6) std::cout<<*itGP.second<<std::endl;
-      //myWriter->writeGPData(*itGP.second);
-      if(itGP.second->key().thePtCode>5) myWriter->writeGPData(*itGP.second,*dummy, *dummy, *dummy);
+      //if(itGP.second->key().thePtCode==6) std::cout<<*itGP.second<<std::endl;
+      myWriter->writeGPData(*itGP.second,*dummy, *dummy, *dummy);
     }
     fName = "GPs.xml";
     myWriter->finaliseXMLDocument(fName);
-    ///Write GPs merged by 4 above iPt19, and by 2 below//
+    ///Write GPs merged by 4 above iPt=71, and by 2 below//
     //////////////////////////////////////////////////////
     ///4x merging
     fName = "OMTF";
@@ -122,7 +121,7 @@ void L1TMuonOverlapTrackProducer::writeMergedGPs(){
     while(myGPmap.find(aKey)==myGPmap.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
     if(aKey.thePtCode<=400 && myGPmap.find(aKey)!=myGPmap.end()) aGP2 =  myGPmap.find(aKey)->second;
 
-    if(aKey.thePtCode>70){
+    if(aKey.thePtCode>71){
       ++aKey.thePtCode;
       while(myGPmap.find(aKey)==myGPmap.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
       if(aKey.thePtCode<=400 && myGPmap.find(aKey)!=myGPmap.end()) aGP3 =  myGPmap.find(aKey)->second;
@@ -285,8 +284,9 @@ void L1TMuonOverlapTrackProducer::processCandidates(unsigned int iProcessor, int
       l1t::RegionalMuonCand cand = myOTFCandidates.at(bx, iCand);
       int phiValue = (cand.hwPhi()+procOffset+lowScaleEnd);
       if(phiValue>=(int)OMTFConfiguration::nPhiBins) phiValue-=OMTFConfiguration::nPhiBins;
-      phiValue/=10; //MicroGMT has 10x coarser scale than OMTF
-
+      ///conversion factor: 5400/5760
+      ///offset: 24 uGMT phi bins      
+      phiValue/=9.375+24; 
       cand.setHwPhi(phiValue);
       cand.setTFIdentifiers(iProcessor,mtfType);
       // store candidate

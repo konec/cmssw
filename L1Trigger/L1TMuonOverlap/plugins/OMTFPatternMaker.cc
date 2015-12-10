@@ -110,8 +110,8 @@ void OMTFPatternMaker::endJob(){
     for(auto itGP: myGPmap){
       ////
       unsigned int iPt = theConfig.getParameter<int>("ptCode")+1;
-      if(iPt>31) iPt = 200*2;
-      else iPt = RPCConst::ptFromIpt(iPt)*2.0;//MicroGMT has 0.5 GeV pt bins
+      if(iPt>31) iPt = 200*2+1;
+      else iPt = RPCConst::ptFromIpt(iPt)*2.0+1;//MicroGMT has 0.5 GeV step size, with lower bin edge  (uGMT_pt_code - 1)*step_size
       ////
       if(itGP.first.thePtCode==iPt && 
 	 itGP.first.theCharge==theConfig.getParameter<int>("charge")){ 
