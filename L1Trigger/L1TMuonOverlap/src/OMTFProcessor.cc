@@ -143,7 +143,7 @@ void  OMTFProcessor::averagePatterns(int charge){
     while(theGPs.find(aKey)==theGPs.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
     if(aKey.thePtCode<=400 && theGPs.find(aKey)!=theGPs.end()) aGP2 =  theGPs.find(aKey)->second;
     
-    if(aKey.thePtCode>70){
+    if(aKey.thePtCode>71){
       ++aKey.thePtCode;
       while(theGPs.find(aKey)==theGPs.end() && aKey.thePtCode<=400) ++aKey.thePtCode;    
       if(aKey.thePtCode<=400 && theGPs.find(aKey)!=theGPs.end()) aGP3 =  theGPs.find(aKey)->second;
@@ -325,15 +325,15 @@ void OMTFProcessor::fillCounts(unsigned int iProcessor,
 			       const SimTrack* aSimMuon){
 
   int theCharge = (abs(aSimMuon->type()) == 13) ? aSimMuon->type()/-13 : 0;
-  //Charge convention for uGMT is 0,1
-  if(theCharge<0) theCharge=0;
-  else theCharge=1;
+  //Charge convention for uGMT is charge = (-1)^iCharge
+  if(theCharge<0) theCharge=1;
+  else theCharge=0;
   unsigned int  iPt =  RPCConst::iptFromPt(aSimMuon->momentum().pt());
   ///Stupid conersion. Have to go through PAC pt scale, as we later
   ///shitf resulting pt code by +1
   iPt+=1;
-  if(iPt>31) iPt=200*2;
-  else iPt = RPCConst::ptFromIpt(iPt)*2.0;//MicroGMT has 0.5 GeV pt bins
+  if(iPt>31) iPt=200*2+1;
+  else iPt = RPCConst::ptFromIpt(iPt)*2.0+1;//MicroGMT has 0.5 GeV step size, with lower bin edge  (uGMT_pt_code - 1)*step_size
   //////
 
   //////////////////////////////////////  

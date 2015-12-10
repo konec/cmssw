@@ -432,15 +432,19 @@ void XMLConfigWriter::writeGPData(const GoldenPattern & aGP1,
 
   xercesc::DOMElement* aGPElement = theDoc->createElement(_toDOMS("GP"));
   stringStr.str("");
+
   stringStr<<aGP1.key().thePtCode;
   aGPElement->setAttribute(_toDOMS("iPt1"), _toDOMS(stringStr.str()));
   stringStr.str("");
+
   stringStr<<aGP2.key().thePtCode;
   aGPElement->setAttribute(_toDOMS("iPt2"), _toDOMS(stringStr.str()));
   stringStr.str("");
+
   stringStr<<aGP3.key().thePtCode;
   aGPElement->setAttribute(_toDOMS("iPt3"), _toDOMS(stringStr.str()));
   stringStr.str("");
+
   stringStr<<aGP4.key().thePtCode;
   aGPElement->setAttribute(_toDOMS("iPt4"), _toDOMS(stringStr.str()));
 
@@ -453,6 +457,7 @@ void XMLConfigWriter::writeGPData(const GoldenPattern & aGP1,
   aGPElement->setAttribute(_toDOMS("iPhi"), _toDOMS(stringStr.str()));
   stringStr.str("");
   stringStr<<aGP1.key().theCharge;
+  
   aGPElement->setAttribute(_toDOMS("iCharge"), _toDOMS(stringStr.str()));
 
   unsigned int iLayerNew=0;
