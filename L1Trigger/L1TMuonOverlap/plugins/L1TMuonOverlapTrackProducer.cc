@@ -272,26 +272,17 @@ void L1TMuonOverlapTrackProducer::processCandidates(unsigned int iProcessor, int
 				     l1t::RegionalMuonCandBxCollection & myOTFCandidates,
 				     l1t::tftype mtfType){
 
-  ////Switch from internal processor n bit scale to global one
-  int procOffset = OMTFConfiguration::globalPhiStart(iProcessor);
-  if(procOffset<0) procOffset+=(int)OMTFConfiguration::nPhiBins;
-  ///Set local 0 at iProcessor x 15 deg
-  procOffset-=(15+iProcessor*60)/360.0*OMTFConfiguration::nPhiBins;
-  int lowScaleEnd = pow(2,OMTFConfiguration::nPhiBits-1);
-
-    for(unsigned int iCand=0; iCand<myOTFCandidates.size(bx); ++iCand){
-      // shift phi from processor to global coordinates
-      l1t::RegionalMuonCand cand = myOTFCandidates.at(bx, iCand);
-      int phiValue = (cand.hwPhi()+procOffset+lowScaleEnd);
-      if(phiValue>=(int)OMTFConfiguration::nPhiBins) phiValue-=OMTFConfiguration::nPhiBins;
-      ///conversion factor: 5400/5760
-      ///offset: 24 uGMT phi bins      
-      phiValue/=9.375+24; 
-      cand.setHwPhi(phiValue);
-      cand.setTFIdentifiers(iProcessor,mtfType);
-      // store candidate
-      if(cand.hwPt()) myCands->push_back(bx, cand);
-    }
+  for(unsigned int iCand=0; iCand<myOTFCandidates.size(bx); ++iCand){
+    l1t::RegionalMuonCand cand = myOTFCandidates.at(bx, iCand);
+    int phiValue = cand.hwPhi();
+    if(phiValue>=(int)OMTFConfiguration::nPhiBins) phiValue-=OMTFConfiguration::nPhiBins;
+    ///conversion factor from OMTF to uGMT scale: 5400/576
+    phiValue/=9.375;    
+    cand.setHwPhi(phiValue);
+    cand.setTFIdentifiers(iProcessor,mtfType);
+    // store candidate
+    if(cand.hwPt()) myCands->push_back(bx, cand);
+  }
 }
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
