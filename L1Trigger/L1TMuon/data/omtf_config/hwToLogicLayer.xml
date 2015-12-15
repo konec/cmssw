@@ -204,10 +204,10 @@
       <Layer iFirstInput="0" iLayer="7" nInputs="6"/>
       <Layer iFirstInput="0" iLayer="8" nInputs="6"/>
       <Layer iFirstInput="0" iLayer="9" nInputs="6"/>
-      <Layer iFirstInput="2" iLayer="10" nInputs="6"/>
-      <Layer iFirstInput="2" iLayer="11" nInputs="6"/>
-      <Layer iFirstInput="2" iLayer="12" nInputs="6"/>
-      <Layer iFirstInput="2" iLayer="13" nInputs="6"/>
+      <Layer iFirstInput="0" iLayer="10" nInputs="6"/>
+      <Layer iFirstInput="0" iLayer="11" nInputs="6"/>
+      <Layer iFirstInput="0" iLayer="12" nInputs="6"/>
+      <Layer iFirstInput="0" iLayer="13" nInputs="6"/>
       <Layer iFirstInput="0" iLayer="14" nInputs="4"/>
       <Layer iFirstInput="0" iLayer="15" nInputs="6"/>
       <Layer iFirstInput="0" iLayer="16" nInputs="6"/>
@@ -264,10 +264,10 @@
       <Layer iFirstInput="6" iLayer="7" nInputs="6"/>
       <Layer iFirstInput="6" iLayer="8" nInputs="6"/>
       <Layer iFirstInput="6" iLayer="9" nInputs="6"/>
-      <Layer iFirstInput="6" iLayer="10" nInputs="6"/>
-      <Layer iFirstInput="6" iLayer="11" nInputs="6"/>
-      <Layer iFirstInput="6" iLayer="12" nInputs="6"/>
-      <Layer iFirstInput="6" iLayer="13" nInputs="6"/>
+      <Layer iFirstInput="4" iLayer="10" nInputs="6"/>
+      <Layer iFirstInput="4" iLayer="11" nInputs="6"/>
+      <Layer iFirstInput="4" iLayer="12" nInputs="6"/>
+      <Layer iFirstInput="4" iLayer="13" nInputs="6"/>
       <Layer iFirstInput="2" iLayer="14" nInputs="4"/>
       <Layer iFirstInput="6" iLayer="15" nInputs="6"/>
       <Layer iFirstInput="6" iLayer="16" nInputs="6"/>

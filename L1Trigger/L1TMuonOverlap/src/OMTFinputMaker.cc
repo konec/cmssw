@@ -159,8 +159,11 @@ unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId,
       ///Set roll number by hand to keep common input 
       ///number shift formula for all stations
       if(rpc.station()==2 && rpc.layer()==2 && rpc.roll()==2) iRoll = 1;
-      if(rpc.station()==3) iRoll = 1;
-
+      ///Only one roll from station 3 is connected.
+      if(rpc.station()==3){
+	iRoll = 1;
+	nInputsPerSector = 2;
+      }
       ///At the moment do not use RPC chambers splitting into rolls for bmtf part      
       if(type==l1t::tftype::bmtf)iRoll = 1;
     }
@@ -204,7 +207,7 @@ unsigned int OMTFinputMaker::getInputNumber(unsigned int rawId,
   iInput = (aSector - aMin)*nInputsPerSector;
   ///Chambers divided into two rolls have rolls number 1 and 3
   iInput+=iRoll-1;
-
+  
   return iInput;
 }
 ////////////////////////////////////////////
@@ -239,6 +242,10 @@ OMTFinput OMTFinputMaker::processDT(const L1MuDTChambPhContainer *dtPhDigis,
     int iPhi =  myAngleConverter.getProcessorPhi(iProcessor, type, digiIt);
     int iEta =  myAngleConverter.getGlobalEta(detid.rawId(), digiIt, dtThDigis);
     unsigned int iInput= getInputNumber(detid.rawId(), iProcessor, type);
+
+    std::cout<<detid<<"iInput: "<<iInput<<" iPhi: "<<iPhi<<" globalPhi: "<<myAngleConverter.getGlobalPhi(detid.rawId(), digiIt)<<std::endl;
+
+    
     result.addLayerHit(iLayer,iInput,iPhi,iEta);
     result.addLayerHit(iLayer+1,iInput,digiIt.phiB(),iEta);
   }
@@ -301,9 +308,9 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
 
   const RPCDigiCollection & rpcDigiCollection = *rpcDigis;
   for (auto rollDigis : rpcDigiCollection) {
-    RPCDetId roll = rollDigis.first;
+    RPCDetId roll = rollDigis.first;    
     unsigned int rawid = roll.rawId();
-    if(!acceptDigi(rawid, iProcessor, type)) continue;
+    if(!acceptDigi(rawid, iProcessor, type)) continue;    
     ///Find clusters of consecutive fired strips.
     ///Have to copy the digis in chamber to sort them (not optimal).
     ///NOTE: when copying I select only digis with bx==0       //FIXME: find a better place/way to filtering digi against quality/BX etc.
@@ -320,12 +327,14 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
 
     for (auto & cluster: clusters) {
       int iPhiHalfStrip1 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.first);
-      int iPhiHalfStrip2 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.second);
+      int iPhiHalfStrip2 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.second);     
       int iPhi = (iPhiHalfStrip1+iPhiHalfStrip2)/2;
       int iEta =  myAngleConverter.getGlobalEta(rawid, cluster.first);
       unsigned int hwNumber = OMTFConfiguration::getLayerNumber(rawid);
       unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];
       unsigned int iInput= getInputNumber(rawid, iProcessor, type);
+
+      std::cout<<roll<<" iInput: "<<iInput<<" iPhi: "<<iPhiHalfStrip1<<" globalPhi: "<<myAngleConverter.getGlobalPhi(roll.rawId(), cluster.first)<<std::endl;
 
       result.addLayerHit(iLayer,iInput,iPhi,iEta);
 
@@ -336,7 +345,7 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
            <<" hwNumber: "<<hwNumber
            <<" iInput: "<<iInput
            <<" iLayer: "<<iLayer
-           <<std::endl;
+           <<std::endl;      
     }
   }
 
