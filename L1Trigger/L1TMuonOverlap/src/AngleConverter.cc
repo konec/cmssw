@@ -166,10 +166,11 @@ float AngleConverter::getGlobalPhi(unsigned int rawid, const RPCDigi & aDigi){
   const GlobalPoint gp = roll->toGlobal(lp);
   roll.release();
 
-  //float phi = gp.phi()/(2.0*M_PI);
-  //int iPhi = phi*OMTFConfiguration::nPhiBins;
+  float phi = gp.phi()/(2.0*M_PI);
+  int iPhi = phi*OMTFConfiguration::nPhiBins;
+  return iPhi;
 
-  return gp.phi();
+  //return gp.phi();
 }
 ///////////////////////////////////////
 ///////////////////////////////////////

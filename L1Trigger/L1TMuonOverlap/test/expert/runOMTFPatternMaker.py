@@ -63,23 +63,22 @@ process.options = cms.untracked.PSet(wantSummary = cms.untracked.bool(True))
 process.source = cms.Source(
     'PoolSource',
     #fileNames = cms.untracked.vstring('file:///afs/cern.ch/work/a/akalinow/CMS/OverlapTrackFinder/data/Crab/SingleMuFullEtaTestSample/720_FullEta_v1/data/SingleMu_16_p_1_2_TWz.root')
-    fileNames = cms.untracked.vstring('file:///home/akalinow/scratch/CMS/OverlapTrackFinder/data/Crab/SingleMuFullEta/721_FullEta_v4/data/SingleMu_25_p_133_2_QJ1.root')
+    fileNames = cms.untracked.vstring('file:///home/akalinow/scratch/CMS/OverlapTrackFinder/Crab/SingleMuFullEta/721_FullEta_v4/data/SingleMu_25_p_133_2_QJ1.root')
    
 )
-
 '''
 ##Use all available events in a single job.
 ##Only for making the connections maps.
 process.source.fileNames =  cms.untracked.vstring()
-path = "/afs/cern.ch/work/a/akalinow/CMS/OverlapTrackFinder/data/Crab/SingleMuFullEta/721_FullEta_v4/data/"
-command = "ls "+path+"/SingleMu_25_?_*"
+path = "/home/akalinow/scratch/CMS/OverlapTrackFinder/Crab/SingleMuFullEta/721_FullEta_v4/data/"
+command = "ls "+path+"/SingleMu_10_?_*"
 fileList = commands.getoutput(command).split("\n")
 process.source.fileNames =  cms.untracked.vstring()
 for aFile in fileList:
     process.source.fileNames.append('file:'+aFile)
 '''
 
-process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1))
+process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(1000000))
 
 ###TEST
 '''
@@ -124,7 +123,7 @@ process.omtfPatternMaker = cms.EDAnalyzer("OMTFPatternMaker",
                                           dropDTPrimitives = cms.bool(False),                                    
                                           dropCSCPrimitives = cms.bool(False),   
                                           ptCode = cms.int32(25),#this is old PAC pt scale.
-                                          charge = cms.int32(1),#can be 0(corresponds to q=-1) or 1(q=1)
+                                          charge = cms.int32(0),#can be 0(corresponds to q=1) or 1(q=0)
                                           omtf = cms.PSet(
                                               configFromXML = cms.bool(False),   
                                               patternsXMLFiles = cms.VPSet(                                       
@@ -134,7 +133,14 @@ process.omtfPatternMaker = cms.EDAnalyzer("OMTFPatternMaker",
                                           )
 )
 
-process.L1TMuonSeq = cms.Sequence(process.omtfPatternMaker)
+###Gen level filter configuration
+process.MuonEtaFilter = cms.EDFilter("SimTrackEtaFilter",
+                                minNumber = cms.uint32(1),
+                                src = cms.InputTag("g4SimHits"),
+                                cut = cms.string("momentum.eta<0.86 && momentum.eta>0.83 &&  momentum.pt>1")
+                                )
+
+process.L1TMuonSeq = cms.Sequence(process.MuonEtaFilter*process.omtfPatternMaker)
 
 process.L1TMuonPath = cms.Path(process.L1TMuonSeq)
 

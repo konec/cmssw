@@ -76,7 +76,7 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condD
 from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
 
-path = "../../job_3_pat/8_0_0/"
+path = "../../job_3_pat/8_0_0_15_12_2015/"
 patternsXMLFiles = cms.VPSet()
 for ipt in xrange(4,32):
     patternsXMLFiles.append(cms.PSet(patternsXMLFile = cms.FileInPath(path+"SingleMu_"+str(ipt)+"_p/GPs.xml")))

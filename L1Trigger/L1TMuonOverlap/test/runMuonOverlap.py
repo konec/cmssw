@@ -38,6 +38,8 @@ process.esProd = cms.EDAnalyzer("EventSetupRecordDataGetter",
 
 ####OMTF Emulator
 process.load('L1Trigger.L1TMuonOverlap.simMuonOverlapDigis_cfi')
+process.simOmtfDigis.dropRPCPrimitives = cms.bool(True)
+
 
 process.dumpED = cms.EDAnalyzer("EventContentAnalyzer")
 process.dumpES = cms.EDAnalyzer("PrintEventSetupContent")

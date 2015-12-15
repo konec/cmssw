@@ -134,7 +134,7 @@ void OMTFPatternMaker::endJob(){
     myOMTFConfigMaker->printConnections(std::cout,iProcessor,3);
     myOMTFConfigMaker->printConnections(std::cout,iProcessor,4);
     myOMTFConfigMaker->printConnections(std::cout,iProcessor,5);
-    myOMTFConfigMaker->printConnections(std::cout,iProcessor,6);
+    //myOMTFConfigMaker->printConnections(std::cout,iProcessor,6);
 
     myWriter->writeConnectionsData(OMTFConfiguration::measurements4D);
     myWriter->finaliseXMLDocument(fName);
