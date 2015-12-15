@@ -241,11 +241,7 @@ OMTFinput OMTFinputMaker::processDT(const L1MuDTChambPhContainer *dtPhDigis,
     unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];   
     int iPhi =  myAngleConverter.getProcessorPhi(iProcessor, type, digiIt);
     int iEta =  myAngleConverter.getGlobalEta(detid.rawId(), digiIt, dtThDigis);
-    unsigned int iInput= getInputNumber(detid.rawId(), iProcessor, type);
-
-    std::cout<<detid<<"iInput: "<<iInput<<" iPhi: "<<iPhi<<" globalPhi: "<<myAngleConverter.getGlobalPhi(detid.rawId(), digiIt)<<std::endl;
-
-    
+    unsigned int iInput= getInputNumber(detid.rawId(), iProcessor, type);    
     result.addLayerHit(iLayer,iInput,iPhi,iEta);
     result.addLayerHit(iLayer+1,iInput,digiIt.phiB(),iEta);
   }
@@ -333,9 +329,6 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
       unsigned int hwNumber = OMTFConfiguration::getLayerNumber(rawid);
       unsigned int iLayer = OMTFConfiguration::hwToLogicLayer[hwNumber];
       unsigned int iInput= getInputNumber(rawid, iProcessor, type);
-
-      std::cout<<roll<<" iInput: "<<iInput<<" iPhi: "<<iPhiHalfStrip1<<" globalPhi: "<<myAngleConverter.getGlobalPhi(roll.rawId(), cluster.first)<<std::endl;
-
       result.addLayerHit(iLayer,iInput,iPhi,iEta);
 
       str<<" RPC halfDigi "
