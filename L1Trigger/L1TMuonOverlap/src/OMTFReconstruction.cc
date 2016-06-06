@@ -146,7 +146,7 @@ void OMTFReconstruction::getProcessorCandidates(unsigned int iProcessor, l1t::tf
 
   //fill outgoing collection
   for (auto & candMuon :  candMuons) {
-     if (flag) candMuon.setHwQual(0);         //FIXME temporary debug fix
+     candMuon.setHwQual( candMuon.hwQual() | flag);         //FIXME temporary debug fix
      omtfCandidates.push_back(bx, candMuon);
   }
   

@@ -294,6 +294,7 @@ OMTFinput OMTFinputMaker::processCSC(const CSCCorrelatedLCTDigiCollection *cscDi
       //if(abs(iEta)>1.26/2.61*240) continue;
       //if (abs(iEta) > 115) continue;
       unsigned int iInput= getInputNumber(rawid, iProcessor, type);      
+//      std::cout <<" ADDING CSC hit, proc: "<<iProcessor<<" iPhi : " << iPhi <<" iEta: "<< iEta << std::endl; 
       result.addLayerHit(iLayer,iInput,iPhi,iEta);     
     }
   }      
@@ -336,22 +337,22 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
     }
 
     for (auto & cluster: clusters) {
-//      int iPhiHalfStrip1 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.first);
-//      int iPhiHalfStrip2 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.second);
-      int cSize =  abs(int(cluster.first)-int(cluster.second))+1;
-      if (cSize>3) continue;
+ //     int iPhiHalfStrip1 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.first);
+ //     int iPhiHalfStrip2 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.second);
       //int iPhi = (iPhiHalfStrip1+iPhiHalfStrip2)/2;
       int iPhi =  myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.first, cluster.second);
-//      std::cout << " HStrip_1: " << iPhiHalfStrip1 <<" HStrip_2: "<<iPhiHalfStrip2<<" iPhi: " << iPhi << std::endl;
+      int cSize =  abs(int(cluster.first)-int(cluster.second))+1;
+ //     std::cout << " HStrip_1: " << iPhiHalfStrip1 <<" HStrip_2: "<<iPhiHalfStrip2<<" iPhi: " << iPhi << " cluster: ["<< cluster.first << ", "<<  cluster.second <<"]"<< std::endl;
+      if (cSize>3) continue;
       int iEta =  myAngleConverter.getGlobalEta(rawid, cluster.first);      
       unsigned int hwNumber = myOmtfConfig->getLayerNumber(rawid);
       unsigned int iLayer = myOmtfConfig->getHwToLogicLayer().at(hwNumber);
       unsigned int iInput= getInputNumber(rawid, iProcessor, type);
-//      std::cout <<"ADDING HIT: iLayer = " << iLayer << " iInput: " << iInput << " iPhi: " << iPhi << std::endl;
+ //     std::cout <<"ADDING HIT: iLayer = " << iLayer << " iInput: " << iInput << " iPhi: " << iPhi << std::endl;
       if (iLayer==17 && (iInput==0 || iInput==1)) continue;  // FIXME (MK) there is no RPC link for that input, because it is taken by DAQ link
       bool outres = result.addLayerHit(iLayer,iInput,iPhi,iEta);
-      if (cSize>2) flag=1;
-      if (!outres) flag=1;
+      if (cSize>2) flag |= 2;
+      if (!outres) flag |= 1;
       nClusters++;
 
       str <<" RPC halfDigi "
@@ -363,7 +364,7 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
            <<" iLayer: "<<iLayer
            <<std::endl;      
     }
-    if (nClusters > 2) flag=1;
+//    if (nClusters > 2) flag=1;
   }
 
   edm::LogInfo("OMTFInputMaker")<<str.str();

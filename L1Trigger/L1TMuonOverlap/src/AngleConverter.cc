@@ -191,6 +191,9 @@ int AngleConverter::getProcessorPhi(unsigned int iProcessor, l1t::tftype part, c
   //FIXME: to be checked (only important for ME1/3) keep more bits for offset, truncate at the end
   int phi = offsetLoc + order*scale*halfStrip;
 
+//  std::cout <<" hs: "<< halfStrip <<" offset: " << offsetLoc <<" oder*scale: "<< order*scale 
+//            <<" phi: " <<phi<<" ("<<offsetLoc + order*scale*halfStrip<<")"<< std::endl;
+
   return phi;
 }
 
