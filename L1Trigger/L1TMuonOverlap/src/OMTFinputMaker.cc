@@ -292,7 +292,7 @@ OMTFinput OMTFinputMaker::processCSC(const CSCCorrelatedLCTDigiCollection *cscDi
       ///The nominal OMTF range is up to 1.24, but cutting at 1.24
       ///kill efficnency at the edge. 1.26 is one eta bin above nominal.
       //if(abs(iEta)>1.26/2.61*240) continue;
-      //if (abs(iEta) > 115) continue;
+      if (abs(iEta) > 115) continue;
       unsigned int iInput= getInputNumber(rawid, iProcessor, type);      
 //      std::cout <<" ADDING CSC hit, proc: "<<iProcessor<<" iPhi : " << iPhi <<" iEta: "<< iEta << std::endl; 
       result.addLayerHit(iLayer,iInput,iPhi,iEta);     
@@ -351,8 +351,8 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
  //     std::cout <<"ADDING HIT: iLayer = " << iLayer << " iInput: " << iInput << " iPhi: " << iPhi << std::endl;
       if (iLayer==17 && (iInput==0 || iInput==1)) continue;  // FIXME (MK) there is no RPC link for that input, because it is taken by DAQ link
       bool outres = result.addLayerHit(iLayer,iInput,iPhi,iEta);
-      if (cSize>2) flag |= 2;
-      if (!outres) flag |= 1;
+//      if (cSize>2) flag |= 2;
+//      if (!outres) flag |= 1;
       nClusters++;
 
       str <<" RPC halfDigi "
