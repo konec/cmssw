@@ -2,6 +2,8 @@
 
 #include "GMTCollections.h"
 
+#include <sstream>
+
 namespace l1t {
    namespace stage2 {
       GMTCollections::~GMTCollections()
@@ -9,7 +11,12 @@ namespace l1t {
          event_.put(std::move(regionalMuonCandsBMTF_), "BMTF");
          event_.put(std::move(regionalMuonCandsOMTF_), "OMTF");
          event_.put(std::move(regionalMuonCandsEMTF_), "EMTF");
-         event_.put(std::move(muons_), "Muon");
+         event_.put(std::move(muons_[0]), "Muon");
+         for (int i=1; i<6; ++i) {
+            std::stringstream ss;
+            ss << "MuonCopy" << i;
+            event_.put(std::move(muons_[i]), ss.str().c_str());
+         }
          event_.put(std::move(imdMuonsBMTF_), "imdMuonsBMTF");
          event_.put(std::move(imdMuonsEMTFNeg_), "imdMuonsEMTFNeg");
          event_.put(std::move(imdMuonsEMTFPos_), "imdMuonsEMTFPos");
