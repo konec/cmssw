@@ -16,6 +16,57 @@
 #include "FWCore/Framework/interface/EventSetup.h"
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
 
+namespace {
+  uint32_t lbDetId( const RPCDetId & rollDetId) {
+//    if (rollDetId.rawId()==637571080) std::cout <<" ROLL DetId: "<<rollDetId << std::endl;
+    int region = rollDetId.region();
+    int ring = rollDetId.ring();
+    int station = rollDetId.station();
+    int sector = rollDetId.sector();
+    int layer = rollDetId.layer();
+    int subsector = rollDetId.subsector();
+    int roll = rollDetId.roll();
+    if (region != 0) roll = 0;
+    return RPCDetId(region, ring, station, sector, layer, subsector, roll);
+  }
+
+  struct RpcCluSpec {
+    typedef std::pair<unsigned int, unsigned int> Cluster;
+    int cSize() {return abs(int(cluster.first)-int(cluster.second))+1; }
+    RPCDetId du;
+    Cluster cluster;
+
+    bool operator < (const RpcCluSpec & o) {
+      if (du.roll() < o.du.roll()) return true;
+      if (du.roll() > o.du.roll()) return false;
+      if (du.region() == 0) {
+        if (cluster.first < o.cluster.first) return true; else return false;
+      } else {
+        if (du.station()==1 && (du.ring()==2 || du.ring()==3) && du.roll()==1) {
+          if (cluster.first > o.cluster.first) return true; else return false; 
+        } else if ( (du.station()==2 || du.station()==3 || du.station()==4) && (du.ring()==2 || du.ring()==3) && (du.roll()==1 || du.roll()==2) ) {
+          if (cluster.first > o.cluster.first) return true; else return false; 
+        } else {
+          if (cluster.first < o.cluster.first) return true; else return false;
+        }
+      }
+    }
+//    int phi;
+//    int eta;
+  };
+  
+
+  std::vector<RpcCluSpec> sortLbClusters(std::vector<RpcCluSpec> clusters) {
+    std::vector<RpcCluSpec> result; 
+    sort(clusters.begin(), clusters.end());
+    for (int csize=3; csize >0; csize--) {
+      for (auto & clu : clusters) if (clu.cSize()==csize) result.push_back(clu);
+    }
+    if (result.size() >2) result.erase(result.begin()+2, result.end());
+    return result;
+  }
+}
+
 ///////////////////////////////////////
 ///////////////////////////////////////
 OMTFinputMaker::OMTFinputMaker() {}
@@ -310,12 +361,14 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
   std::stringstream str;
 
 //  std::cout <<" RPC HITS, processor : " << iProcessor << std::endl;
+  typedef std::map<uint32_t ,std::vector<RpcCluSpec> > MapLbClu;
+  MapLbClu mapLbClu;
 
   const RPCDigiCollection & rpcDigiCollection = *rpcDigis;
   for (auto rollDigis : rpcDigiCollection) {
     RPCDetId roll = rollDigis.first;    
     unsigned int rawid = roll.rawId();
-    int nClusters = 0;
+//    int nClusters = 0;
     if(!acceptDigi(rawid, iProcessor, type)) continue;    
     ///Find clusters of consecutive fired strips.
     ///Have to copy the digis in chamber to sort them (not optimal).
@@ -332,37 +385,38 @@ OMTFinput OMTFinputMaker::processRPC(const RPCDigiCollection *rpcDigis,
       else if (digi.strip() - clusters.back().second  > 1) clusters.push_back(Cluster(digi.strip(),digi.strip()));
     }
 
-    for (auto & cluster: clusters) {
-//      int iPhiHalfStrip1 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.first);
-//      int iPhiHalfStrip2 = myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.second);
-      int iPhi =  myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.first, cluster.second);
-      int cSize =  abs(int(cluster.first)-int(cluster.second))+1;
-//      std::cout << " HStrip_1: " << iPhiHalfStrip1 <<" HStrip_2: "<<iPhiHalfStrip2<<" iPhi: " << iPhi << " cluster: ["<< cluster.first << ", "<<  cluster.second <<"]"<< std::endl;
-      if (cSize>3) continue;
-      int iEta =  myAngleConverter.getGlobalEta(rawid, cluster.first);      
-      unsigned int hwNumber = myOmtfConfig->getLayerNumber(rawid);
-      unsigned int iLayer = myOmtfConfig->getHwToLogicLayer().at(hwNumber);
-      unsigned int iInput= getInputNumber(rawid, iProcessor, type);
-//      std::cout <<"ADDING HIT: iLayer = " << iLayer << " iInput: " << iInput << " iPhi: " << iPhi << std::endl;
-      if (iLayer==17 && (iInput==0 || iInput==1)) continue;  // FIXME (MK) there is no RPC link for that input, because it is taken by DAQ link
-      bool outres = 
-        result.addLayerHit(iLayer,iInput,iPhi,iEta);
-//      if (cSize>2) flag |= 2;
-//      if (!outres) flag |= 1;
-      nClusters++;
+    uint32_t lbDetU = lbDetId(roll); 
+    std::vector<RpcCluSpec> & vClu = mapLbClu[lbDetU];
+    for (auto & cluster: clusters) vClu.push_back({roll,cluster}); 
 
-      str <<" RPC halfDigi "
-           <<" begin: "<<cluster.first<<" end: "<<cluster.second
-           <<" iPhi: "<<iPhi
-           <<" iEta: "<<iEta
-           <<" hwNumber: "<<hwNumber
-           <<" iInput: "<<iInput
-           <<" iLayer: "<<iLayer
-           <<" out: " << outres
-           <<std::endl;      
-    }
-//    if (nClusters > 2) flag=1;
   }
+
+  
+//    int nClusters = 0;
+  for (auto & im : mapLbClu) {
+    std::vector<RpcCluSpec> vClu = sortLbClusters(im.second);
+      for (auto & clu : vClu) {
+        RPCDetId & roll = clu.du;
+        unsigned int rawid = roll.rawId();
+        RpcCluSpec::Cluster & cluster = clu.cluster;
+      
+        int iPhi =  myAngleConverter.getProcessorPhi(iProcessor, type, roll, cluster.first, cluster.second);
+        int cSize =  clu.cSize();
+//      std::cout << " HStrip_1: " << iPhiHalfStrip1 <<" HStrip_2: "<<iPhiHalfStrip2<<" iPhi: " << iPhi << " cluster: ["<< cluster.first << ", "<<  cluster.second <<"]"<< std::endl;
+        if (cSize>3) continue;
+        int iEta =  myAngleConverter.getGlobalEta(rawid, cluster.first);
+        unsigned int hwNumber = myOmtfConfig->getLayerNumber(rawid);
+        unsigned int iLayer = myOmtfConfig->getHwToLogicLayer().at(hwNumber);
+        unsigned int iInput= getInputNumber(rawid, iProcessor, type);
+//      std::cout <<"ADDING HIT: iLayer = " << iLayer << " iInput: " << iInput << " iPhi: " << iPhi << std::endl;
+        if (iLayer==17 && (iInput==0 || iInput==1)) continue;  // FIXME (MK) there is no RPC link for that input, because it is taken by DAQ link
+        result.addLayerHit(iLayer,iInput,iPhi,iEta);
+//    if (cSize>2) flag |= 2;
+//    if (!outres) flag |= 1;
+//        nClusters++;
+      }
+  }
+
 
   edm::LogInfo("OMTFInputMaker")<<str.str();
   return result;
