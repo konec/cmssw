@@ -82,6 +82,7 @@ class OMTFReconstruction {
     OMTFConfigMaker     *m_OMTFConfigMaker;
     XMLConfigWriter     *m_Writer;
 	
+    unsigned int theEvent;
 };
 
 #endif

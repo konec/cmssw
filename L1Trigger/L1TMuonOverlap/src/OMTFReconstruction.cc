@@ -102,7 +102,8 @@ std::unique_ptr<l1t::RegionalMuonCandBxCollection> OMTFReconstruction::reconstru
 
   loadAndFilterDigis(iEvent);
 
-  if(dumpResultToXML) aTopElement = m_Writer->writeEventHeader(iEvent.id().event());
+  //if(dumpResultToXML) aTopElement = m_Writer->writeEventHeader(iEvent.id().event());
+  theEvent = iEvent.id().event();
 
   std::unique_ptr<l1t::RegionalMuonCandBxCollection> candidates(new l1t::RegionalMuonCandBxCollection );
   candidates->setBXRange(bxMin, bxMax);
@@ -169,7 +170,12 @@ void OMTFReconstruction::getProcessorCandidates(unsigned int iProcessor, l1t::tf
   }
   
   //dump to XML
-  if(bx==0)writeResultToXML(iProcessor, mtfType,  input, results, candMuons);
+  //if(bx==0) writeResultToXML(iProcessor, mtfType,  input, results, candMuons);
+
+  if(dumpResultToXML && bx==0 && candMuons.size()>=1) {
+     aTopElement = m_Writer->writeEventHeader(theEvent);
+     writeResultToXML(iProcessor, mtfType,  input, results, candMuons);
+  }
 }
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////

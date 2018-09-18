@@ -19,7 +19,7 @@ std::ostream & operator<< (std::ostream &out, const AlgoMuon &o){
   out <<"AlgoMuon: ";
   out << " pt: "   << o.getPt()
       << ", phi: " << o.getPhi()
-      << ", eta: " << o.getEta()*2.61/240
+      << ", eta: " << o.getEta()   
       << ", hits: " << std::bitset<18>(o.getHits()).to_string()
       << ", q: "   << o.getQ()
       << ", bx: "  << o.getBx()
